@@ -19,9 +19,16 @@ graphs to disk using the methods on ``KnowledgeGraph``.
 """
 
 import argparse
+import os
 import sys
 
-from .orchestrator import Orchestrator
+# Support running both as a module and as a script
+if __package__ is None or __package__ == '':
+    # When executed as a script, add the parent directory to sys.path
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from AuraModelTraining.orchestrator import Orchestrator  # type: ignore
+else:
+    from .orchestrator import Orchestrator
 
 
 def main(argv: list[str] | None = None) -> int:
