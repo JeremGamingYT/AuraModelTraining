@@ -188,11 +188,12 @@ class EntityRelationExtractor:
         triples: List[Triple] = []
         # Split into sentences roughly on punctuation
         sentences = re.split(r'[\.!?]\s+', text)
-        pattern = re.compile(
-            r'\b([A-Z][A-Za-z\-]*(?:\s+[A-Z][A-Za-z\-]*)*)\s+'  # subject (proper noun)
-            r'([a-zéèêëïîàâçùû]+)\s+'                              # verb
-            r'([A-Z][A-Za-z\-]*(?:\s+[A-Z][A-Za-z\-]*)*)\b'      # object (proper noun)
-        )
+        # Allow connectors inside multi-word names (e.g., "Modèles de Langage") and accented letters
+        name_token = r"[A-Z][A-Za-zÀ-ÖØ-öø-ÿ0-9\-]*"
+        connectors = r"(?:de|du|des|d['’]|of|the|and|et|la|le|les|l['’]|van|von|da|di|do)"
+        name = rf"{name_token}(?:\s+(?:{connectors})\s+{name_token}|\s+{name_token})*"
+        verb = r"[A-Za-zéèêëïîàâçùû]+"
+        pattern = re.compile(rf"\b({name})\s+({verb})\s+({name})\b")
         for sentence in sentences:
             for match in pattern.finditer(sentence):
                 subj, verb, obj = match.groups()

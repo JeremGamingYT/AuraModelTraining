@@ -126,8 +126,18 @@ class NeuralEnvelope:
             intent = 'compare'
         elif any(word in q_lower for word in ['meilleur', 'good', 'best']) or 'bon' in q_lower:
             intent = 'subjective'
-        # Extract capitalised entities
-        entities = re.findall(r'\b([A-Z][A-Za-z\-]*(?:\s+[A-Z][A-Za-z\-]*)*)\b', question)
+        # Extract capitalised entities, allowing common lowercase connectors inside names
+        entity_token = r"[A-Z][A-Za-zÀ-ÖØ-öø-ÿ0-9\-]*"
+        connectors = r"(?:de|du|des|d['’]|of|the|and|et|la|le|les|l['’]|van|von|da|di|do)"
+        entity_pattern = rf"\b({entity_token}(?:\s+(?:{connectors})\s+{entity_token}|\s+{entity_token})*)\b"
+        entities = re.findall(entity_pattern, question)
+        # Remove leading determiners/articles
+        cleaned: list[str] = []
+        for e in entities:
+            e = re.sub(r"^(?:Le|La|Les|L['’]|Un|Une|The|A|An)\s+", "", e).strip()
+            if e and e not in cleaned:
+                cleaned.append(e)
+        entities = cleaned
         # Remove leading question word if misinterpreted as entity
         if entities and entities[0].lower() in {'why', 'who', 'what', 'where', 'when', 'comment', 'pourquoi', 'qui', 'que', 'quels', 'quelles'}:
             entities = entities[1:]

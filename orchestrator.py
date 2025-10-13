@@ -106,8 +106,36 @@ class Orchestrator:
                 # Fact retrieval or multi‑hop: if two entities, find paths; else list facts
                 if len(parsed.entities) >= 2:
                     start, end = parsed.entities[0], parsed.entities[1]
-                    paths = self.engine.find_paths(start, end, max_hops=3)
+                    paths = []
+                    try:
+                        paths = self.engine.find_paths(start, end, max_hops=3)
+                    except NotImplementedError:
+                        # Backend does not support path search; we'll fall back to listing facts
+                        paths = []
                     results['paths'] = paths
+                    # Fallback: if no paths, surface nearby facts for each entity
+                    if not paths:
+                        facts: list[tuple[str, str, str]] = []
+                        for subj in {start, end}:
+                            if self.kg.backend == 'rdflib':
+                                q = f"SELECT ?p ?o WHERE {{ <http://example.org/entity/{subj}> ?p ?o . }}"
+                                try:
+                                    for row in self.kg.query(q):
+                                        p_uri = row['p']
+                                        pred_name = p_uri.split('/')[-1]
+                                        obj_name = row['o'].split('/')[-1]
+                                        facts.append((subj, pred_name, obj_name))
+                                except Exception:
+                                    continue
+                            else:
+                                try:
+                                    for u, v, key in self.kg.graph.edges(subj, keys=True):  # type: ignore[attr-defined]
+                                        facts.append((u, key, v))
+                                except Exception:
+                                    continue
+                        # Limit to a manageable number of facts
+                        if facts:
+                            results['facts'] = facts[:20]
                 elif len(parsed.entities) == 1:
                     # List all relations involving this entity
                     subj = parsed.entities[0]
