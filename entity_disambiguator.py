@@ -92,6 +92,35 @@ class EntityDisambiguator:
             )
         return resolved
 
+    def add_synonyms(self, mapping: Dict[str, str]) -> None:
+        """Preload synonym/abbreviation mappings into the cache.
+
+        The mapping keys are aliases (e.g., "LLM"), and the values are
+        canonical names (e.g., "Grands Modèles de Langage"). Both the alias
+        and the canonical name (and their lowercase forms) are cached to improve
+        hit rate. The canonical form stored is a normalised identifier suitable
+        for use as a node id (lowercase with underscores).
+        """
+        for alias, canonical in mapping.items():
+            if not alias or not canonical:
+                continue
+            canonical_id = self._normalise_to_id(canonical)
+            self._cache[alias] = canonical_id
+            self._cache[alias.lower()] = canonical_id
+            self._cache[canonical] = canonical_id
+            self._cache[canonical.lower()] = canonical_id
+
+    def resolve_name(self, name: str) -> str:
+        """Resolve a single entity name to a canonical identifier."""
+        return self._resolve_entity(name)
+
+    def _normalise_to_id(self, text: str) -> str:
+        """Normalise a free-text label into a safe identifier.
+
+        Lowercase and replace whitespace with underscores.
+        """
+        return re.sub(r"\s+", "_", text.strip().lower())
+
     def _resolve_entity(self, name: str) -> str:
         """Resolve an entity name to a canonical identifier.
 

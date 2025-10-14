@@ -141,7 +141,12 @@ class NeuralEnvelope:
         # Remove leading question word if misinterpreted as entity
         if entities and entities[0].lower() in {'why', 'who', 'what', 'where', 'when', 'comment', 'pourquoi', 'qui', 'que', 'quels', 'quelles'}:
             entities = entities[1:]
-        return ParsedQuery(original=question, intent=intent, entities=entities, details={})
+        # Detect inline document references like "@doc.txt"
+        doc_refs = re.findall(r"@([^\s]+)", question)
+        details: Dict[str, any] = {}
+        if doc_refs:
+            details['doc_refs'] = doc_refs
+        return ParsedQuery(original=question, intent=intent, entities=entities, details=details)
 
     # --------------- Answer synthesis ---------------
     def generate_answer(self, parsed_query: ParsedQuery, results: Dict[str, any]) -> str:
@@ -213,6 +218,12 @@ class NeuralEnvelope:
                 parts = [f"{subj} {pred.replace('_', ' ')} {obj}" for subj, pred, obj in path]
                 descriptions.append(' puis '.join(parts))
             return ' ; '.join(descriptions)
+        # Summary fallback from ingested document chunks
+        if 'summary' in results:
+            summary = results['summary']
+            if not summary:
+                return "Je n'ai pas pu extraire un résumé pertinent du document."
+            return ' '.join(summary)
         # Causal explanation
         if intent == 'why' and 'causal_paths' in results:
             cpaths = results['causal_paths']
