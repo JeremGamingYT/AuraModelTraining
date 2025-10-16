@@ -1,0 +1,18 @@
+{
+  "block_mapping": {
+    "minecraft:air": 0,
+    "minecraft:stone": 1,
+    "minecraft:oak_planks": 2,
+    "minecraft:oak_log": 3,
+    "minecraft:cobblestone": 4,
+    "minecraft:sandstone": 5
+  },
+  "reverse_mapping": {
+    "0": "minecraft:air",
+    "1": "minecraft:stone",
+    "2": "minecraft:oak_planks",
+    "3": "minecraft:oak_log",
+    "4": "minecraft:cobblestone",
+    "5": "minecraft:sandstone"
+  }
+}
