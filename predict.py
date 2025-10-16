@@ -9,7 +9,6 @@ from torch.utils.data import Dataset, DataLoader
 import torchvision.transforms as T
 from torchvision.utils import save_image
 from torch.optim.lr_scheduler import CosineAnnealingLR
-import pytorch_ssim  # pip install pytorch-ssim
 
 # ============ HYPERPARAMÈTRES ============
 IMG_SIZE = 128  # Augmenté pour meilleure qualité
@@ -22,6 +21,45 @@ LEARNING_RATE = 2e-4
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 print(f"Utilisation du device: {DEVICE}")
+
+# ============ SSIM IMPLEMENTATION ============
+class SSIM(nn.Module):
+    """Implémentation de SSIM (Structural Similarity Index)"""
+    def __init__(self, window_size=11, channel=3):
+        super().__init__()
+        self.window_size = window_size
+        self.channel = channel
+        self.window = self.create_window(window_size, channel)
+    
+    def gaussian(self, window_size, sigma):
+        gauss = torch.Tensor([np.exp(-(x - window_size//2)**2/float(2*sigma**2)) for x in range(window_size)])
+        return gauss/gauss.sum()
+    
+    def create_window(self, window_size, channel):
+        _1D_window = self.gaussian(window_size, 1.5).unsqueeze(1)
+        _2D_window = _1D_window.mm(_1D_window.t()).float().unsqueeze(0).unsqueeze(0)
+        window = _2D_window.expand(channel, 1, window_size, window_size).contiguous()
+        return window
+    
+    def forward(self, img1, img2):
+        window = self.window.to(img1.device).type_as(img1)
+        
+        mu1 = F.conv2d(img1, window, padding=self.window_size//2, groups=self.channel)
+        mu2 = F.conv2d(img2, window, padding=self.window_size//2, groups=self.channel)
+        
+        mu1_sq = mu1.pow(2)
+        mu2_sq = mu2.pow(2)
+        mu1_mu2 = mu1 * mu2
+        
+        sigma1_sq = F.conv2d(img1*img1, window, padding=self.window_size//2, groups=self.channel) - mu1_sq
+        sigma2_sq = F.conv2d(img2*img2, window, padding=self.window_size//2, groups=self.channel) - mu2_sq
+        sigma12 = F.conv2d(img1*img2, window, padding=self.window_size//2, groups=self.channel) - mu1_mu2
+        
+        C1 = 0.01**2
+        C2 = 0.03**2
+        
+        ssim_map = ((2*mu1_mu2 + C1)*(2*sigma12 + C2))/((mu1_sq + mu2_sq + C1)*(sigma1_sq + sigma2_sq + C2))
+        return ssim_map.mean()
 
 # ============ DATASET AMÉLIORÉ ============
 class EnhancedFrameDataset(Dataset):
@@ -279,24 +317,27 @@ class EnhancedFramePredictor(nn.Module):
 # ============ LOSS PERCEPTUELLE ============
 class PerceptualLoss(nn.Module):
     """Combine plusieurs losses pour meilleure qualité"""
-    def __init__(self):
+    def __init__(self, use_ssim=True):
         super().__init__()
         self.l1_loss = nn.L1Loss()
         self.mse_loss = nn.MSELoss()
-        self.ssim_loss = pytorch_ssim.SSIM()
+        self.use_ssim = use_ssim
+        if use_ssim:
+            self.ssim_loss = SSIM()
     
     def forward(self, pred, target):
         # Pixel-wise losses
         l1 = self.l1_loss(pred, target)
         mse = self.mse_loss(pred, target)
         
-        # Structural similarity (inversé car SSIM est une métrique de similarité)
-        ssim = 1 - self.ssim_loss(pred, target)
-        
-        # Combine les losses
-        total_loss = l1 + 0.5 * mse + 0.5 * ssim
-        
-        return total_loss, {'l1': l1.item(), 'mse': mse.item(), 'ssim': ssim.item()}
+        if self.use_ssim:
+            # Structural similarity (inversé car SSIM est une métrique de similarité)
+            ssim = 1 - self.ssim_loss(pred, target)
+            total_loss = l1 + 0.5 * mse + 0.5 * ssim
+            return total_loss, {'l1': l1.item(), 'mse': mse.item(), 'ssim': ssim.item()}
+        else:
+            total_loss = l1 + 0.5 * mse
+            return total_loss, {'l1': l1.item(), 'mse': mse.item()}
 
 # ============ ENTRAÎNEMENT EN DEUX PHASES ============
 def train_model(args):
@@ -314,14 +355,14 @@ def train_model(args):
         batch_size=args.batch_size,
         shuffle=True,
         num_workers=NUM_WORKERS,
-        pin_memory=True
+        pin_memory=True if DEVICE == 'cuda' else False
     )
     
     # Initialise le modèle
     model = EnhancedFramePredictor(channels=3, hidden_dims=HIDDEN_DIMS).to(DEVICE)
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-5)
     scheduler = CosineAnnealingLR(optimizer, T_max=NUM_EPOCHS_PRETRAIN)
-    criterion = PerceptualLoss()
+    criterion = PerceptualLoss(use_ssim=True)
     
     print(f"Nombre de paramètres: {sum(p.numel() for p in model.parameters()):,}")
     
@@ -349,10 +390,15 @@ def train_model(args):
             
             # Log périodique
             if batch_idx % 10 == 0:
-                print(f"  Batch {batch_idx}/{len(pretrain_loader)}: "
-                      f"L1={loss_dict['l1']:.4f}, "
-                      f"MSE={loss_dict['mse']:.4f}, "
-                      f"SSIM={loss_dict['ssim']:.4f}")
+                if 'ssim' in loss_dict:
+                    print(f"  Batch {batch_idx}/{len(pretrain_loader)}: "
+                          f"L1={loss_dict['l1']:.4f}, "
+                          f"MSE={loss_dict['mse']:.4f}, "
+                          f"SSIM={loss_dict['ssim']:.4f}")
+                else:
+                    print(f"  Batch {batch_idx}/{len(pretrain_loader)}: "
+                          f"L1={loss_dict['l1']:.4f}, "
+                          f"MSE={loss_dict['mse']:.4f}")
         
         scheduler.step()
         avg_loss = np.mean(epoch_losses)
@@ -374,10 +420,12 @@ def train_model(args):
         if (epoch + 1) % 10 == 0:
             model.eval()
             with torch.no_grad():
+                # Limiter à 4 images pour la visualisation
+                n_vis = min(4, noisy.size(0))
                 save_image(
-                    torch.cat([noisy[:4], reconstructed[:4], clean[:4]], dim=0),
+                    torch.cat([noisy[:n_vis], reconstructed[:n_vis], clean[:n_vis]], dim=0),
                     f'pretrain_epoch{epoch+1}.png',
-                    nrow=4,
+                    nrow=n_vis,
                     normalize=True
                 )
             print(f"  → Images sauvegardées: pretrain_epoch{epoch+1}.png")
@@ -388,9 +436,10 @@ def train_model(args):
     print("="*50)
     
     # Charge le meilleur modèle pré-entraîné
-    checkpoint = torch.load('best_autoencoder.pth')
-    model.load_state_dict(checkpoint['model_state_dict'])
-    print(f"✓ Modèle pré-entraîné chargé (epoch {checkpoint['epoch']+1})")
+    if os.path.exists('best_autoencoder.pth'):
+        checkpoint = torch.load('best_autoencoder.pth', map_location=DEVICE)
+        model.load_state_dict(checkpoint['model_state_dict'])
+        print(f"✓ Modèle pré-entraîné chargé (epoch {checkpoint['epoch']+1})")
     
     # Dataset pour prédiction
     finetune_dataset = EnhancedFrameDataset(
@@ -401,7 +450,7 @@ def train_model(args):
         batch_size=args.batch_size,
         shuffle=True,
         num_workers=NUM_WORKERS,
-        pin_memory=True
+        pin_memory=True if DEVICE == 'cuda' else False
     )
     
     # Nouvel optimizer avec learning rate plus faible
@@ -451,10 +500,11 @@ def train_model(args):
         if (epoch + 1) % 20 == 0:
             model.eval()
             with torch.no_grad():
+                n_vis = min(4, current_frame.size(0))
                 save_image(
-                    torch.cat([current_frame[:4], predicted_frame[:4], next_frame[:4]], dim=0),
+                    torch.cat([current_frame[:n_vis], predicted_frame[:n_vis], next_frame[:n_vis]], dim=0),
                     f'prediction_epoch{epoch+1}.png',
-                    nrow=4,
+                    nrow=n_vis,
                     normalize=True
                 )
             print(f"  → Prédictions sauvegardées: prediction_epoch{epoch+1}.png")
@@ -518,9 +568,13 @@ if __name__ == '__main__':
         # Mode inférence uniquement
         print("\nMODE INFÉRENCE")
         model = EnhancedFramePredictor(channels=3, hidden_dims=HIDDEN_DIMS).to(DEVICE)
-        checkpoint = torch.load('best_predictor.pth', map_location=DEVICE)
-        model.load_state_dict(checkpoint['model_state_dict'])
-        print("✓ Modèle chargé")
+        
+        if os.path.exists('best_predictor.pth'):
+            checkpoint = torch.load('best_predictor.pth', map_location=DEVICE)
+            model.load_state_dict(checkpoint['model_state_dict'])
+            print("✓ Modèle chargé")
+        else:
+            print("⚠ Aucun modèle trouvé, utilisation du modèle non entraîné")
         
         test_dataset = EnhancedFrameDataset(
             args.frames, args.img_size, mode='predict', augment=False
