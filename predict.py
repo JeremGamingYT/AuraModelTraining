@@ -150,6 +150,7 @@ class FramePredictor(nn.Module):
         return out
 
 # ============ BOUCLE D'ENTRAÎNEMENT ============
+# ============ BOUCLE D'ENTRAÎNEMENT ============
 if __name__ == '__main__':
     import argparse
     
@@ -220,9 +221,9 @@ if __name__ == '__main__':
             model.eval()
             with torch.no_grad():
                 pred = model(x)
-                # CORRECTION: Sélectionner la première image du batch 
-                pred_img = T.ToPILImage()(pred.cpu())
-                gt_img = T.ToPILImage()(y.cpu())
+                # CORRECTION: Sélectionner la première image du batch [0]
+                pred_img = T.ToPILImage()(pred[0].cpu())  # ← CORRECTION ICI
+                gt_img = T.ToPILImage()(y[0].cpu())       # ← CORRECTION ICI
                 pred_img.save(f'prediction_epoch{epoch+1}.png')
                 gt_img.save(f'groundtruth_epoch{epoch+1}.png')
             model.train()
@@ -235,10 +236,10 @@ if __name__ == '__main__':
     print("\nMode inférence:")
     model.eval()
     with torch.no_grad():
-        sample_x, sample_y = dataset  # CORRECTION: utiliser  pour indexer
+        sample_x, sample_y = dataset[0]  # CORRECTION: utiliser [0] pour indexer
         sample_x = sample_x.unsqueeze(0).to(DEVICE)
         prediction = model(sample_x)
         # CORRECTION: Sélectionner la première (et seule) image
-        pred_img = T.ToPILImage()(prediction.cpu())
+        pred_img = T.ToPILImage()(prediction[0].cpu())  # ← CORRECTION ICI
         pred_img.save('next_frame_prediction.png')
         print("✓ Prédiction sauvegardée: next_frame_prediction.png")
