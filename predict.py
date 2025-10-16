@@ -339,6 +339,19 @@ class PerceptualLoss(nn.Module):
             total_loss = l1 + 0.5 * mse
             return total_loss, {'l1': l1.item(), 'mse': mse.item()}
 
+# ============ CHECKPOINT LOADER COMPAT ============
+def load_checkpoint(path, map_location=DEVICE):
+    """Compat loader for PyTorch 2.6+ (weights_only default) and older versions.
+
+    Uses weights_only=False to allow loading older checkpoints that may contain
+    non-tensor objects (e.g., numpy scalars) saved in the dict.
+    """
+    try:
+        return torch.load(path, map_location=map_location, weights_only=False)
+    except TypeError:
+        # Older PyTorch versions do not support the weights_only argument
+        return torch.load(path, map_location=map_location)
+
 # ============ ENTRAÎNEMENT EN DEUX PHASES ============
 def train_model(args):
     # === PHASE 1: PRÉ-ENTRAÎNEMENT AUTOENCODER ===
@@ -412,7 +425,7 @@ def train_model(args):
                 'epoch': epoch,
                 'model_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
-                'loss': avg_loss,
+                'loss': float(avg_loss),
             }, 'best_autoencoder.pth')
             print(f"  ✓ Meilleur modèle sauvegardé (loss: {best_loss:.6f})")
         
@@ -437,7 +450,7 @@ def train_model(args):
     
     # Charge le meilleur modèle pré-entraîné
     if os.path.exists('best_autoencoder.pth'):
-        checkpoint = torch.load('best_autoencoder.pth', map_location=DEVICE)
+        checkpoint = load_checkpoint('best_autoencoder.pth', map_location=DEVICE)
         model.load_state_dict(checkpoint['model_state_dict'])
         print(f"✓ Modèle pré-entraîné chargé (epoch {checkpoint['epoch']+1})")
     
@@ -492,7 +505,7 @@ def train_model(args):
                 'epoch': epoch,
                 'model_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
-                'loss': avg_loss,
+                'loss': float(avg_loss),
             }, 'best_predictor.pth')
             print(f"  ✓ Meilleur prédicteur sauvegardé (loss: {best_pred_loss:.6f})")
         
