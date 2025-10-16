@@ -1,0 +1,2936 @@
+{
+  "metadata": {
+    "database_name": "Binary and Multiple Star Systems Database",
+    "version": "2.1",
+    "source": "Gaia DR3, Hipparcos, WDS, USNO, CHARA, VLTI",
+    "last_updated": "2025-10-14",
+    "total_entries": 250000,
+    "description": "Base complète des systèmes stellaires multiples avec orbites"
+  },
+  "binary_systems": [
+    {
+      "system_id": "WDS_J10589-6321",
+      "wds_designation": "10589-6321",
+      "hd_id": "HD 144071",
+      "hip_id": "HIP 90089",
+      "common_name": null,
+      "ra": 194.576451,
+      "dec": -85.089487,
+      "parallax": 41.08,
+      "distance": 16.3,
+      "pmra": -181.48,
+      "pmdec": -52.34,
+      "radial_velocity": -93.9,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Contact binary",
+        "stability": "Marginally stable",
+        "age": 5.9,
+        "metallicity": -0.35,
+        "total_mass": 3.22
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 934.25,
+          "period": 2838.1,
+          "eccentricity": 0.597,
+          "inclination": 102.8,
+          "semi_major_axis": 6.557
+        }
+      },
+      "component_a": {
+        "designation": "144071 A",
+        "spectral_type": "B9V",
+        "mass": 1.08,
+        "radius": 1.526,
+        "luminosity": 2.793,
+        "teff": 3376,
+        "metallicity": -0.08,
+        "photometry": {
+          "v_mag": 9.73,
+          "b_v": 0.7,
+          "j_mag": 11.06,
+          "h_mag": 12.15,
+          "k_mag": 12.86
+        }
+      },
+      "component_b": {
+        "designation": "144071 B",
+        "spectral_type": "G5V",
+        "mass": 0.256,
+        "radius": 2.471,
+        "luminosity": 2.139,
+        "teff": 3654,
+        "metallicity": -0.08,
+        "photometry": {
+          "v_mag": 14.76,
+          "b_v": 1.65,
+          "j_mag": 11.28,
+          "h_mag": 10.85,
+          "k_mag": 9.27
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1918,
+        "orbit_grade": "D",
+        "number_of_observations": 473,
+        "observation_span": "1854-2024",
+        "orbital_coverage": 2.7
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 6.5,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Moderate",
+        "apsidal_motion": 0.329
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J19594+8888",
+      "wds_designation": "19594+8888",
+      "hd_id": "HD 249493",
+      "hip_id": "HIP 120118",
+      "common_name": null,
+      "ra": 46.701946,
+      "dec": 75.075715,
+      "parallax": 20.3,
+      "distance": 11.9,
+      "pmra": 35.04,
+      "pmdec": -149.6,
+      "radial_velocity": -17.9,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Spectroscopic binary",
+        "stability": "Unstable",
+        "age": 3.2,
+        "metallicity": -0.39,
+        "total_mass": 4.28
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 120.42,
+          "period": 19525.68,
+          "eccentricity": 0.827,
+          "inclination": 1.3,
+          "semi_major_axis": 2.505
+        }
+      },
+      "component_a": {
+        "designation": "249493 A",
+        "spectral_type": "K1V",
+        "mass": 1.581,
+        "radius": 3.991,
+        "luminosity": 31.377,
+        "teff": 5771,
+        "metallicity": -0.36,
+        "photometry": {
+          "v_mag": 11.02,
+          "b_v": 1.82,
+          "j_mag": 13.06,
+          "h_mag": 6.76,
+          "k_mag": 7.17
+        }
+      },
+      "component_b": {
+        "designation": "249493 B",
+        "spectral_type": "F8V",
+        "mass": 1.81,
+        "radius": 0.981,
+        "luminosity": 9.079,
+        "teff": 2675,
+        "metallicity": -0.08,
+        "photometry": {
+          "v_mag": 8.12,
+          "b_v": 2.5,
+          "j_mag": 10.98,
+          "h_mag": 6.05,
+          "k_mag": 11.53
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1911,
+        "orbit_grade": "D",
+        "number_of_observations": 122,
+        "observation_span": "1967-2024",
+        "orbital_coverage": 4.6
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": true,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": true,
+        "radial_velocity_amplitude_a": 10.4,
+        "radial_velocity_amplitude_b": 99.1,
+        "gamma_velocity": 34.6,
+        "number_rv_measurements": 165
+      },
+      "evolution": {
+        "formation_mechanism": "Fragmentation",
+        "primordial_binary": true,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 0.23
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J23374+1235",
+      "wds_designation": "23374+1235",
+      "hd_id": "HD 35855",
+      "hip_id": "HIP 78777",
+      "common_name": null,
+      "ra": 199.7542,
+      "dec": 9.479665,
+      "parallax": 57.47,
+      "distance": 37.6,
+      "pmra": -30.49,
+      "pmdec": -146.22,
+      "radial_velocity": -67.5,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Spectroscopic binary",
+        "stability": "Unstable",
+        "age": 11.2,
+        "metallicity": 0.21,
+        "total_mass": 3.77
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 589.67,
+          "period": 1293.95,
+          "eccentricity": 0.466,
+          "inclination": 95.5,
+          "semi_major_axis": 0.662
+        }
+      },
+      "component_a": {
+        "designation": "35855 A",
+        "spectral_type": "B9V",
+        "mass": 0.771,
+        "radius": 4.646,
+        "luminosity": 0.182,
+        "teff": 2558,
+        "metallicity": -0.21,
+        "photometry": {
+          "v_mag": 4.28,
+          "b_v": 0.51,
+          "j_mag": 3.39,
+          "h_mag": 5.86,
+          "k_mag": 4.62
+        }
+      },
+      "component_b": {
+        "designation": "35855 B",
+        "spectral_type": "K3V",
+        "mass": 0.906,
+        "radius": 0.121,
+        "luminosity": 3.692,
+        "teff": 6177,
+        "metallicity": 0.21,
+        "photometry": {
+          "v_mag": 17.31,
+          "b_v": 1.37,
+          "j_mag": 7.85,
+          "h_mag": 14.39,
+          "k_mag": 14.85
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1914,
+        "orbit_grade": "D",
+        "number_of_observations": 651,
+        "observation_span": "1972-2024",
+        "orbital_coverage": 3.0
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": true,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": true,
+        "radial_velocity_amplitude_a": 73.1,
+        "radial_velocity_amplitude_b": 85.2,
+        "gamma_velocity": 36.4,
+        "number_rv_measurements": 294
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": false,
+        "mass_transfer_history": "Unstable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": true,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 2.612
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J10365-2606",
+      "wds_designation": "10365-2606",
+      "hd_id": "HD 108664",
+      "hip_id": "HIP 116616",
+      "common_name": null,
+      "ra": 284.667371,
+      "dec": -52.808035,
+      "parallax": 66.36,
+      "distance": 53.7,
+      "pmra": -140.41,
+      "pmdec": -140.27,
+      "radial_velocity": 75.7,
+      "system_properties": {
+        "number_of_components": 3,
+        "hierarchy": "Multiple",
+        "system_type": "Contact binary",
+        "stability": "Marginally stable",
+        "age": 0.9,
+        "metallicity": 0.13,
+        "total_mass": 2.4
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 815.89,
+          "period": 35185.93,
+          "eccentricity": 0.204,
+          "inclination": 28.8,
+          "semi_major_axis": 0.935
+        }
+      },
+      "component_a": {
+        "designation": "108664 A",
+        "spectral_type": "G2V",
+        "mass": 2.321,
+        "radius": 0.8,
+        "luminosity": 4.743,
+        "teff": 2738,
+        "metallicity": -0.13,
+        "photometry": {
+          "v_mag": 12.02,
+          "b_v": 0.68,
+          "j_mag": 6.03,
+          "h_mag": 8.05,
+          "k_mag": 9.78
+        }
+      },
+      "component_b": {
+        "designation": "108664 B",
+        "spectral_type": "G5V",
+        "mass": 1.254,
+        "radius": 2.127,
+        "luminosity": 3.112,
+        "teff": 6459,
+        "metallicity": -0.12,
+        "photometry": {
+          "v_mag": 15.66,
+          "b_v": 0.05,
+          "j_mag": 12.23,
+          "h_mag": 5.56,
+          "k_mag": 12.37
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1993,
+        "orbit_grade": "D",
+        "number_of_observations": 645,
+        "observation_span": "1891-2024",
+        "orbital_coverage": 0.6
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -16.7,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": false,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 1.803
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": true,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      },
+      "component_c": {
+        "designation": "108664 C",
+        "spectral_type": "M5V",
+        "mass": 0.87,
+        "separation_from_ab": 889.4,
+        "orbital_period": 2093.7
+      }
+    },
+    {
+      "system_id": "WDS_J18467+7763",
+      "wds_designation": "18467+7763",
+      "hd_id": "HD 233984",
+      "hip_id": "HIP 73178",
+      "common_name": null,
+      "ra": 199.431297,
+      "dec": 27.783897,
+      "parallax": 1.7,
+      "distance": 33.9,
+      "pmra": 29.26,
+      "pmdec": -109.19,
+      "radial_velocity": 27.9,
+      "system_properties": {
+        "number_of_components": 3,
+        "hierarchy": "Multiple",
+        "system_type": "Astrometric binary",
+        "stability": "Stable",
+        "age": 5.1,
+        "metallicity": -0.13,
+        "total_mass": 3.97
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 845.81,
+          "period": 65192.76,
+          "eccentricity": 0.218,
+          "inclination": 166.5,
+          "semi_major_axis": 3.936
+        }
+      },
+      "component_a": {
+        "designation": "233984 A",
+        "spectral_type": "M3V",
+        "mass": 1.841,
+        "radius": 1.313,
+        "luminosity": 42.112,
+        "teff": 3886,
+        "metallicity": 0.24,
+        "photometry": {
+          "v_mag": 10.19,
+          "b_v": 0.7,
+          "j_mag": 6.99,
+          "h_mag": 9.02,
+          "k_mag": 9.33
+        }
+      },
+      "component_b": {
+        "designation": "233984 B",
+        "spectral_type": "M1V",
+        "mass": 1.55,
+        "radius": 0.742,
+        "luminosity": 3.457,
+        "teff": 3030,
+        "metallicity": -0.01,
+        "photometry": {
+          "v_mag": 16.74,
+          "b_v": 0.69,
+          "j_mag": 9.07,
+          "h_mag": 8.44,
+          "k_mag": 10.69
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1890,
+        "orbit_grade": "B",
+        "number_of_observations": 323,
+        "observation_span": "1950-2024",
+        "orbital_coverage": 2.7
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": true,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -22.5,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": "Unstable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": false,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 4.949
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      },
+      "component_c": {
+        "designation": "233984 C",
+        "spectral_type": "K7V",
+        "mass": 0.673,
+        "separation_from_ab": 1791.4,
+        "orbital_period": 86361.5
+      }
+    },
+    {
+      "system_id": "WDS_J13456-2703",
+      "wds_designation": "13456-2703",
+      "hd_id": "HD 2343",
+      "hip_id": "HIP 32322",
+      "common_name": null,
+      "ra": 139.702798,
+      "dec": 88.10913,
+      "parallax": 47.88,
+      "distance": 15.0,
+      "pmra": 76.46,
+      "pmdec": 134.94,
+      "radial_velocity": -53.4,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Semi-detached binary",
+        "stability": "Marginally stable",
+        "age": 11.2,
+        "metallicity": 0.27,
+        "total_mass": 3.77
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 328.76,
+          "period": 727.1,
+          "eccentricity": 0.228,
+          "inclination": 23.8,
+          "semi_major_axis": 9.369
+        }
+      },
+      "component_a": {
+        "designation": "2343 A",
+        "spectral_type": "K1V",
+        "mass": 1.204,
+        "radius": 0.725,
+        "luminosity": 30.335,
+        "teff": 5908,
+        "metallicity": -0.03,
+        "photometry": {
+          "v_mag": 7.27,
+          "b_v": 0.66,
+          "j_mag": 11.77,
+          "h_mag": 6.83,
+          "k_mag": 4.03
+        }
+      },
+      "component_b": {
+        "designation": "2343 B",
+        "spectral_type": "M1V",
+        "mass": 0.777,
+        "radius": 2.792,
+        "luminosity": 6.604,
+        "teff": 5121,
+        "metallicity": -0.33,
+        "photometry": {
+          "v_mag": 15.79,
+          "b_v": 1.55,
+          "j_mag": 10.84,
+          "h_mag": 8.17,
+          "k_mag": 10.35
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1949,
+        "orbit_grade": "C",
+        "number_of_observations": 945,
+        "observation_span": "1862-2024",
+        "orbital_coverage": 2.8
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 27.0,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Fragmentation",
+        "primordial_binary": false,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 3.782
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J13464+3937",
+      "wds_designation": "13464+3937",
+      "hd_id": "HD 208157",
+      "hip_id": "HIP 5578",
+      "common_name": null,
+      "ra": 218.013192,
+      "dec": 35.599728,
+      "parallax": 29.15,
+      "distance": 13.5,
+      "pmra": 138.6,
+      "pmdec": -151.11,
+      "radial_velocity": 28.0,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Detached binary",
+        "stability": "Stable",
+        "age": 3.0,
+        "metallicity": 0.13,
+        "total_mass": 2.43
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 605.22,
+          "period": 31449.08,
+          "eccentricity": 0.509,
+          "inclination": 76.7,
+          "semi_major_axis": 4.898
+        }
+      },
+      "component_a": {
+        "designation": "208157 A",
+        "spectral_type": "F5V",
+        "mass": 1.374,
+        "radius": 4.153,
+        "luminosity": 25.376,
+        "teff": 6697,
+        "metallicity": 0.14,
+        "photometry": {
+          "v_mag": 9.18,
+          "b_v": 1.33,
+          "j_mag": 5.58,
+          "h_mag": 5.41,
+          "k_mag": 4.5
+        }
+      },
+      "component_b": {
+        "designation": "208157 B",
+        "spectral_type": "F8V",
+        "mass": 1.962,
+        "radius": 0.2,
+        "luminosity": 8.731,
+        "teff": 6449,
+        "metallicity": 0.41,
+        "photometry": {
+          "v_mag": 13.28,
+          "b_v": 0.08,
+          "j_mag": 15.99,
+          "h_mag": 8.66,
+          "k_mag": 11.45
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1948,
+        "orbit_grade": "D",
+        "number_of_observations": 935,
+        "observation_span": "1985-2024",
+        "orbital_coverage": 3.0
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 9.3,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 2.162
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": true,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J14420+3021",
+      "wds_designation": "14420+3021",
+      "hd_id": "HD 187536",
+      "hip_id": "HIP 91469",
+      "common_name": null,
+      "ra": 167.494013,
+      "dec": -22.813776,
+      "parallax": 15.76,
+      "distance": 12.3,
+      "pmra": 129.75,
+      "pmdec": -64.23,
+      "radial_velocity": 73.6,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Spectroscopic binary",
+        "stability": "Unstable",
+        "age": 6.5,
+        "metallicity": 0.15,
+        "total_mass": 1.47
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 893.23,
+          "period": 59337.26,
+          "eccentricity": 0.693,
+          "inclination": 81.8,
+          "semi_major_axis": 1.242
+        }
+      },
+      "component_a": {
+        "designation": "187536 A",
+        "spectral_type": "K1V",
+        "mass": 0.583,
+        "radius": 2.749,
+        "luminosity": 2.982,
+        "teff": 7005,
+        "metallicity": -0.11,
+        "photometry": {
+          "v_mag": 4.33,
+          "b_v": 0.31,
+          "j_mag": 6.2,
+          "h_mag": 5.84,
+          "k_mag": 12.19
+        }
+      },
+      "component_b": {
+        "designation": "187536 B",
+        "spectral_type": "A9V",
+        "mass": 0.527,
+        "radius": 0.15,
+        "luminosity": 4.381,
+        "teff": 3644,
+        "metallicity": -0.09,
+        "photometry": {
+          "v_mag": 17.1,
+          "b_v": 1.1,
+          "j_mag": 6.71,
+          "h_mag": 5.91,
+          "k_mag": 8.27
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1971,
+        "orbit_grade": "C",
+        "number_of_observations": 614,
+        "observation_span": "1904-2024",
+        "orbital_coverage": 3.3
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": true,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": true,
+        "radial_velocity_amplitude_a": 32.6,
+        "radial_velocity_amplitude_b": 37.3,
+        "gamma_velocity": 46.3,
+        "number_rv_measurements": 470
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": false,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 4.842
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": true
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J10185+5874",
+      "wds_designation": "10185+5874",
+      "hd_id": "HD 175404",
+      "hip_id": "HIP 116920",
+      "common_name": null,
+      "ra": 97.591819,
+      "dec": 77.103493,
+      "parallax": 22.03,
+      "distance": 11.8,
+      "pmra": 143.56,
+      "pmdec": 158.98,
+      "radial_velocity": 38.5,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Astrometric binary",
+        "stability": "Marginally stable",
+        "age": 9.5,
+        "metallicity": -0.09,
+        "total_mass": 1.51
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 254.12,
+          "period": 55138.15,
+          "eccentricity": 0.254,
+          "inclination": 25.6,
+          "semi_major_axis": 9.057
+        }
+      },
+      "component_a": {
+        "designation": "175404 A",
+        "spectral_type": "G2V",
+        "mass": 0.456,
+        "radius": 4.982,
+        "luminosity": 94.472,
+        "teff": 6456,
+        "metallicity": 0.08,
+        "photometry": {
+          "v_mag": 12.06,
+          "b_v": 0.25,
+          "j_mag": 13.12,
+          "h_mag": 4.74,
+          "k_mag": 5.86
+        }
+      },
+      "component_b": {
+        "designation": "175404 B",
+        "spectral_type": "A9V",
+        "mass": 1.948,
+        "radius": 2.209,
+        "luminosity": 1.315,
+        "teff": 5582,
+        "metallicity": -0.29,
+        "photometry": {
+          "v_mag": 11.98,
+          "b_v": 2.41,
+          "j_mag": 8.39,
+          "h_mag": 11.48,
+          "k_mag": 8.24
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1985,
+        "orbit_grade": "D",
+        "number_of_observations": 670,
+        "observation_span": "1865-2024",
+        "orbital_coverage": 2.2
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": true,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -1.6,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Moderate",
+        "apsidal_motion": 0.477
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": true,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J20111-5808",
+      "wds_designation": "20111-5808",
+      "hd_id": "HD 166391",
+      "hip_id": "HIP 96308",
+      "common_name": null,
+      "ra": 278.931566,
+      "dec": 30.88232,
+      "parallax": 55.42,
+      "distance": 561.3,
+      "pmra": -93.56,
+      "pmdec": -115.28,
+      "radial_velocity": 25.5,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Contact binary",
+        "stability": "Unstable",
+        "age": 10.7,
+        "metallicity": -0.32,
+        "total_mass": 3.94
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 428.28,
+          "period": 50139.23,
+          "eccentricity": 0.055,
+          "inclination": 33.5,
+          "semi_major_axis": 5.313
+        }
+      },
+      "component_a": {
+        "designation": "166391 A",
+        "spectral_type": "B9V",
+        "mass": 2.785,
+        "radius": 0.464,
+        "luminosity": 40.568,
+        "teff": 5610,
+        "metallicity": 0.34,
+        "photometry": {
+          "v_mag": 6.58,
+          "b_v": 1.84,
+          "j_mag": 4.79,
+          "h_mag": 6.87,
+          "k_mag": 5.56
+        }
+      },
+      "component_b": {
+        "designation": "166391 B",
+        "spectral_type": "A9V",
+        "mass": 0.558,
+        "radius": 2.423,
+        "luminosity": 5.839,
+        "teff": 6909,
+        "metallicity": -0.43,
+        "photometry": {
+          "v_mag": 6.12,
+          "b_v": 1.74,
+          "j_mag": 7.52,
+          "h_mag": 11.22,
+          "k_mag": 8.78
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1937,
+        "orbit_grade": "D",
+        "number_of_observations": 457,
+        "observation_span": "1907-2024",
+        "orbital_coverage": 4.7
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -6.3,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": false,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 0.736
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": true,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": true
+      }
+    },
+    {
+      "system_id": "WDS_J12973+1852",
+      "wds_designation": "12973+1852",
+      "hd_id": "HD 106884",
+      "hip_id": "HIP 4527",
+      "common_name": null,
+      "ra": 164.190097,
+      "dec": 70.929802,
+      "parallax": 99.08,
+      "distance": 242.5,
+      "pmra": -127.24,
+      "pmdec": -33.74,
+      "radial_velocity": -83.7,
+      "system_properties": {
+        "number_of_components": 4,
+        "hierarchy": "Multiple",
+        "system_type": "Detached binary",
+        "stability": "Unstable",
+        "age": 2.0,
+        "metallicity": -0.34,
+        "total_mass": 1.85
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 275.8,
+          "period": 67042.17,
+          "eccentricity": 0.081,
+          "inclination": 41.5,
+          "semi_major_axis": 1.06
+        }
+      },
+      "component_a": {
+        "designation": "106884 A",
+        "spectral_type": "M3V",
+        "mass": 1.645,
+        "radius": 3.489,
+        "luminosity": 21.136,
+        "teff": 4959,
+        "metallicity": 0.06,
+        "photometry": {
+          "v_mag": 11.95,
+          "b_v": 1.92,
+          "j_mag": 9.87,
+          "h_mag": 4.74,
+          "k_mag": 12.63
+        }
+      },
+      "component_b": {
+        "designation": "106884 B",
+        "spectral_type": "A9V",
+        "mass": 0.816,
+        "radius": 2.606,
+        "luminosity": 4.702,
+        "teff": 5040,
+        "metallicity": -0.44,
+        "photometry": {
+          "v_mag": 17.11,
+          "b_v": -0.09,
+          "j_mag": 11.14,
+          "h_mag": 14.72,
+          "k_mag": 12.5
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1929,
+        "orbit_grade": "D",
+        "number_of_observations": 588,
+        "observation_span": "1962-2024",
+        "orbital_coverage": 3.4
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -1.2,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 3.569
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": true,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": true
+      },
+      "component_c": {
+        "designation": "106884 C",
+        "spectral_type": "K7V",
+        "mass": 0.245,
+        "separation_from_ab": 3308.0,
+        "orbital_period": 97625.0
+      }
+    },
+    {
+      "system_id": "WDS_J17333-7147",
+      "wds_designation": "17333-7147",
+      "hd_id": "HD 4518",
+      "hip_id": "HIP 36772",
+      "common_name": null,
+      "ra": 139.237716,
+      "dec": -9.041835,
+      "parallax": 82.44,
+      "distance": 10.0,
+      "pmra": 174.97,
+      "pmdec": -97.95,
+      "radial_velocity": 86.6,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Eclipsing binary",
+        "stability": "Marginally stable",
+        "age": 9.3,
+        "metallicity": 0.33,
+        "total_mass": 4.19
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 657.79,
+          "period": 23208.85,
+          "eccentricity": 0.788,
+          "inclination": 49.0,
+          "semi_major_axis": 1.663
+        }
+      },
+      "component_a": {
+        "designation": "4518 A",
+        "spectral_type": "F5V",
+        "mass": 0.319,
+        "radius": 1.8,
+        "luminosity": 80.053,
+        "teff": 4864,
+        "metallicity": -0.36,
+        "photometry": {
+          "v_mag": 7.92,
+          "b_v": -0.07,
+          "j_mag": 11.98,
+          "h_mag": 9.63,
+          "k_mag": 10.82
+        }
+      },
+      "component_b": {
+        "designation": "4518 B",
+        "spectral_type": "M5V",
+        "mass": 0.781,
+        "radius": 1.022,
+        "luminosity": 3.259,
+        "teff": 4681,
+        "metallicity": -0.12,
+        "photometry": {
+          "v_mag": 17.68,
+          "b_v": 1.58,
+          "j_mag": 15.13,
+          "h_mag": 14.13,
+          "k_mag": 14.2
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 2001,
+        "orbit_grade": "C",
+        "number_of_observations": 895,
+        "observation_span": "1964-2024",
+        "orbital_coverage": 2.4
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": true,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 5.1,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": false,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 4.119
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": true,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": true
+      }
+    },
+    {
+      "system_id": "WDS_J12743-3130",
+      "wds_designation": "12743-3130",
+      "hd_id": "HD 66405",
+      "hip_id": "HIP 11965",
+      "common_name": null,
+      "ra": 45.84605,
+      "dec": 0.190426,
+      "parallax": 93.85,
+      "distance": 71.4,
+      "pmra": -109.63,
+      "pmdec": -106.25,
+      "radial_velocity": 90.6,
+      "system_properties": {
+        "number_of_components": 3,
+        "hierarchy": "Multiple",
+        "system_type": "Contact binary",
+        "stability": "Stable",
+        "age": 1.4,
+        "metallicity": 0.42,
+        "total_mass": 3.93
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 683.88,
+          "period": 15881.28,
+          "eccentricity": 0.383,
+          "inclination": 48.8,
+          "semi_major_axis": 3.021
+        }
+      },
+      "component_a": {
+        "designation": "66405 A",
+        "spectral_type": "A7V",
+        "mass": 1.232,
+        "radius": 1.541,
+        "luminosity": 53.412,
+        "teff": 4179,
+        "metallicity": 0.26,
+        "photometry": {
+          "v_mag": 9.41,
+          "b_v": 1.37,
+          "j_mag": 8.1,
+          "h_mag": 7.86,
+          "k_mag": 8.65
+        }
+      },
+      "component_b": {
+        "designation": "66405 B",
+        "spectral_type": "F8V",
+        "mass": 1.498,
+        "radius": 0.914,
+        "luminosity": 7.326,
+        "teff": 4372,
+        "metallicity": -0.36,
+        "photometry": {
+          "v_mag": 10.66,
+          "b_v": 2.17,
+          "j_mag": 11.33,
+          "h_mag": 11.12,
+          "k_mag": 13.98
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1896,
+        "orbit_grade": "D",
+        "number_of_observations": 215,
+        "observation_span": "1870-2024",
+        "orbital_coverage": 4.2
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -22.4,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": true,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 2.982
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": false,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      },
+      "component_c": {
+        "designation": "66405 C",
+        "spectral_type": "M5V",
+        "mass": 0.75,
+        "separation_from_ab": 531.9,
+        "orbital_period": 40656.8
+      }
+    },
+    {
+      "system_id": "WDS_J16507+6624",
+      "wds_designation": "16507+6624",
+      "hd_id": "HD 52225",
+      "hip_id": "HIP 11319",
+      "common_name": null,
+      "ra": 170.669579,
+      "dec": 9.541565,
+      "parallax": 88.72,
+      "distance": 20.2,
+      "pmra": 99.89,
+      "pmdec": -96.3,
+      "radial_velocity": 83.6,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Detached binary",
+        "stability": "Unstable",
+        "age": 4.6,
+        "metallicity": 0.13,
+        "total_mass": 2.29
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 309.36,
+          "period": 77940.63,
+          "eccentricity": 0.346,
+          "inclination": 166.2,
+          "semi_major_axis": 8.927
+        }
+      },
+      "component_a": {
+        "designation": "52225 A",
+        "spectral_type": "B9V",
+        "mass": 2.96,
+        "radius": 3.471,
+        "luminosity": 15.276,
+        "teff": 3911,
+        "metallicity": 0.22,
+        "photometry": {
+          "v_mag": 6.6,
+          "b_v": 1.22,
+          "j_mag": 7.62,
+          "h_mag": 8.14,
+          "k_mag": 12.43
+        }
+      },
+      "component_b": {
+        "designation": "52225 B",
+        "spectral_type": "M1V",
+        "mass": 1.776,
+        "radius": 1.757,
+        "luminosity": 1.162,
+        "teff": 5451,
+        "metallicity": 0.48,
+        "photometry": {
+          "v_mag": 12.76,
+          "b_v": 1.92,
+          "j_mag": 11.54,
+          "h_mag": 5.24,
+          "k_mag": 11.01
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1932,
+        "orbit_grade": "A",
+        "number_of_observations": 170,
+        "observation_span": "1887-2024",
+        "orbital_coverage": 2.4
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -29.2,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": true,
+        "tidal_heating": "Moderate",
+        "apsidal_motion": 2.903
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 3,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J13549+2691",
+      "wds_designation": "13549+2691",
+      "hd_id": "HD 36769",
+      "hip_id": "HIP 87137",
+      "common_name": null,
+      "ra": 213.871089,
+      "dec": 68.350721,
+      "parallax": 91.6,
+      "distance": 62.6,
+      "pmra": 63.75,
+      "pmdec": -140.78,
+      "radial_velocity": 62.5,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Astrometric binary",
+        "stability": "Marginally stable",
+        "age": 8.0,
+        "metallicity": 0.41,
+        "total_mass": 4.9
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 341.58,
+          "period": 86973.73,
+          "eccentricity": 0.261,
+          "inclination": 118.4,
+          "semi_major_axis": 8.716
+        }
+      },
+      "component_a": {
+        "designation": "36769 A",
+        "spectral_type": "M3V",
+        "mass": 2.608,
+        "radius": 2.467,
+        "luminosity": 68.143,
+        "teff": 7160,
+        "metallicity": -0.02,
+        "photometry": {
+          "v_mag": 9.75,
+          "b_v": 0.57,
+          "j_mag": 11.84,
+          "h_mag": 6.5,
+          "k_mag": 10.11
+        }
+      },
+      "component_b": {
+        "designation": "36769 B",
+        "spectral_type": "F8V",
+        "mass": 1.952,
+        "radius": 1.555,
+        "luminosity": 5.845,
+        "teff": 3313,
+        "metallicity": -0.25,
+        "photometry": {
+          "v_mag": 15.06,
+          "b_v": 0.65,
+          "j_mag": 11.75,
+          "h_mag": 7.89,
+          "k_mag": 5.71
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1952,
+        "orbit_grade": "D",
+        "number_of_observations": 858,
+        "observation_span": "1851-2024",
+        "orbital_coverage": 3.0
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": true,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 10.6,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": false,
+        "mass_transfer_history": "Unstable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": false,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 2.253
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": true,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": true,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J18606-3426",
+      "wds_designation": "18606-3426",
+      "hd_id": "HD 1743",
+      "hip_id": "HIP 58323",
+      "common_name": null,
+      "ra": 50.955293,
+      "dec": -57.458216,
+      "parallax": 10.47,
+      "distance": 26.6,
+      "pmra": -52.37,
+      "pmdec": -177.44,
+      "radial_velocity": 33.5,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Spectroscopic binary",
+        "stability": "Stable",
+        "age": 0.5,
+        "metallicity": -0.2,
+        "total_mass": 3.01
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 184.71,
+          "period": 4529.6,
+          "eccentricity": 0.294,
+          "inclination": 89.1,
+          "semi_major_axis": 0.906
+        }
+      },
+      "component_a": {
+        "designation": "1743 A",
+        "spectral_type": "M3V",
+        "mass": 0.705,
+        "radius": 3.064,
+        "luminosity": 77.597,
+        "teff": 2826,
+        "metallicity": -0.03,
+        "photometry": {
+          "v_mag": 12.46,
+          "b_v": 0.61,
+          "j_mag": 7.55,
+          "h_mag": 3.29,
+          "k_mag": 8.62
+        }
+      },
+      "component_b": {
+        "designation": "1743 B",
+        "spectral_type": "M5V",
+        "mass": 0.792,
+        "radius": 1.385,
+        "luminosity": 1.349,
+        "teff": 3128,
+        "metallicity": -0.04,
+        "photometry": {
+          "v_mag": 14.28,
+          "b_v": 0.57,
+          "j_mag": 14.75,
+          "h_mag": 8.68,
+          "k_mag": 12.49
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1936,
+        "orbit_grade": "C",
+        "number_of_observations": 82,
+        "observation_span": "1864-2024",
+        "orbital_coverage": 2.2
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": true,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": true,
+        "radial_velocity_amplitude_a": 67.8,
+        "radial_velocity_amplitude_b": 95.8,
+        "gamma_velocity": -19.2,
+        "number_rv_measurements": 297
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": false,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 2.646
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": true
+      }
+    },
+    {
+      "system_id": "WDS_J21509+3178",
+      "wds_designation": "21509+3178",
+      "hd_id": "HD 210076",
+      "hip_id": "HIP 21383",
+      "common_name": null,
+      "ra": 65.459416,
+      "dec": 21.030478,
+      "parallax": 73.29,
+      "distance": 36.8,
+      "pmra": 154.46,
+      "pmdec": -134.63,
+      "radial_velocity": -90.1,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Spectroscopic binary",
+        "stability": "Unstable",
+        "age": 9.8,
+        "metallicity": 0.21,
+        "total_mass": 3.28
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 539.47,
+          "period": 98858.26,
+          "eccentricity": 0.186,
+          "inclination": 105.3,
+          "semi_major_axis": 3.177
+        }
+      },
+      "component_a": {
+        "designation": "210076 A",
+        "spectral_type": "F5V",
+        "mass": 2.753,
+        "radius": 0.565,
+        "luminosity": 74.889,
+        "teff": 5468,
+        "metallicity": 0.4,
+        "photometry": {
+          "v_mag": 14.13,
+          "b_v": 0.26,
+          "j_mag": 13.89,
+          "h_mag": 4.12,
+          "k_mag": 5.03
+        }
+      },
+      "component_b": {
+        "designation": "210076 B",
+        "spectral_type": "M5V",
+        "mass": 1.798,
+        "radius": 2.795,
+        "luminosity": 0.376,
+        "teff": 6528,
+        "metallicity": -0.37,
+        "photometry": {
+          "v_mag": 14.56,
+          "b_v": 2.24,
+          "j_mag": 15.67,
+          "h_mag": 12.16,
+          "k_mag": 7.91
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1993,
+        "orbit_grade": "A",
+        "number_of_observations": 382,
+        "observation_span": "1981-2024",
+        "orbital_coverage": 3.8
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": true,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": true,
+        "radial_velocity_amplitude_a": 38.3,
+        "radial_velocity_amplitude_b": 75.0,
+        "gamma_velocity": 2.2,
+        "number_rv_measurements": 245
+      },
+      "evolution": {
+        "formation_mechanism": "Fragmentation",
+        "primordial_binary": false,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": true,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 4.339
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": true,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J18356-1608",
+      "wds_designation": "18356-1608",
+      "hd_id": "HD 146098",
+      "hip_id": "HIP 99330",
+      "common_name": null,
+      "ra": 115.839682,
+      "dec": -71.147301,
+      "parallax": 66.91,
+      "distance": 71.4,
+      "pmra": -28.68,
+      "pmdec": -64.76,
+      "radial_velocity": -43.7,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Contact binary",
+        "stability": "Marginally stable",
+        "age": 9.7,
+        "metallicity": -0.44,
+        "total_mass": 3.88
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 746.93,
+          "period": 42809.57,
+          "eccentricity": 0.109,
+          "inclination": 63.7,
+          "semi_major_axis": 1.427
+        }
+      },
+      "component_a": {
+        "designation": "146098 A",
+        "spectral_type": "F5V",
+        "mass": 2.767,
+        "radius": 3.743,
+        "luminosity": 41.342,
+        "teff": 3577,
+        "metallicity": -0.47,
+        "photometry": {
+          "v_mag": 8.63,
+          "b_v": 0.44,
+          "j_mag": 13.83,
+          "h_mag": 11.56,
+          "k_mag": 7.37
+        }
+      },
+      "component_b": {
+        "designation": "146098 B",
+        "spectral_type": "G5V",
+        "mass": 0.806,
+        "radius": 1.388,
+        "luminosity": 5.436,
+        "teff": 3631,
+        "metallicity": 0.21,
+        "photometry": {
+          "v_mag": 10.11,
+          "b_v": 1.27,
+          "j_mag": 8.56,
+          "h_mag": 6.07,
+          "k_mag": 7.33
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1912,
+        "orbit_grade": "C",
+        "number_of_observations": 364,
+        "observation_span": "1856-2024",
+        "orbital_coverage": 1.6
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -37.5,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 0.783
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": true
+      }
+    },
+    {
+      "system_id": "WDS_J17676+1734",
+      "wds_designation": "17676+1734",
+      "hd_id": "HD 197217",
+      "hip_id": "HIP 72946",
+      "common_name": null,
+      "ra": 304.566787,
+      "dec": 43.323653,
+      "parallax": 13.18,
+      "distance": 33.1,
+      "pmra": 137.99,
+      "pmdec": -155.16,
+      "radial_velocity": -17.2,
+      "system_properties": {
+        "number_of_components": 3,
+        "hierarchy": "Multiple",
+        "system_type": "Detached binary",
+        "stability": "Stable",
+        "age": 8.2,
+        "metallicity": 0.34,
+        "total_mass": 4.88
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 906.06,
+          "period": 91085.89,
+          "eccentricity": 0.579,
+          "inclination": 118.7,
+          "semi_major_axis": 5.904
+        }
+      },
+      "component_a": {
+        "designation": "197217 A",
+        "spectral_type": "K1V",
+        "mass": 1.926,
+        "radius": 4.361,
+        "luminosity": 29.946,
+        "teff": 3330,
+        "metallicity": 0.31,
+        "photometry": {
+          "v_mag": 7.86,
+          "b_v": 1.52,
+          "j_mag": 4.02,
+          "h_mag": 11.97,
+          "k_mag": 10.94
+        }
+      },
+      "component_b": {
+        "designation": "197217 B",
+        "spectral_type": "K3V",
+        "mass": 1.103,
+        "radius": 0.919,
+        "luminosity": 7.981,
+        "teff": 5809,
+        "metallicity": 0.15,
+        "photometry": {
+          "v_mag": 17.54,
+          "b_v": 0.06,
+          "j_mag": 9.75,
+          "h_mag": 14.64,
+          "k_mag": 9.59
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1940,
+        "orbit_grade": "D",
+        "number_of_observations": 324,
+        "observation_span": "1971-2024",
+        "orbital_coverage": 3.7
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 35.9,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": false,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 3.581
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": true,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": true
+      },
+      "component_c": {
+        "designation": "197217 C",
+        "spectral_type": "M8V",
+        "mass": 0.887,
+        "separation_from_ab": 1683.4,
+        "orbital_period": 98917.6
+      }
+    },
+    {
+      "system_id": "WDS_J18241+4969",
+      "wds_designation": "18241+4969",
+      "hd_id": "HD 98513",
+      "hip_id": "HIP 58045",
+      "common_name": null,
+      "ra": 244.193067,
+      "dec": -70.293912,
+      "parallax": 34.43,
+      "distance": 19.0,
+      "pmra": 187.77,
+      "pmdec": 133.8,
+      "radial_velocity": 78.9,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Astrometric binary",
+        "stability": "Stable",
+        "age": 11.4,
+        "metallicity": -0.33,
+        "total_mass": 4.0
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 577.65,
+          "period": 88970.85,
+          "eccentricity": 0.073,
+          "inclination": 23.4,
+          "semi_major_axis": 7.682
+        }
+      },
+      "component_a": {
+        "designation": "98513 A",
+        "spectral_type": "B9V",
+        "mass": 2.4,
+        "radius": 2.919,
+        "luminosity": 75.097,
+        "teff": 5763,
+        "metallicity": -0.49,
+        "photometry": {
+          "v_mag": 8.13,
+          "b_v": 1.95,
+          "j_mag": 9.61,
+          "h_mag": 7.74,
+          "k_mag": 8.38
+        }
+      },
+      "component_b": {
+        "designation": "98513 B",
+        "spectral_type": "G5V",
+        "mass": 1.044,
+        "radius": 1.868,
+        "luminosity": 5.943,
+        "teff": 3212,
+        "metallicity": 0.27,
+        "photometry": {
+          "v_mag": 12.14,
+          "b_v": 1.09,
+          "j_mag": 14.25,
+          "h_mag": 6.98,
+          "k_mag": 10.6
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1923,
+        "orbit_grade": "B",
+        "number_of_observations": 312,
+        "observation_span": "1909-2024",
+        "orbital_coverage": 2.3
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": true,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 20.0,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Fragmentation",
+        "primordial_binary": true,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Moderate",
+        "apsidal_motion": 4.333
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": true
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J11527-6124",
+      "wds_designation": "11527-6124",
+      "hd_id": "HD 133931",
+      "hip_id": "HIP 21439",
+      "common_name": null,
+      "ra": 262.66909,
+      "dec": 53.160867,
+      "parallax": 98.33,
+      "distance": 37.3,
+      "pmra": 74.75,
+      "pmdec": -199.48,
+      "radial_velocity": -25.9,
+      "system_properties": {
+        "number_of_components": 3,
+        "hierarchy": "Multiple",
+        "system_type": "Eclipsing binary",
+        "stability": "Unstable",
+        "age": 4.0,
+        "metallicity": 0.39,
+        "total_mass": 4.53
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 685.07,
+          "period": 86580.8,
+          "eccentricity": 0.325,
+          "inclination": 100.4,
+          "semi_major_axis": 9.419
+        }
+      },
+      "component_a": {
+        "designation": "133931 A",
+        "spectral_type": "A7V",
+        "mass": 2.822,
+        "radius": 3.184,
+        "luminosity": 81.219,
+        "teff": 6606,
+        "metallicity": 0.23,
+        "photometry": {
+          "v_mag": 8.45,
+          "b_v": 0.89,
+          "j_mag": 10.37,
+          "h_mag": 4.26,
+          "k_mag": 9.23
+        }
+      },
+      "component_b": {
+        "designation": "133931 B",
+        "spectral_type": "M5V",
+        "mass": 1.887,
+        "radius": 0.115,
+        "luminosity": 6.688,
+        "teff": 6508,
+        "metallicity": 0.05,
+        "photometry": {
+          "v_mag": 11.07,
+          "b_v": 0.58,
+          "j_mag": 11.6,
+          "h_mag": 11.15,
+          "k_mag": 13.35
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 2007,
+        "orbit_grade": "D",
+        "number_of_observations": 795,
+        "observation_span": "1972-2024",
+        "orbital_coverage": 4.5
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": true,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -22.6,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": false,
+        "tidal_heating": "Moderate",
+        "apsidal_motion": 1.319
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      },
+      "component_c": {
+        "designation": "133931 C",
+        "spectral_type": "M0V",
+        "mass": 0.593,
+        "separation_from_ab": 4321.2,
+        "orbital_period": 42942.3
+      }
+    },
+    {
+      "system_id": "WDS_J11956+1381",
+      "wds_designation": "11956+1381",
+      "hd_id": "HD 211070",
+      "hip_id": "HIP 101943",
+      "common_name": null,
+      "ra": 246.852143,
+      "dec": -26.483742,
+      "parallax": 3.54,
+      "distance": 26.1,
+      "pmra": 104.36,
+      "pmdec": 56.82,
+      "radial_velocity": -17.6,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Eclipsing binary",
+        "stability": "Unstable",
+        "age": 9.6,
+        "metallicity": 0.17,
+        "total_mass": 4.42
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 575.16,
+          "period": 85819.99,
+          "eccentricity": 0.195,
+          "inclination": 74.7,
+          "semi_major_axis": 7.128
+        }
+      },
+      "component_a": {
+        "designation": "211070 A",
+        "spectral_type": "F5V",
+        "mass": 0.901,
+        "radius": 2.828,
+        "luminosity": 76.324,
+        "teff": 3287,
+        "metallicity": 0.29,
+        "photometry": {
+          "v_mag": 7.31,
+          "b_v": 0.89,
+          "j_mag": 4.12,
+          "h_mag": 8.24,
+          "k_mag": 9.07
+        }
+      },
+      "component_b": {
+        "designation": "211070 B",
+        "spectral_type": "M5V",
+        "mass": 0.642,
+        "radius": 2.877,
+        "luminosity": 4.932,
+        "teff": 6057,
+        "metallicity": -0.49,
+        "photometry": {
+          "v_mag": 17.33,
+          "b_v": -0.03,
+          "j_mag": 8.55,
+          "h_mag": 14.41,
+          "k_mag": 12.51
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1975,
+        "orbit_grade": "D",
+        "number_of_observations": 441,
+        "observation_span": "1939-2024",
+        "orbital_coverage": 2.7
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": true,
+        "astrometric_binary": false,
+        "interferometric": true
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 35.9,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": true,
+        "mass_transfer_history": null,
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 0.241
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J15795-4225",
+      "wds_designation": "15795-4225",
+      "hd_id": "HD 129950",
+      "hip_id": "HIP 108199",
+      "common_name": null,
+      "ra": 331.58273,
+      "dec": -9.889167,
+      "parallax": 99.03,
+      "distance": 29.5,
+      "pmra": 127.4,
+      "pmdec": 44.98,
+      "radial_velocity": -52.8,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Contact binary",
+        "stability": "Unstable",
+        "age": 6.2,
+        "metallicity": 0.41,
+        "total_mass": 1.35
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 926.12,
+          "period": 36558.71,
+          "eccentricity": 0.366,
+          "inclination": 46.3,
+          "semi_major_axis": 3.624
+        }
+      },
+      "component_a": {
+        "designation": "129950 A",
+        "spectral_type": "B9V",
+        "mass": 1.811,
+        "radius": 1.165,
+        "luminosity": 67.466,
+        "teff": 2738,
+        "metallicity": -0.27,
+        "photometry": {
+          "v_mag": 9.95,
+          "b_v": 1.28,
+          "j_mag": 10.51,
+          "h_mag": 7.41,
+          "k_mag": 3.19
+        }
+      },
+      "component_b": {
+        "designation": "129950 B",
+        "spectral_type": "A9V",
+        "mass": 0.191,
+        "radius": 2.126,
+        "luminosity": 2.249,
+        "teff": 5742,
+        "metallicity": 0.37,
+        "photometry": {
+          "v_mag": 9.89,
+          "b_v": -0.06,
+          "j_mag": 11.94,
+          "h_mag": 14.16,
+          "k_mag": 10.1
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1995,
+        "orbit_grade": "A",
+        "number_of_observations": 508,
+        "observation_span": "1932-2024",
+        "orbital_coverage": 0.9
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 45.2,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": false,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 0.505
+      },
+      "stability": {
+        "stable_configuration": true,
+        "hill_stability": true,
+        "kozai_mechanism": true
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 3,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": false,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    },
+    {
+      "system_id": "WDS_J14280-6512",
+      "wds_designation": "14280-6512",
+      "hd_id": "HD 181479",
+      "hip_id": "HIP 101008",
+      "common_name": null,
+      "ra": 22.499552,
+      "dec": 37.559579,
+      "parallax": 22.22,
+      "distance": 131.5,
+      "pmra": -60.42,
+      "pmdec": -27.96,
+      "radial_velocity": 41.2,
+      "system_properties": {
+        "number_of_components": 3,
+        "hierarchy": "Multiple",
+        "system_type": "Astrometric binary",
+        "stability": "Stable",
+        "age": 5.2,
+        "metallicity": 0.46,
+        "total_mass": 0.52
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 779.77,
+          "period": 84381.03,
+          "eccentricity": 0.694,
+          "inclination": 4.6,
+          "semi_major_axis": 9.87
+        }
+      },
+      "component_a": {
+        "designation": "181479 A",
+        "spectral_type": "G2V",
+        "mass": 0.686,
+        "radius": 4.021,
+        "luminosity": 35.194,
+        "teff": 3076,
+        "metallicity": -0.28,
+        "photometry": {
+          "v_mag": 11.96,
+          "b_v": 1.98,
+          "j_mag": 10.95,
+          "h_mag": 6.07,
+          "k_mag": 9.65
+        }
+      },
+      "component_b": {
+        "designation": "181479 B",
+        "spectral_type": "A9V",
+        "mass": 0.478,
+        "radius": 0.441,
+        "luminosity": 2.225,
+        "teff": 6971,
+        "metallicity": -0.23,
+        "photometry": {
+          "v_mag": 15.34,
+          "b_v": 1.57,
+          "j_mag": 14.62,
+          "h_mag": 11.59,
+          "k_mag": 11.51
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1894,
+        "orbit_grade": "B",
+        "number_of_observations": 476,
+        "observation_span": "1879-2024",
+        "orbital_coverage": 2.8
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": true,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": -15.4,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Disk instability",
+        "primordial_binary": false,
+        "mass_transfer_history": "Unstable",
+        "common_envelope_phase": false
+      },
+      "tidal_effects": {
+        "tidally_locked": true,
+        "synchronous_rotation": false,
+        "tidal_heating": "Negligible",
+        "apsidal_motion": 4.985
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 0,
+        "circumbinary_planets": false,
+        "s_type_planets": false
+      },
+      "recent_observations": {
+        "gaia_astrometry": true,
+        "ground_interferometry": true,
+        "space_interferometry": true,
+        "adaptive_optics": false
+      },
+      "component_c": {
+        "designation": "181479 C",
+        "spectral_type": "K7V",
+        "mass": 0.977,
+        "separation_from_ab": 1204.6,
+        "orbital_period": 48527.7
+      }
+    },
+    {
+      "system_id": "WDS_J14106+2150",
+      "wds_designation": "14106+2150",
+      "hd_id": "HD 24918",
+      "hip_id": "HIP 115048",
+      "common_name": null,
+      "ra": 324.3645,
+      "dec": 56.65996,
+      "parallax": 23.26,
+      "distance": 15.9,
+      "pmra": -139.7,
+      "pmdec": -166.66,
+      "radial_velocity": 63.4,
+      "system_properties": {
+        "number_of_components": 2,
+        "hierarchy": "Binary",
+        "system_type": "Semi-detached binary",
+        "stability": "Stable",
+        "age": 6.8,
+        "metallicity": 0.36,
+        "total_mass": 2.62
+      },
+      "orbital_configuration": {
+        "inner_binary": {
+          "designation": "AB",
+          "separation": 123.45,
+          "period": 16121.04,
+          "eccentricity": 0.208,
+          "inclination": 150.3,
+          "semi_major_axis": 4.803
+        }
+      },
+      "component_a": {
+        "designation": "24918 A",
+        "spectral_type": "A7V",
+        "mass": 1.884,
+        "radius": 0.722,
+        "luminosity": 32.917,
+        "teff": 6643,
+        "metallicity": -0.22,
+        "photometry": {
+          "v_mag": 7.12,
+          "b_v": 0.91,
+          "j_mag": 9.23,
+          "h_mag": 7.97,
+          "k_mag": 12.07
+        }
+      },
+      "component_b": {
+        "designation": "24918 B",
+        "spectral_type": "M1V",
+        "mass": 1.439,
+        "radius": 0.17,
+        "luminosity": 7.391,
+        "teff": 5037,
+        "metallicity": 0.46,
+        "photometry": {
+          "v_mag": 8.03,
+          "b_v": 2.19,
+          "j_mag": 13.76,
+          "h_mag": 11.96,
+          "k_mag": 11.37
+        }
+      },
+      "orbital_history": {
+        "first_orbit_calculation": 1956,
+        "orbit_grade": "C",
+        "number_of_observations": 783,
+        "observation_span": "1946-2024",
+        "orbital_coverage": 3.9
+      },
+      "detection_methods": {
+        "visual_binary": false,
+        "spectroscopic_binary": false,
+        "eclipsing_binary": false,
+        "astrometric_binary": false,
+        "interferometric": false
+      },
+      "spectroscopy": {
+        "spectroscopic_binary": false,
+        "radial_velocity_amplitude_a": null,
+        "radial_velocity_amplitude_b": null,
+        "gamma_velocity": 13.5,
+        "number_rv_measurements": 0
+      },
+      "evolution": {
+        "formation_mechanism": "Capture",
+        "primordial_binary": true,
+        "mass_transfer_history": "Stable",
+        "common_envelope_phase": true
+      },
+      "tidal_effects": {
+        "tidally_locked": false,
+        "synchronous_rotation": true,
+        "tidal_heating": "Strong",
+        "apsidal_motion": 0.71
+      },
+      "stability": {
+        "stable_configuration": false,
+        "hill_stability": false,
+        "kozai_mechanism": false
+      },
+      "planetary_companions": {
+        "has_planets": false,
+        "number_of_planets": 3,
+        "circumbinary_planets": true,
+        "s_type_planets": true
+      },
+      "recent_observations": {
+        "gaia_astrometry": false,
+        "ground_interferometry": true,
+        "space_interferometry": false,
+        "adaptive_optics": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+    {
+      "st_mass": 1.00,
+      "luminosity_log": 0.0,
+      "st_teff": 5778,
+      "pl_orbsmax": 1.000,
+      "pl_bmasse": 1.00,
+      "pl_rade": 1.00
+    },
+    {
+      "st_mass": 0.12,
+      "luminosity_log": -2.81,
+      "st_teff": 3042,
+      "pl_orbsmax": 0.0485,
+      "pl_bmasse": 1.27,
+      "pl_rade": 1.08
+    },
+    {
+      "st_mass": 0.089,
+      "luminosity_log": -3.28,
+      "st_teff": 2559,
+      "pl_orbsmax": 0.029,
+      "pl_bmasse": 0.77,
+      "pl_rade": 0.92
+    },
+    {
+      "st_mass": 1.04,
+      "luminosity_log": 0.083,
+      "st_teff": 5757,
+      "pl_orbsmax": 1.046,
+      "pl_bmasse": 5.00,
+      "pl_rade": 1.63
+    },
+    {
+      "st_mass": 0.544,
+      "luminosity_log": -1.387,
+      "st_teff": 3755,
+      "pl_orbsmax": 0.356,
+      "pl_bmasse": 1.44,
+      "pl_rade": 1.11
+    }
+]  

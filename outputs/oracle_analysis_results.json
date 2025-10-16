@@ -1,0 +1,1359 @@
+{
+  "systems": [
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.2,
+        "temperature_k": 3348.0,
+        "luminosity_log": -1.534,
+        "age_gyr": 9.1
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.8634193519413398,
+          "mass_earth": 3.199,
+          "radius_earth": 2.095,
+          "composition": {
+            "rocky": 0.285,
+            "gaseous": 0.447,
+            "icy": 0.268
+          },
+          "albedo": 0.26774401226974376,
+          "orbital_period_years": 1.794,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 114.6,
+            "surface_temp_k": 129.6,
+            "hz_inner_au": 0.163,
+            "hz_outer_au": 0.235
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 129.6,
+            "age": "9.10 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 1.559742045306886,
+          "mass_earth": 3.148,
+          "radius_earth": 2.173,
+          "composition": {
+            "rocky": 0.294,
+            "gaseous": 0.443,
+            "icy": 0.263
+          },
+          "albedo": 0.3747717126441737,
+          "orbital_period_years": 4.356,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 81.9,
+            "surface_temp_k": 92.7,
+            "hz_inner_au": 0.163,
+            "hz_outer_au": 0.235
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 92.7,
+            "age": "9.10 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 2.5677680132264533,
+          "mass_earth": 3.111,
+          "radius_earth": 2.324,
+          "composition": {
+            "rocky": 0.314,
+            "gaseous": 0.433,
+            "icy": 0.253
+          },
+          "albedo": 0.316909062599666,
+          "orbital_period_years": 9.201,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 65.3,
+            "surface_temp_k": 73.9,
+            "hz_inner_au": 0.163,
+            "hz_outer_au": 0.235
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 73.9,
+            "age": "9.10 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 3,
+      "id": "Oracle-001",
+      "is_stable": true,
+      "max_bpi": 0.219,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.089,
+        "temperature_k": 2540.0,
+        "luminosity_log": -2.928,
+        "age_gyr": 7.09
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 1.2617160558485154,
+          "mass_earth": 3.269,
+          "radius_earth": 2.282,
+          "composition": {
+            "rocky": 0.288,
+            "gaseous": 0.436,
+            "icy": 0.276
+          },
+          "albedo": 0.3009500165531075,
+          "orbital_period_years": 4.751,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 42.0,
+            "surface_temp_k": 47.5,
+            "hz_inner_au": 0.033,
+            "hz_outer_au": 0.047
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 47.5,
+            "age": "7.09 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 1.8920382802647375,
+          "mass_earth": 3.221,
+          "radius_earth": 2.336,
+          "composition": {
+            "rocky": 0.294,
+            "gaseous": 0.432,
+            "icy": 0.274
+          },
+          "albedo": 0.37389470223707577,
+          "orbital_period_years": 8.724,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 33.4,
+            "surface_temp_k": 37.7,
+            "hz_inner_au": 0.033,
+            "hz_outer_au": 0.047
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 37.7,
+            "age": "7.09 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 2.8139886108960934,
+          "mass_earth": 3.163,
+          "radius_earth": 2.408,
+          "composition": {
+            "rocky": 0.304,
+            "gaseous": 0.427,
+            "icy": 0.269
+          },
+          "albedo": 0.2740864890863176,
+          "orbital_period_years": 15.823,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 28.4,
+            "surface_temp_k": 32.1,
+            "hz_inner_au": 0.033,
+            "hz_outer_au": 0.047
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 32.1,
+            "age": "7.09 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 3,
+      "id": "Oracle-002",
+      "is_stable": true,
+      "max_bpi": 0.219,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "K",
+        "mass_solar": 0.506,
+        "temperature_k": 5095.0,
+        "luminosity_log": -0.296,
+        "age_gyr": 7.07
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.46262793566050575,
+          "mass_earth": 3.53,
+          "radius_earth": 2.383,
+          "composition": {
+            "rocky": 0.294,
+            "gaseous": 0.424,
+            "icy": 0.282
+          },
+          "albedo": 0.3256633716556678,
+          "orbital_period_years": 0.442,
+          "biosignature_index": 0.426,
+          "biosignature_details": {
+            "temperature_score": 0.003,
+            "water_score": 1.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.001,
+            "equilibrium_temp_k": 312.7,
+            "surface_temp_k": 353.8,
+            "hz_inner_au": 0.678,
+            "hz_outer_au": 0.977
+          },
+          "geology": {
+            "surface_type": "Oc\u00e9ans + continents possibles",
+            "atmosphere_composition": "N2/O2, H2O",
+            "temperature_k": 353.8,
+            "age": "7.07 Ga"
+          },
+          "ecosystem": {
+            "type": "Microbienne primitive",
+            "complexity": 0.2,
+            "energy_source": "Photosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 0.8723013492976589,
+          "mass_earth": 3.624,
+          "radius_earth": 2.313,
+          "composition": {
+            "rocky": 0.297,
+            "gaseous": 0.42,
+            "icy": 0.283
+          },
+          "albedo": 0.3685931066774888,
+          "orbital_period_years": 1.145,
+          "biosignature_index": 0.708,
+          "biosignature_details": {
+            "temperature_score": 0.265,
+            "water_score": 0.837,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.969,
+            "equilibrium_temp_k": 224.0,
+            "surface_temp_k": 253.4,
+            "hz_inner_au": 0.678,
+            "hz_outer_au": 0.977
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 253.4,
+            "age": "7.07 Ga"
+          },
+          "ecosystem": {
+            "type": "\u00c9cosyst\u00e8me d\u00e9velopp\u00e9",
+            "complexity": 0.7,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 1.6466038115621333,
+          "mass_earth": 3.564,
+          "radius_earth": 2.231,
+          "composition": {
+            "rocky": 0.318,
+            "gaseous": 0.397,
+            "icy": 0.285
+          },
+          "albedo": 0.30877766469774165,
+          "orbital_period_years": 2.97,
+          "biosignature_index": 0.28,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.297,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 166.8,
+            "surface_temp_k": 188.7,
+            "hz_inner_au": 0.678,
+            "hz_outer_au": 0.977
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 188.7,
+            "age": "7.07 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P4",
+          "distance_au": 2.5370905859960846,
+          "mass_earth": 3.313,
+          "radius_earth": 2.361,
+          "composition": {
+            "rocky": 0.353,
+            "gaseous": 0.364,
+            "icy": 0.283
+          },
+          "albedo": 0.2871684908653723,
+          "orbital_period_years": 5.681,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.001,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 135.4,
+            "surface_temp_k": 153.2,
+            "hz_inner_au": 0.678,
+            "hz_outer_au": 0.977
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 153.2,
+            "age": "7.07 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P5",
+          "distance_au": 4.075238980932283,
+          "mass_earth": 2.903,
+          "radius_earth": 2.447,
+          "composition": {
+            "rocky": 0.381,
+            "gaseous": 0.347,
+            "icy": 0.272
+          },
+          "albedo": 0.28160871379336194,
+          "orbital_period_years": 11.565,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 107.0,
+            "surface_temp_k": 121.1,
+            "hz_inner_au": 0.678,
+            "hz_outer_au": 0.977
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 121.1,
+            "age": "7.07 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 5,
+      "id": "Oracle-003",
+      "is_stable": true,
+      "max_bpi": 0.708,
+      "habitable_planets": 1
+    },
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.083,
+        "temperature_k": 3064.0,
+        "luminosity_log": -2.04,
+        "age_gyr": 3.78
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.9204021623851301,
+          "mass_earth": 3.212,
+          "radius_earth": 2.143,
+          "composition": {
+            "rocky": 0.286,
+            "gaseous": 0.443,
+            "icy": 0.271
+          },
+          "albedo": 0.2916969545824467,
+          "orbital_period_years": 3.065,
+          "biosignature_index": 0.213,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 0.945,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 82.2,
+            "surface_temp_k": 93.0,
+            "hz_inner_au": 0.091,
+            "hz_outer_au": 0.131
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 93.0,
+            "age": "3.78 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 1.421028925732596,
+          "mass_earth": 3.178,
+          "radius_earth": 2.19,
+          "composition": {
+            "rocky": 0.291,
+            "gaseous": 0.44,
+            "icy": 0.268
+          },
+          "albedo": 0.3943092950605265,
+          "orbital_period_years": 5.88,
+          "biosignature_index": 0.213,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 0.945,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 63.7,
+            "surface_temp_k": 72.0,
+            "hz_inner_au": 0.091,
+            "hz_outer_au": 0.131
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 72.0,
+            "age": "3.78 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 2,
+      "id": "Oracle-004",
+      "is_stable": true,
+      "max_bpi": 0.213,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.436,
+        "temperature_k": 2727.0,
+        "luminosity_log": -1.856,
+        "age_gyr": 4.41
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.7574516810561669,
+          "mass_earth": 3.341,
+          "radius_earth": 2.139,
+          "composition": {
+            "rocky": 0.279,
+            "gaseous": 0.45,
+            "icy": 0.271
+          },
+          "albedo": 0.30511738412748335,
+          "orbital_period_years": 0.998,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 100.3,
+            "surface_temp_k": 113.5,
+            "hz_inner_au": 0.113,
+            "hz_outer_au": 0.162
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 113.5,
+            "age": "4.41 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 1.2510128121316493,
+          "mass_earth": 3.287,
+          "radius_earth": 2.202,
+          "composition": {
+            "rocky": 0.283,
+            "gaseous": 0.447,
+            "icy": 0.27
+          },
+          "albedo": 0.27836953597259934,
+          "orbital_period_years": 2.119,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 78.8,
+            "surface_temp_k": 89.1,
+            "hz_inner_au": 0.113,
+            "hz_outer_au": 0.162
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 89.1,
+            "age": "4.41 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 2,
+      "id": "Oracle-005",
+      "is_stable": true,
+      "max_bpi": 0.219,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "K",
+        "mass_solar": 0.768,
+        "temperature_k": 4059.0,
+        "luminosity_log": -0.628,
+        "age_gyr": 5.92
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 1.1469517684565953,
+          "mass_earth": 3.31,
+          "radius_earth": 2.102,
+          "composition": {
+            "rocky": 0.282,
+            "gaseous": 0.447,
+            "icy": 0.271
+          },
+          "albedo": 0.24251037112528206,
+          "orbital_period_years": 1.402,
+          "biosignature_index": 0.284,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.317,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 168.9,
+            "surface_temp_k": 191.1,
+            "hz_inner_au": 0.463,
+            "hz_outer_au": 0.667
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 191.1,
+            "age": "5.92 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 2.072509466231906,
+          "mass_earth": 3.204,
+          "radius_earth": 2.33,
+          "composition": {
+            "rocky": 0.313,
+            "gaseous": 0.432,
+            "icy": 0.255
+          },
+          "albedo": 0.33955159735215235,
+          "orbital_period_years": 3.405,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 121.4,
+            "surface_temp_k": 137.4,
+            "hz_inner_au": 0.463,
+            "hz_outer_au": 0.667
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 137.4,
+            "age": "5.92 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 3.25522819386172,
+          "mass_earth": 3.055,
+          "radius_earth": 2.552,
+          "composition": {
+            "rocky": 0.346,
+            "gaseous": 0.407,
+            "icy": 0.246
+          },
+          "albedo": 0.25453062726026304,
+          "orbital_period_years": 6.702,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 99.9,
+            "surface_temp_k": 113.0,
+            "hz_inner_au": 0.463,
+            "hz_outer_au": 0.667
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 113.0,
+            "age": "5.92 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P4",
+          "distance_au": 5.629537921848145,
+          "mass_earth": 2.768,
+          "radius_earth": 2.532,
+          "composition": {
+            "rocky": 0.372,
+            "gaseous": 0.377,
+            "icy": 0.25
+          },
+          "albedo": 0.3293428546900135,
+          "orbital_period_years": 15.242,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 74.0,
+            "surface_temp_k": 83.7,
+            "hz_inner_au": 0.463,
+            "hz_outer_au": 0.667
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 83.7,
+            "age": "5.92 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P5",
+          "distance_au": 7.904850005180742,
+          "mass_earth": 2.682,
+          "radius_earth": 2.502,
+          "composition": {
+            "rocky": 0.378,
+            "gaseous": 0.371,
+            "icy": 0.25
+          },
+          "albedo": 0.4095227812904989,
+          "orbital_period_years": 25.361,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 60.5,
+            "surface_temp_k": 68.4,
+            "hz_inner_au": 0.463,
+            "hz_outer_au": 0.667
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 68.4,
+            "age": "5.92 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P6",
+          "distance_au": 14.633312068945646,
+          "mass_earth": 2.602,
+          "radius_earth": 2.467,
+          "composition": {
+            "rocky": 0.383,
+            "gaseous": 0.368,
+            "icy": 0.249
+          },
+          "albedo": 0.25047318374346556,
+          "orbital_period_years": 63.875,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 47.2,
+            "surface_temp_k": 53.4,
+            "hz_inner_au": 0.463,
+            "hz_outer_au": 0.667
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 53.4,
+            "age": "5.92 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 6,
+      "id": "Oracle-006",
+      "is_stable": true,
+      "max_bpi": 0.284,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.331,
+        "temperature_k": 2422.0,
+        "luminosity_log": -1.822,
+        "age_gyr": 3.81
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.45094567074226305,
+          "mass_earth": 3.298,
+          "radius_earth": 2.075,
+          "composition": {
+            "rocky": 0.271,
+            "gaseous": 0.459,
+            "icy": 0.27
+          },
+          "albedo": 0.32681680161910326,
+          "orbital_period_years": 0.526,
+          "biosignature_index": 0.214,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 0.953,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 131.5,
+            "surface_temp_k": 148.8,
+            "hz_inner_au": 0.117,
+            "hz_outer_au": 0.169
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 148.8,
+            "age": "3.81 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 0.7134146335843975,
+          "mass_earth": 3.279,
+          "radius_earth": 2.101,
+          "composition": {
+            "rocky": 0.273,
+            "gaseous": 0.458,
+            "icy": 0.27
+          },
+          "albedo": 0.25426545343693613,
+          "orbital_period_years": 1.047,
+          "biosignature_index": 0.214,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 0.953,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 107.3,
+            "surface_temp_k": 121.4,
+            "hz_inner_au": 0.117,
+            "hz_outer_au": 0.169
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 121.4,
+            "age": "3.81 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 1.3640758843482172,
+          "mass_earth": 3.224,
+          "radius_earth": 2.179,
+          "composition": {
+            "rocky": 0.278,
+            "gaseous": 0.455,
+            "icy": 0.266
+          },
+          "albedo": 0.28058678005116927,
+          "orbital_period_years": 2.769,
+          "biosignature_index": 0.214,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 0.953,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 76.9,
+            "surface_temp_k": 87.0,
+            "hz_inner_au": 0.117,
+            "hz_outer_au": 0.169
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 87.0,
+            "age": "3.81 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P4",
+          "distance_au": 1.9343743401719111,
+          "mass_earth": 3.177,
+          "radius_earth": 2.251,
+          "composition": {
+            "rocky": 0.285,
+            "gaseous": 0.453,
+            "icy": 0.262
+          },
+          "albedo": 0.25572438130855757,
+          "orbital_period_years": 4.676,
+          "biosignature_index": 0.214,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 0.953,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 65.1,
+            "surface_temp_k": 73.7,
+            "hz_inner_au": 0.117,
+            "hz_outer_au": 0.169
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 73.7,
+            "age": "3.81 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 4,
+      "id": "Oracle-007",
+      "is_stable": true,
+      "max_bpi": 0.214,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.175,
+        "temperature_k": 3258.0,
+        "luminosity_log": -1.12,
+        "age_gyr": 6.44
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.5341152333667551,
+          "mass_earth": 3.106,
+          "radius_earth": 1.998,
+          "composition": {
+            "rocky": 0.274,
+            "gaseous": 0.46,
+            "icy": 0.266
+          },
+          "albedo": 0.2897066641452247,
+          "orbital_period_years": 0.933,
+          "biosignature_index": 0.314,
+          "biosignature_details": {
+            "temperature_score": 0.001,
+            "water_score": 0.455,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.006,
+            "equilibrium_temp_k": 183.5,
+            "surface_temp_k": 207.6,
+            "hz_inner_au": 0.263,
+            "hz_outer_au": 0.378
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 207.6,
+            "age": "6.44 Ga"
+          },
+          "ecosystem": {
+            "type": "Microbienne primitive",
+            "complexity": 0.2,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 1.0085855274088622,
+          "mass_earth": 3.093,
+          "radius_earth": 2.023,
+          "composition": {
+            "rocky": 0.278,
+            "gaseous": 0.46,
+            "icy": 0.262
+          },
+          "albedo": 0.3129941397124212,
+          "orbital_period_years": 2.421,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 132.4,
+            "surface_temp_k": 149.8,
+            "hz_inner_au": 0.263,
+            "hz_outer_au": 0.378
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 149.8,
+            "age": "6.44 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 1.5667547863692661,
+          "mass_earth": 3.071,
+          "radius_earth": 2.099,
+          "composition": {
+            "rocky": 0.286,
+            "gaseous": 0.459,
+            "icy": 0.255
+          },
+          "albedo": 0.3390911435888655,
+          "orbital_period_years": 4.688,
+          "biosignature_index": 0.219,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.0,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 105.2,
+            "surface_temp_k": 119.0,
+            "hz_inner_au": 0.263,
+            "hz_outer_au": 0.378
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 119.0,
+            "age": "6.44 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 3,
+      "id": "Oracle-008",
+      "is_stable": true,
+      "max_bpi": 0.314,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "M",
+        "mass_solar": 0.412,
+        "temperature_k": 3553.0,
+        "luminosity_log": -1.206,
+        "age_gyr": 7.14
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.8229586943490225,
+          "mass_earth": 3.265,
+          "radius_earth": 2.087,
+          "composition": {
+            "rocky": 0.285,
+            "gaseous": 0.449,
+            "icy": 0.266
+          },
+          "albedo": 0.2642824290986816,
+          "orbital_period_years": 1.163,
+          "biosignature_index": 0.232,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.063,
+            "age_score": 1.0,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 141.9,
+            "surface_temp_k": 160.5,
+            "hz_inner_au": 0.238,
+            "hz_outer_au": 0.343
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 160.5,
+            "age": "7.14 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 1,
+      "id": "Oracle-009",
+      "is_stable": true,
+      "max_bpi": 0.232,
+      "habitable_planets": 0
+    },
+    {
+      "star": {
+        "spectral_class": "K",
+        "mass_solar": 0.642,
+        "temperature_k": 4738.0,
+        "luminosity_log": -0.374,
+        "age_gyr": 3.79
+      },
+      "planets": [
+        {
+          "id": "P1",
+          "distance_au": 0.39620417892289195,
+          "mass_earth": 3.552,
+          "radius_earth": 2.334,
+          "composition": {
+            "rocky": 0.279,
+            "gaseous": 0.44,
+            "icy": 0.281
+          },
+          "albedo": 0.24347859734397348,
+          "orbital_period_years": 0.311,
+          "biosignature_index": 0.414,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.974,
+            "age_score": 0.948,
+            "protection_score": 1.0,
+            "hz_soft": 0.001,
+            "equilibrium_temp_k": 332.5,
+            "surface_temp_k": 376.2,
+            "hz_inner_au": 0.62,
+            "hz_outer_au": 0.893
+          },
+          "geology": {
+            "surface_type": "D\u00e9sert chaud",
+            "atmosphere_composition": "Dense (CO2, N2)",
+            "temperature_k": 376.2,
+            "age": "3.79 Ga"
+          },
+          "ecosystem": {
+            "type": "Microbienne primitive",
+            "complexity": 0.2,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P2",
+          "distance_au": 0.7123334500885736,
+          "mass_earth": 3.605,
+          "radius_earth": 2.28,
+          "composition": {
+            "rocky": 0.281,
+            "gaseous": 0.439,
+            "icy": 0.28
+          },
+          "albedo": 0.3481688064622161,
+          "orbital_period_years": 0.75,
+          "biosignature_index": 0.878,
+          "biosignature_details": {
+            "temperature_score": 0.705,
+            "water_score": 0.977,
+            "age_score": 0.948,
+            "protection_score": 1.0,
+            "hz_soft": 0.954,
+            "equilibrium_temp_k": 238.9,
+            "surface_temp_k": 270.3,
+            "hz_inner_au": 0.62,
+            "hz_outer_au": 0.893
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 270.3,
+            "age": "3.79 Ga"
+          },
+          "ecosystem": {
+            "type": "Biosph\u00e8re complexe",
+            "complexity": 0.9,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P3",
+          "distance_au": 1.242713953856592,
+          "mass_earth": 3.634,
+          "radius_earth": 2.181,
+          "composition": {
+            "rocky": 0.291,
+            "gaseous": 0.435,
+            "icy": 0.274
+          },
+          "albedo": 0.3206390463468249,
+          "orbital_period_years": 1.729,
+          "biosignature_index": 0.306,
+          "biosignature_details": {
+            "temperature_score": 0.001,
+            "water_score": 0.448,
+            "age_score": 0.948,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 182.8,
+            "surface_temp_k": 206.8,
+            "hz_inner_au": 0.62,
+            "hz_outer_au": 0.893
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 206.8,
+            "age": "3.79 Ga"
+          },
+          "ecosystem": {
+            "type": "Microbienne primitive",
+            "complexity": 0.2,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        },
+        {
+          "id": "P4",
+          "distance_au": 2.101410856583444,
+          "mass_earth": 3.503,
+          "radius_earth": 2.339,
+          "composition": {
+            "rocky": 0.327,
+            "gaseous": 0.407,
+            "icy": 0.266
+          },
+          "albedo": 0.28773059419985647,
+          "orbital_period_years": 3.802,
+          "biosignature_index": 0.227,
+          "biosignature_details": {
+            "temperature_score": 0.0,
+            "water_score": 0.066,
+            "age_score": 0.948,
+            "protection_score": 1.0,
+            "hz_soft": 0.0,
+            "equilibrium_temp_k": 142.2,
+            "surface_temp_k": 160.9,
+            "hz_inner_au": 0.62,
+            "hz_outer_au": 0.893
+          },
+          "geology": {
+            "surface_type": "Monde de glace",
+            "atmosphere_composition": "T\u00e9nue (N2, CH4 gel\u00e9)",
+            "temperature_k": 160.9,
+            "age": "3.79 Ga"
+          },
+          "ecosystem": {
+            "type": "Aucun (st\u00e9rile)",
+            "complexity": 0.0,
+            "energy_source": "Chimio-/Thermosynth\u00e8se"
+          }
+        }
+      ],
+      "n_planets": 4,
+      "id": "Oracle-010",
+      "is_stable": true,
+      "max_bpi": 0.878,
+      "habitable_planets": 1
+    }
+  ],
+  "best_targets": [
+    {
+      "system_id": "Oracle-010",
+      "planet_id": "P2",
+      "bpi": 0.878
+    }
+  ]
+}

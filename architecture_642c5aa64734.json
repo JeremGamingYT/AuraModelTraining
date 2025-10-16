@@ -1,0 +1,114 @@
+{
+  "id": "642c5aa64734",
+  "timestamp": "2025-10-14T20:30:18.742927",
+  "layers": [
+    {
+      "layer_type": "normalization",
+      "params": {},
+      "position": 0,
+      "connections": []
+    },
+    {
+      "layer_type": "dropout",
+      "params": {},
+      "position": 1,
+      "connections": [
+        0
+      ]
+    },
+    {
+      "layer_type": "ffn",
+      "params": {},
+      "position": 2,
+      "connections": [
+        3,
+        1
+      ]
+    },
+    {
+      "layer_type": "ffn",
+      "params": {},
+      "position": 3,
+      "connections": []
+    },
+    {
+      "layer_type": "gru",
+      "params": {},
+      "position": 4,
+      "connections": [
+        0,
+        1
+      ]
+    },
+    {
+      "layer_type": "attention",
+      "params": {},
+      "position": 5,
+      "connections": [
+        7,
+        2,
+        7
+      ]
+    },
+    {
+      "layer_type": "dropout",
+      "params": {},
+      "position": 6,
+      "connections": []
+    },
+    {
+      "layer_type": "conv",
+      "params": {},
+      "position": 7,
+      "connections": []
+    },
+    {
+      "layer_type": "lstm",
+      "params": {},
+      "position": 8,
+      "connections": []
+    },
+    {
+      "layer_type": "gru",
+      "params": {},
+      "position": 9,
+      "connections": [
+        0
+      ]
+    }
+  ],
+  "metrics": {
+    "score": 0.9910000000000001,
+    "complexity": 0.2174,
+    "innovation": 0.7,
+    "efficiency": 3.1222432262129804
+  },
+  "innovation": {
+    "patterns": [
+      "skip_connections",
+      "mixed_layers"
+    ],
+    "metrics": {
+      "score": 0.9910000000000001,
+      "complexity": 0.2174,
+      "innovation": 0.7,
+      "efficiency": 3.1222432262129804
+    },
+    "timestamp": "2025-10-14T20:30:18.253365",
+    "architecture_summary": {
+      "total_layers": 10,
+      "layer_distribution": {
+        "normalization": 1,
+        "dropout": 2,
+        "ffn": 2,
+        "gru": 2,
+        "attention": 1,
+        "conv": 1,
+        "lstm": 1
+      },
+      "has_skip_connections": true,
+      "max_connections": 3
+    },
+    "fallback_explanation": "=== ARCHITECTURE INNOVATION ANALYSIS ===\n\n1. ARCHITECTURE OVERVIEW:\n   - Total layers: 10\n   - normalization: 1 (10.0%)\n   - dropout: 2 (20.0%)\n   - ffn: 2 (20.0%)\n   - gru: 2 (20.0%)\n   - attention: 1 (10.0%)\n   - conv: 1 (10.0%)\n   - lstm: 1 (10.0%)\n\n2. DETECTED INNOVATIONS:\n   \u2713 Utilise des connexions r\u00e9siduelles innovantes\n   \u2713 Combine diff\u00e9rents types de couches de mani\u00e8re nouvelle\n\n3. PERFORMANCE ANALYSIS:\n   - Overall Score: 0.991 (Excellent)\n   - Innovation Score: 0.700 (Moderate innovation)\n   - Efficiency: 3.122\n   - Complexity: 0.217\n\n4. KEY STRENGTHS:\n   \u2713 Good efficiency-performance balance\n   \u2713 Attention mechanisms for context modeling\n   \u2713 Advanced gradient flow with skip connections\n\n5. RECOMMENDATIONS:\n"
+  }
+}

@@ -1,0 +1,2202 @@
+{
+  "metadata": {
+    "database_name": "Brown Dwarf Comprehensive Database",
+    "version": "1.5",
+    "source": "2MASS, WISE, Gaia DR3, SDSS, Pan-STARRS, UKIDSS",
+    "last_updated": "2025-10-14",
+    "total_entries": 8500,
+    "description": "Base de données complète des naines brunes avec spectroscopie"
+  },
+  "brown_dwarfs": [
+    {
+      "source_id": "BD_J771407-671681",
+      "twomass_id": "2MASS J771407-671681",
+      "discoverer_name": "SDSS J771407-671681",
+      "ra": 274.568766,
+      "dec": 85.857505,
+      "distance": 65.8,
+      "parallax": 11.3,
+      "pmra": -310.6,
+      "pmdec": 235.3,
+      "spectral_type": "T8",
+      "spectral_class": "T",
+      "subclass": 8,
+      "physical_parameters": {
+        "teff": 1253,
+        "mass": 42.6,
+        "radius": 1.05,
+        "surface_gravity": 4.7,
+        "age": 9.1,
+        "metallicity": 0.4
+      },
+      "photometry": {
+        "j_mag": 15.25,
+        "h_mag": 13.46,
+        "ks_mag": 12.56,
+        "w1_mag": 15.46,
+        "w2_mag": 9.64,
+        "j_h": 0.54,
+        "h_ks": 0.96,
+        "j_ks": 2.46
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.7
+      },
+      "kinematics": {
+        "tangential_velocity": 65.8,
+        "galactic_population": "Thin disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Clouds",
+        "amplitude_j": 0.29,
+        "period": 4.6
+      },
+      "multiplicity": {
+        "is_binary": true,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2006,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 59
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J405723-285699",
+      "twomass_id": "2MASS J405723-285699",
+      "discoverer_name": "SDSS J405723-285699",
+      "ra": 196.231083,
+      "dec": -26.28323,
+      "distance": 76.5,
+      "parallax": 107.6,
+      "pmra": 756.4,
+      "pmdec": -848.9,
+      "spectral_type": "L0",
+      "spectral_class": "L",
+      "subclass": 0,
+      "physical_parameters": {
+        "teff": 1396,
+        "mass": 22.9,
+        "radius": 1.1,
+        "surface_gravity": 4.6,
+        "age": 6.8,
+        "metallicity": 0.3
+      },
+      "photometry": {
+        "j_mag": 14.98,
+        "h_mag": 16.11,
+        "ks_mag": 14.45,
+        "w1_mag": 12.4,
+        "w2_mag": 9.86,
+        "j_h": 1.06,
+        "h_ks": 0.43,
+        "j_ks": 2.22
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Weak",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.3,
+        "c_to_o_ratio": 0.7
+      },
+      "kinematics": {
+        "tangential_velocity": 191.9,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Flares",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2014,
+        "discovery_survey": "2MASS",
+        "total_observations": 78
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J712362-552163",
+      "twomass_id": "2MASS J712362-552163",
+      "discoverer_name": "SDSS J712362-552163",
+      "ra": 139.010629,
+      "dec": 58.747062,
+      "distance": 90.3,
+      "parallax": 19.0,
+      "pmra": -428.6,
+      "pmdec": 219.5,
+      "spectral_type": "Y2",
+      "spectral_class": "Y",
+      "subclass": 2,
+      "physical_parameters": {
+        "teff": 519,
+        "mass": 11.6,
+        "radius": 0.79,
+        "surface_gravity": 4.8,
+        "age": 9.8,
+        "metallicity": -0.0
+      },
+      "photometry": {
+        "j_mag": 14.59,
+        "h_mag": 11.15,
+        "ks_mag": 15.33,
+        "w1_mag": 12.42,
+        "w2_mag": 16.9,
+        "j_h": 1.43,
+        "h_ks": 0.79,
+        "j_ks": 1.5
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Moderate",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.6
+      },
+      "kinematics": {
+        "tangential_velocity": 98.0,
+        "galactic_population": "Thick disk",
+        "young_association": "Tucana-Horologium"
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.05,
+        "period": 7.3
+      },
+      "multiplicity": {
+        "is_binary": true,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2011,
+        "discovery_survey": "UKIDSS",
+        "total_observations": 89
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J521608-152436",
+      "twomass_id": "2MASS J521608-152436",
+      "discoverer_name": "SDSS J521608-152436",
+      "ra": 100.619175,
+      "dec": 61.925856,
+      "distance": 55.6,
+      "parallax": 74.3,
+      "pmra": -866.7,
+      "pmdec": -646.3,
+      "spectral_type": "L5",
+      "spectral_class": "L",
+      "subclass": 5,
+      "physical_parameters": {
+        "teff": 1939,
+        "mass": 43.1,
+        "radius": 0.71,
+        "surface_gravity": 4.5,
+        "age": 9.9,
+        "metallicity": 0.1
+      },
+      "photometry": {
+        "j_mag": 16.06,
+        "h_mag": 16.07,
+        "ks_mag": 10.87,
+        "w1_mag": 10.91,
+        "w2_mag": 12.21,
+        "j_h": 1.42,
+        "h_ks": 0.52,
+        "j_ks": 1.47
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Weak",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.7
+      },
+      "kinematics": {
+        "tangential_velocity": 154.3,
+        "galactic_population": "Thin disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.28,
+        "period": 17.5
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2024,
+        "discovery_survey": "UKIDSS",
+        "total_observations": 85
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Low"
+      }
+    },
+    {
+      "source_id": "BD_J764509-832138",
+      "twomass_id": "2MASS J764509-832138",
+      "discoverer_name": "SDSS J764509-832138",
+      "ra": 351.84977,
+      "dec": 37.29937,
+      "distance": 88.2,
+      "parallax": 51.2,
+      "pmra": -551.7,
+      "pmdec": -306.5,
+      "spectral_type": "L2",
+      "spectral_class": "L",
+      "subclass": 2,
+      "physical_parameters": {
+        "teff": 1823,
+        "mass": 16.4,
+        "radius": 0.89,
+        "surface_gravity": 5.0,
+        "age": 9.3,
+        "metallicity": 0.4
+      },
+      "photometry": {
+        "j_mag": 12.73,
+        "h_mag": 14.16,
+        "ks_mag": 11.8,
+        "w1_mag": 11.16,
+        "w2_mag": 13.48,
+        "j_h": 0.67,
+        "h_ks": 0.47,
+        "j_ks": 1.53
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Weak",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": 0.1,
+        "c_to_o_ratio": 0.9
+      },
+      "kinematics": {
+        "tangential_velocity": 141.6,
+        "galactic_population": "Thin disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Flares",
+        "amplitude_j": 0.15,
+        "period": 22.8
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2006,
+        "discovery_survey": "SDSS",
+        "total_observations": 78
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Field",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Low"
+      }
+    },
+    {
+      "source_id": "BD_J158071-248955",
+      "twomass_id": "2MASS J158071-248955",
+      "discoverer_name": "SDSS J158071-248955",
+      "ra": 102.858119,
+      "dec": 63.839632,
+      "distance": 39.7,
+      "parallax": 163.3,
+      "pmra": 400.0,
+      "pmdec": -417.0,
+      "spectral_type": "L7",
+      "spectral_class": "L",
+      "subclass": 7,
+      "physical_parameters": {
+        "teff": 1504,
+        "mass": 18.6,
+        "radius": 1.03,
+        "surface_gravity": 5.0,
+        "age": 3.9,
+        "metallicity": 0.2
+      },
+      "photometry": {
+        "j_mag": 13.37,
+        "h_mag": 16.99,
+        "ks_mag": 10.68,
+        "w1_mag": 9.09,
+        "w2_mag": 14.62,
+        "j_h": 0.78,
+        "h_ks": 0.78,
+        "j_ks": 2.05
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.5
+      },
+      "kinematics": {
+        "tangential_velocity": 30.8,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Clouds",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": 55.7
+      },
+      "discovery": {
+        "discovery_year": 2024,
+        "discovery_survey": "SDSS",
+        "total_observations": 61
+      },
+      "formation": {
+        "formation_scenario": "Fragmentation",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J239001-159337",
+      "twomass_id": "2MASS J239001-159337",
+      "discoverer_name": "SDSS J239001-159337",
+      "ra": 131.901487,
+      "dec": 36.592609,
+      "distance": 98.2,
+      "parallax": 19.7,
+      "pmra": 770.6,
+      "pmdec": 444.6,
+      "spectral_type": "L7",
+      "spectral_class": "L",
+      "subclass": 7,
+      "physical_parameters": {
+        "teff": 1769,
+        "mass": 61.2,
+        "radius": 0.95,
+        "surface_gravity": 5.4,
+        "age": 9.0,
+        "metallicity": -0.1
+      },
+      "photometry": {
+        "j_mag": 16.76,
+        "h_mag": 13.37,
+        "ks_mag": 17.81,
+        "w1_mag": 15.02,
+        "w2_mag": 11.68,
+        "j_h": 1.49,
+        "h_ks": 0.2,
+        "j_ks": 2.43
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Strong",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.0,
+        "c_to_o_ratio": 1.0
+      },
+      "kinematics": {
+        "tangential_velocity": 162.7,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Rotational modulation",
+        "amplitude_j": 0.22,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2022,
+        "discovery_survey": "WISE",
+        "total_observations": 69
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J969319-311888",
+      "twomass_id": "2MASS J969319-311888",
+      "discoverer_name": "SDSS J969319-311888",
+      "ra": 17.837983,
+      "dec": 15.23724,
+      "distance": 20.2,
+      "parallax": 25.2,
+      "pmra": 763.5,
+      "pmdec": 457.1,
+      "spectral_type": "L6",
+      "spectral_class": "L",
+      "subclass": 6,
+      "physical_parameters": {
+        "teff": 1870,
+        "mass": 38.8,
+        "radius": 0.76,
+        "surface_gravity": 5.4,
+        "age": 3.3,
+        "metallicity": -0.3
+      },
+      "photometry": {
+        "j_mag": 19.16,
+        "h_mag": 17.83,
+        "ks_mag": 16.93,
+        "w1_mag": 9.03,
+        "w2_mag": 15.71,
+        "j_h": 1.23,
+        "h_ks": 0.83,
+        "j_ks": 2.19
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Strong",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.3,
+        "c_to_o_ratio": 1.0
+      },
+      "kinematics": {
+        "tangential_velocity": 70.1,
+        "galactic_population": "Thin disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.12,
+        "period": 17.5
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": 67.0
+      },
+      "discovery": {
+        "discovery_year": 1998,
+        "discovery_survey": "2MASS",
+        "total_observations": 70
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "Low"
+      }
+    },
+    {
+      "source_id": "BD_J326526-828855",
+      "twomass_id": "2MASS J326526-828855",
+      "discoverer_name": "SDSS J326526-828855",
+      "ra": 23.046422,
+      "dec": 85.790001,
+      "distance": 70.4,
+      "parallax": 17.7,
+      "pmra": -221.4,
+      "pmdec": 540.0,
+      "spectral_type": "T0",
+      "spectral_class": "T",
+      "subclass": 0,
+      "physical_parameters": {
+        "teff": 896,
+        "mass": 61.5,
+        "radius": 1.02,
+        "surface_gravity": 5.2,
+        "age": 4.0,
+        "metallicity": 0.5
+      },
+      "photometry": {
+        "j_mag": 17.09,
+        "h_mag": 18.73,
+        "ks_mag": 15.79,
+        "w1_mag": 10.13,
+        "w2_mag": 10.02,
+        "j_h": 1.09,
+        "h_ks": 0.94,
+        "j_ks": 1.84
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.2,
+        "c_to_o_ratio": 1.1
+      },
+      "kinematics": {
+        "tangential_velocity": 122.0,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Flares",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2014,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 62
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Low"
+      }
+    },
+    {
+      "source_id": "BD_J467207-449685",
+      "twomass_id": "2MASS J467207-449685",
+      "discoverer_name": "SDSS J467207-449685",
+      "ra": 124.612019,
+      "dec": 18.573786,
+      "distance": 71.6,
+      "parallax": 43.8,
+      "pmra": 446.2,
+      "pmdec": -467.2,
+      "spectral_type": "Y3",
+      "spectral_class": "Y",
+      "subclass": 3,
+      "physical_parameters": {
+        "teff": 558,
+        "mass": 24.7,
+        "radius": 1.07,
+        "surface_gravity": 5.2,
+        "age": 0.6,
+        "metallicity": -0.4
+      },
+      "photometry": {
+        "j_mag": 13.44,
+        "h_mag": 14.16,
+        "ks_mag": 15.71,
+        "w1_mag": 11.69,
+        "w2_mag": 10.75,
+        "j_h": 1.08,
+        "h_ks": 0.33,
+        "j_ks": 1.91
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Weak",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": 0.3,
+        "c_to_o_ratio": 1.2
+      },
+      "kinematics": {
+        "tangential_velocity": 18.6,
+        "galactic_population": "Thin disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.1,
+        "period": 2.5
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 1999,
+        "discovery_survey": "SDSS",
+        "total_observations": 48
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Field",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J836854-680329",
+      "twomass_id": "2MASS J836854-680329",
+      "discoverer_name": "SDSS J836854-680329",
+      "ra": 40.345501,
+      "dec": 54.655233,
+      "distance": 68.0,
+      "parallax": 41.2,
+      "pmra": -884.7,
+      "pmdec": -381.7,
+      "spectral_type": "T2",
+      "spectral_class": "T",
+      "subclass": 2,
+      "physical_parameters": {
+        "teff": 1021,
+        "mass": 29.9,
+        "radius": 1.11,
+        "surface_gravity": 5.2,
+        "age": 7.0,
+        "metallicity": -0.0
+      },
+      "photometry": {
+        "j_mag": 17.38,
+        "h_mag": 12.39,
+        "ks_mag": 11.15,
+        "w1_mag": 13.28,
+        "w2_mag": 15.2,
+        "j_h": 1.0,
+        "h_ks": 0.62,
+        "j_ks": 1.19
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Moderate",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": -0.2,
+        "c_to_o_ratio": 0.5
+      },
+      "kinematics": {
+        "tangential_velocity": 172.6,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Rotational modulation",
+        "amplitude_j": 0.17,
+        "period": 20.4
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2017,
+        "discovery_survey": "WISE",
+        "total_observations": 93
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Cluster",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J728958-415760",
+      "twomass_id": "2MASS J728958-415760",
+      "discoverer_name": "SDSS J728958-415760",
+      "ra": 173.281868,
+      "dec": 71.036726,
+      "distance": 5.7,
+      "parallax": 130.8,
+      "pmra": -727.4,
+      "pmdec": -424.4,
+      "spectral_type": "L8",
+      "spectral_class": "L",
+      "subclass": 8,
+      "physical_parameters": {
+        "teff": 1696,
+        "mass": 58.6,
+        "radius": 0.77,
+        "surface_gravity": 4.8,
+        "age": 5.0,
+        "metallicity": -0.1
+      },
+      "photometry": {
+        "j_mag": 19.46,
+        "h_mag": 12.96,
+        "ks_mag": 14.16,
+        "w1_mag": 11.14,
+        "w2_mag": 10.36,
+        "j_h": 1.25,
+        "h_ks": 0.21,
+        "j_ks": 1.76
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Strong",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": 0.2,
+        "c_to_o_ratio": 1.0
+      },
+      "kinematics": {
+        "tangential_velocity": 128.9,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Clouds",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2007,
+        "discovery_survey": "WISE",
+        "total_observations": 17
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J479321-294956",
+      "twomass_id": "2MASS J479321-294956",
+      "discoverer_name": "SDSS J479321-294956",
+      "ra": 29.24437,
+      "dec": 32.871064,
+      "distance": 25.1,
+      "parallax": 11.5,
+      "pmra": -190.1,
+      "pmdec": 69.6,
+      "spectral_type": "L7",
+      "spectral_class": "L",
+      "subclass": 7,
+      "physical_parameters": {
+        "teff": 1882,
+        "mass": 26.1,
+        "radius": 0.82,
+        "surface_gravity": 5.3,
+        "age": 2.8,
+        "metallicity": -0.2
+      },
+      "photometry": {
+        "j_mag": 14.17,
+        "h_mag": 12.46,
+        "ks_mag": 13.8,
+        "w1_mag": 11.77,
+        "w2_mag": 13.65,
+        "j_h": 1.38,
+        "h_ks": 0.48,
+        "j_ks": 1.16
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Weak",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": 0.0,
+        "c_to_o_ratio": 0.4
+      },
+      "kinematics": {
+        "tangential_velocity": 162.9,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Clouds",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": true,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2020,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 37
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J148950-682771",
+      "twomass_id": "2MASS J148950-682771",
+      "discoverer_name": "SDSS J148950-682771",
+      "ra": 353.821484,
+      "dec": -9.562438,
+      "distance": 59.8,
+      "parallax": 12.3,
+      "pmra": -317.0,
+      "pmdec": 64.3,
+      "spectral_type": "L1",
+      "spectral_class": "L",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 1519,
+        "mass": 33.5,
+        "radius": 0.97,
+        "surface_gravity": 4.7,
+        "age": 4.0,
+        "metallicity": -0.0
+      },
+      "photometry": {
+        "j_mag": 19.1,
+        "h_mag": 16.42,
+        "ks_mag": 14.63,
+        "w1_mag": 12.66,
+        "w2_mag": 12.14,
+        "j_h": 1.26,
+        "h_ks": 0.68,
+        "j_ks": 1.96
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Weak",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.8
+      },
+      "kinematics": {
+        "tangential_velocity": 83.3,
+        "galactic_population": "Thin disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Flares",
+        "amplitude_j": 0.17,
+        "period": 19.9
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 1997,
+        "discovery_survey": "SDSS",
+        "total_observations": 93
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J294235-334772",
+      "twomass_id": "2MASS J294235-334772",
+      "discoverer_name": "SDSS J294235-334772",
+      "ra": 150.117466,
+      "dec": -51.234192,
+      "distance": 27.6,
+      "parallax": 31.5,
+      "pmra": -94.6,
+      "pmdec": -770.9,
+      "spectral_type": "T1",
+      "spectral_class": "T",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 853,
+        "mass": 44.9,
+        "radius": 0.76,
+        "surface_gravity": 4.9,
+        "age": 2.8,
+        "metallicity": -0.3
+      },
+      "photometry": {
+        "j_mag": 13.9,
+        "h_mag": 14.22,
+        "ks_mag": 12.09,
+        "w1_mag": 15.29,
+        "w2_mag": 12.31,
+        "j_h": 0.86,
+        "h_ks": 0.92,
+        "j_ks": 2.1
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": 0.3,
+        "c_to_o_ratio": 0.7
+      },
+      "kinematics": {
+        "tangential_velocity": 173.7,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Rotational modulation",
+        "amplitude_j": null,
+        "period": 20.2
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2015,
+        "discovery_survey": "SDSS",
+        "total_observations": 69
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Field",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J429244-490894",
+      "twomass_id": "2MASS J429244-490894",
+      "discoverer_name": "SDSS J429244-490894",
+      "ra": 317.104543,
+      "dec": 84.213701,
+      "distance": 14.0,
+      "parallax": 26.2,
+      "pmra": -644.5,
+      "pmdec": 325.8,
+      "spectral_type": "L1",
+      "spectral_class": "L",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 1574,
+        "mass": 73.8,
+        "radius": 1.16,
+        "surface_gravity": 4.9,
+        "age": 4.4,
+        "metallicity": 0.1
+      },
+      "photometry": {
+        "j_mag": 19.2,
+        "h_mag": 16.43,
+        "ks_mag": 14.63,
+        "w1_mag": 12.92,
+        "w2_mag": 9.65,
+        "j_h": 0.85,
+        "h_ks": 0.54,
+        "j_ks": 1.48
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Weak",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Strong",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": -0.3,
+        "c_to_o_ratio": 0.5
+      },
+      "kinematics": {
+        "tangential_velocity": 85.1,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.12,
+        "period": 20.6
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2014,
+        "discovery_survey": "UKIDSS",
+        "total_observations": 70
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Field",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J711451-148459",
+      "twomass_id": "2MASS J711451-148459",
+      "discoverer_name": "SDSS J711451-148459",
+      "ra": 278.647377,
+      "dec": -49.347581,
+      "distance": 78.0,
+      "parallax": 63.8,
+      "pmra": 980.2,
+      "pmdec": 129.0,
+      "spectral_type": "T2",
+      "spectral_class": "T",
+      "subclass": 2,
+      "physical_parameters": {
+        "teff": 1054,
+        "mass": 28.1,
+        "radius": 0.96,
+        "surface_gravity": 4.7,
+        "age": 7.5,
+        "metallicity": -0.2
+      },
+      "photometry": {
+        "j_mag": 12.36,
+        "h_mag": 15.16,
+        "ks_mag": 16.21,
+        "w1_mag": 9.16,
+        "w2_mag": 11.87,
+        "j_h": 1.39,
+        "h_ks": 0.95,
+        "j_ks": 1.14
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Moderate",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": 0.1,
+        "c_to_o_ratio": 1.0
+      },
+      "kinematics": {
+        "tangential_velocity": 141.8,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": null,
+        "period": 4.1
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 1996,
+        "discovery_survey": "SDSS",
+        "total_observations": 98
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J474993-409425",
+      "twomass_id": "2MASS J474993-409425",
+      "discoverer_name": "SDSS J474993-409425",
+      "ra": 309.013757,
+      "dec": 76.008837,
+      "distance": 65.9,
+      "parallax": 18.3,
+      "pmra": -820.3,
+      "pmdec": 479.1,
+      "spectral_type": "L4",
+      "spectral_class": "L",
+      "subclass": 4,
+      "physical_parameters": {
+        "teff": 1325,
+        "mass": 32.2,
+        "radius": 1.15,
+        "surface_gravity": 5.4,
+        "age": 1.2,
+        "metallicity": 0.2
+      },
+      "photometry": {
+        "j_mag": 12.15,
+        "h_mag": 18.43,
+        "ks_mag": 15.58,
+        "w1_mag": 12.63,
+        "w2_mag": 11.01,
+        "j_h": 0.9,
+        "h_ks": 0.86,
+        "j_ks": 2.3
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": 0.2,
+        "c_to_o_ratio": 0.4
+      },
+      "kinematics": {
+        "tangential_velocity": 75.5,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": null,
+        "amplitude_j": 0.08,
+        "period": 3.6
+      },
+      "multiplicity": {
+        "is_binary": true,
+        "separation": 9.5
+      },
+      "discovery": {
+        "discovery_year": 2016,
+        "discovery_survey": "UKIDSS",
+        "total_observations": 59
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Field",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J374381-321871",
+      "twomass_id": "2MASS J374381-321871",
+      "discoverer_name": "SDSS J374381-321871",
+      "ra": 285.266149,
+      "dec": -21.358391,
+      "distance": 38.4,
+      "parallax": 17.4,
+      "pmra": -894.1,
+      "pmdec": 638.4,
+      "spectral_type": "Y1",
+      "spectral_class": "Y",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 503,
+        "mass": 15.0,
+        "radius": 0.86,
+        "surface_gravity": 4.7,
+        "age": 1.9,
+        "metallicity": 0.1
+      },
+      "photometry": {
+        "j_mag": 14.27,
+        "h_mag": 16.6,
+        "ks_mag": 11.89,
+        "w1_mag": 11.05,
+        "w2_mag": 15.07,
+        "j_h": 0.88,
+        "h_ks": 0.45,
+        "j_ks": 1.46
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Weak",
+        "co_absorption": "Weak",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": 0.1,
+        "c_to_o_ratio": 1.2
+      },
+      "kinematics": {
+        "tangential_velocity": 189.3,
+        "galactic_population": "Thin disk",
+        "young_association": "TW Hydrae"
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": null,
+        "amplitude_j": 0.17,
+        "period": 21.7
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2024,
+        "discovery_survey": "2MASS",
+        "total_observations": 76
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J395171-332139",
+      "twomass_id": "2MASS J395171-332139",
+      "discoverer_name": "SDSS J395171-332139",
+      "ra": 209.529541,
+      "dec": -48.060595,
+      "distance": 93.7,
+      "parallax": 10.2,
+      "pmra": -760.1,
+      "pmdec": 856.2,
+      "spectral_type": "Y3",
+      "spectral_class": "Y",
+      "subclass": 3,
+      "physical_parameters": {
+        "teff": 372,
+        "mass": 20.9,
+        "radius": 0.85,
+        "surface_gravity": 5.3,
+        "age": 5.9,
+        "metallicity": -0.3
+      },
+      "photometry": {
+        "j_mag": 15.88,
+        "h_mag": 13.7,
+        "ks_mag": 15.69,
+        "w1_mag": 13.11,
+        "w2_mag": 12.56,
+        "j_h": 1.03,
+        "h_ks": 0.76,
+        "j_ks": 1.63
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 1.2
+      },
+      "kinematics": {
+        "tangential_velocity": 43.2,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.12,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2023,
+        "discovery_survey": "2MASS",
+        "total_observations": 57
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Field",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J132522-485826",
+      "twomass_id": "2MASS J132522-485826",
+      "discoverer_name": "SDSS J132522-485826",
+      "ra": 204.623703,
+      "dec": 5.447538,
+      "distance": 21.6,
+      "parallax": 18.7,
+      "pmra": -846.1,
+      "pmdec": 924.5,
+      "spectral_type": "T5",
+      "spectral_class": "T",
+      "subclass": 5,
+      "physical_parameters": {
+        "teff": 742,
+        "mass": 32.1,
+        "radius": 1.01,
+        "surface_gravity": 5.3,
+        "age": 0.7,
+        "metallicity": 0.1
+      },
+      "photometry": {
+        "j_mag": 14.94,
+        "h_mag": 14.82,
+        "ks_mag": 14.05,
+        "w1_mag": 15.01,
+        "w2_mag": 14.74,
+        "j_h": 1.13,
+        "h_ks": 0.5,
+        "j_ks": 0.9
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.2,
+        "c_to_o_ratio": 0.9
+      },
+      "kinematics": {
+        "tangential_velocity": 94.2,
+        "galactic_population": "Thin disk",
+        "young_association": "TW Hydrae"
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Flares",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2021,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 40
+      },
+      "formation": {
+        "formation_scenario": "Fragmentation",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J799133-870100",
+      "twomass_id": "2MASS J799133-870100",
+      "discoverer_name": "SDSS J799133-870100",
+      "ra": 292.03146,
+      "dec": -54.26478,
+      "distance": 20.6,
+      "parallax": 143.4,
+      "pmra": -455.0,
+      "pmdec": -798.5,
+      "spectral_type": "T0",
+      "spectral_class": "T",
+      "subclass": 0,
+      "physical_parameters": {
+        "teff": 808,
+        "mass": 34.6,
+        "radius": 1.01,
+        "surface_gravity": 5.2,
+        "age": 8.8,
+        "metallicity": 0.4
+      },
+      "photometry": {
+        "j_mag": 12.11,
+        "h_mag": 13.01,
+        "ks_mag": 15.8,
+        "w1_mag": 14.84,
+        "w2_mag": 16.71,
+        "j_h": 1.46,
+        "h_ks": 0.37,
+        "j_ks": 2.4
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Cloudy",
+        "metallicity_atm": -0.2,
+        "c_to_o_ratio": 0.9
+      },
+      "kinematics": {
+        "tangential_velocity": 147.6,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": null,
+        "period": 22.7
+      },
+      "multiplicity": {
+        "is_binary": true,
+        "separation": 80.4
+      },
+      "discovery": {
+        "discovery_year": 2004,
+        "discovery_survey": "WISE",
+        "total_observations": 17
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J367685-284903",
+      "twomass_id": "2MASS J367685-284903",
+      "discoverer_name": "SDSS J367685-284903",
+      "ra": 190.444913,
+      "dec": 38.145455,
+      "distance": 67.5,
+      "parallax": 27.0,
+      "pmra": -302.9,
+      "pmdec": 518.5,
+      "spectral_type": "L4",
+      "spectral_class": "L",
+      "subclass": 4,
+      "physical_parameters": {
+        "teff": 1321,
+        "mass": 30.0,
+        "radius": 0.96,
+        "surface_gravity": 4.8,
+        "age": 0.3,
+        "metallicity": 0.4
+      },
+      "photometry": {
+        "j_mag": 14.57,
+        "h_mag": 12.77,
+        "ks_mag": 10.71,
+        "w1_mag": 9.47,
+        "w2_mag": 12.09,
+        "j_h": 1.42,
+        "h_ks": 0.23,
+        "j_ks": 2.2
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Weak",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.4
+      },
+      "kinematics": {
+        "tangential_velocity": 158.9,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2018,
+        "discovery_survey": "SDSS",
+        "total_observations": 29
+      },
+      "formation": {
+        "formation_scenario": "Fragmentation",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Low"
+      }
+    },
+    {
+      "source_id": "BD_J312223-966048",
+      "twomass_id": "2MASS J312223-966048",
+      "discoverer_name": "SDSS J312223-966048",
+      "ra": 210.874888,
+      "dec": -12.211514,
+      "distance": 26.4,
+      "parallax": 48.0,
+      "pmra": 377.2,
+      "pmdec": 949.8,
+      "spectral_type": "Y2",
+      "spectral_class": "Y",
+      "subclass": 2,
+      "physical_parameters": {
+        "teff": 485,
+        "mass": 15.9,
+        "radius": 1.18,
+        "surface_gravity": 5.4,
+        "age": 6.0,
+        "metallicity": 0.2
+      },
+      "photometry": {
+        "j_mag": 18.61,
+        "h_mag": 18.64,
+        "ks_mag": 11.26,
+        "w1_mag": 10.8,
+        "w2_mag": 16.16,
+        "j_h": 0.99,
+        "h_ks": 0.63,
+        "j_ks": 2.24
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Weak",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": 0.1,
+        "c_to_o_ratio": 0.9
+      },
+      "kinematics": {
+        "tangential_velocity": 172.3,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": 0.07,
+        "period": 21.9
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 1996,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 16
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Field",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J674867-392539",
+      "twomass_id": "2MASS J674867-392539",
+      "discoverer_name": "SDSS J674867-392539",
+      "ra": 65.053064,
+      "dec": 78.454442,
+      "distance": 44.2,
+      "parallax": 11.2,
+      "pmra": -596.6,
+      "pmdec": 888.6,
+      "spectral_type": "Y1",
+      "spectral_class": "Y",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 358,
+        "mass": 5.0,
+        "radius": 1.02,
+        "surface_gravity": 4.7,
+        "age": 9.5,
+        "metallicity": 0.3
+      },
+      "photometry": {
+        "j_mag": 13.79,
+        "h_mag": 17.36,
+        "ks_mag": 12.25,
+        "w1_mag": 9.34,
+        "w2_mag": 11.51,
+        "j_h": 1.49,
+        "h_ks": 0.4,
+        "j_ks": 1.61
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.1,
+        "c_to_o_ratio": 0.9
+      },
+      "kinematics": {
+        "tangential_velocity": 155.8,
+        "galactic_population": "Thick disk",
+        "young_association": "TW Hydrae"
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Clouds",
+        "amplitude_j": null,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 1995,
+        "discovery_survey": "WISE",
+        "total_observations": 81
+      },
+      "formation": {
+        "formation_scenario": "Disk instability",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "C",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J875792-843970",
+      "twomass_id": "2MASS J875792-843970",
+      "discoverer_name": "SDSS J875792-843970",
+      "ra": 202.735557,
+      "dec": 34.292218,
+      "distance": 36.1,
+      "parallax": 22.7,
+      "pmra": -588.9,
+      "pmdec": 558.4,
+      "spectral_type": "L7",
+      "spectral_class": "L",
+      "subclass": 7,
+      "physical_parameters": {
+        "teff": 1349,
+        "mass": 69.8,
+        "radius": 1.08,
+        "surface_gravity": 4.5,
+        "age": 8.5,
+        "metallicity": -0.1
+      },
+      "photometry": {
+        "j_mag": 12.57,
+        "h_mag": 11.8,
+        "ks_mag": 11.48,
+        "w1_mag": 12.08,
+        "w2_mag": 10.35,
+        "j_h": 1.37,
+        "h_ks": 0.61,
+        "j_ks": 1.78
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Absent",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Present"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": 0.3,
+        "c_to_o_ratio": 0.4
+      },
+      "kinematics": {
+        "tangential_velocity": 179.9,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": "Flares",
+        "amplitude_j": 0.29,
+        "period": null
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": 13.7
+      },
+      "discovery": {
+        "discovery_year": 2010,
+        "discovery_survey": "UKIDSS",
+        "total_observations": 71
+      },
+      "formation": {
+        "formation_scenario": "Fragmentation",
+        "birth_environment": "Cluster",
+        "deuterium_burning": true
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J328380-121963",
+      "twomass_id": "2MASS J328380-121963",
+      "discoverer_name": "SDSS J328380-121963",
+      "ra": 352.61088,
+      "dec": -85.63172,
+      "distance": 7.3,
+      "parallax": 11.0,
+      "pmra": 481.6,
+      "pmdec": -833.7,
+      "spectral_type": "T1",
+      "spectral_class": "T",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 948,
+        "mass": 56.1,
+        "radius": 0.91,
+        "surface_gravity": 5.2,
+        "age": 6.7,
+        "metallicity": 0.2
+      },
+      "photometry": {
+        "j_mag": 12.13,
+        "h_mag": 13.53,
+        "ks_mag": 14.57,
+        "w1_mag": 16.19,
+        "w2_mag": 10.61,
+        "j_h": 1.47,
+        "h_ks": 0.75,
+        "j_ks": 1.81
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Weak",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": 0.3,
+        "c_to_o_ratio": 1.2
+      },
+      "kinematics": {
+        "tangential_velocity": 193.5,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": null,
+        "period": 10.3
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 1996,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 57
+      },
+      "formation": {
+        "formation_scenario": "Fragmentation",
+        "birth_environment": "Cluster",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "Medium"
+      }
+    },
+    {
+      "source_id": "BD_J493894-788984",
+      "twomass_id": "2MASS J493894-788984",
+      "discoverer_name": "SDSS J493894-788984",
+      "ra": 95.812483,
+      "dec": -71.357611,
+      "distance": 33.3,
+      "parallax": 15.4,
+      "pmra": 783.4,
+      "pmdec": -578.1,
+      "spectral_type": "T0",
+      "spectral_class": "T",
+      "subclass": 0,
+      "physical_parameters": {
+        "teff": 651,
+        "mass": 57.8,
+        "radius": 0.95,
+        "surface_gravity": 5.1,
+        "age": 5.0,
+        "metallicity": 0.3
+      },
+      "photometry": {
+        "j_mag": 17.78,
+        "h_mag": 14.06,
+        "ks_mag": 11.72,
+        "w1_mag": 17.0,
+        "w2_mag": 16.09,
+        "j_h": 0.59,
+        "h_ks": 0.72,
+        "j_ks": 1.27
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Moderate",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Moderate",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Clear",
+        "metallicity_atm": -0.3,
+        "c_to_o_ratio": 1.1
+      },
+      "kinematics": {
+        "tangential_velocity": 188.7,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": true,
+        "variability_type": null,
+        "amplitude_j": null,
+        "period": 19.0
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2003,
+        "discovery_survey": "2MASS",
+        "total_observations": 32
+      },
+      "formation": {
+        "formation_scenario": "Fragmentation",
+        "birth_environment": "Star-forming region",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "A",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J407247-544454",
+      "twomass_id": "2MASS J407247-544454",
+      "discoverer_name": "SDSS J407247-544454",
+      "ra": 77.350529,
+      "dec": 83.960918,
+      "distance": 86.5,
+      "parallax": 11.6,
+      "pmra": 692.5,
+      "pmdec": 543.2,
+      "spectral_type": "Y3",
+      "spectral_class": "Y",
+      "subclass": 3,
+      "physical_parameters": {
+        "teff": 300,
+        "mass": 6.4,
+        "radius": 0.75,
+        "surface_gravity": 4.9,
+        "age": 6.0,
+        "metallicity": -0.5
+      },
+      "photometry": {
+        "j_mag": 17.77,
+        "h_mag": 18.82,
+        "ks_mag": 17.31,
+        "w1_mag": 9.79,
+        "w2_mag": 13.5,
+        "j_h": 0.97,
+        "h_ks": 0.41,
+        "j_ks": 1.08
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Weak",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.2,
+        "c_to_o_ratio": 0.6
+      },
+      "kinematics": {
+        "tangential_velocity": 101.2,
+        "galactic_population": "Thick disk",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": "Clouds",
+        "amplitude_j": 0.03,
+        "period": 20.7
+      },
+      "multiplicity": {
+        "is_binary": true,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2022,
+        "discovery_survey": "UKIDSS",
+        "total_observations": 20
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Cluster",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "A",
+        "spectroscopy_quality": "B",
+        "overall_reliability": "High"
+      }
+    },
+    {
+      "source_id": "BD_J982300-326258",
+      "twomass_id": "2MASS J982300-326258",
+      "discoverer_name": "SDSS J982300-326258",
+      "ra": 226.688313,
+      "dec": 64.804577,
+      "distance": 89.8,
+      "parallax": 12.4,
+      "pmra": -839.4,
+      "pmdec": 114.6,
+      "spectral_type": "Y1",
+      "spectral_class": "Y",
+      "subclass": 1,
+      "physical_parameters": {
+        "teff": 419,
+        "mass": 13.0,
+        "radius": 0.98,
+        "surface_gravity": 4.7,
+        "age": 4.5,
+        "metallicity": 0.1
+      },
+      "photometry": {
+        "j_mag": 16.58,
+        "h_mag": 14.94,
+        "ks_mag": 16.23,
+        "w1_mag": 15.17,
+        "w2_mag": 9.15,
+        "j_h": 1.32,
+        "h_ks": 0.81,
+        "j_ks": 0.96
+      },
+      "spectroscopy": {
+        "h2o_absorption": "Strong",
+        "ch4_absorption": "Strong",
+        "co_absorption": "Strong",
+        "alkali_lines": "Absent"
+      },
+      "atmospheric_properties": {
+        "cloud_coverage": "Partially cloudy",
+        "metallicity_atm": -0.2,
+        "c_to_o_ratio": 0.7
+      },
+      "kinematics": {
+        "tangential_velocity": 81.9,
+        "galactic_population": "Halo",
+        "young_association": null
+      },
+      "variability": {
+        "is_variable": false,
+        "variability_type": null,
+        "amplitude_j": null,
+        "period": 23.4
+      },
+      "multiplicity": {
+        "is_binary": false,
+        "separation": null
+      },
+      "discovery": {
+        "discovery_year": 2001,
+        "discovery_survey": "Pan-STARRS",
+        "total_observations": 38
+      },
+      "formation": {
+        "formation_scenario": "Ejected planet",
+        "birth_environment": "Cluster",
+        "deuterium_burning": false
+      },
+      "data_quality": {
+        "photometry_quality": "B",
+        "spectroscopy_quality": "C",
+        "overall_reliability": "Low"
+      }
+    }
+  ]
+}

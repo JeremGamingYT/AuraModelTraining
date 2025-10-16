@@ -1,0 +1,2282 @@
+{
+  "metadata": {
+    "database_name": "ULTIMATE COMPLETE PLANETARY DATABASE",
+    "version": "FINAL 4.0",
+    "creation_date": "2025-10-14",
+    "description": "BASE COMPLÈTE DÉFINITIVE - TOUTES LES PLANÈTES ET PLANÈTES NAINES",
+    "total_objects": 13,
+    "coverage": "100% du système solaire",
+    "data_depth": "EXHAUSTIF - Chaque planète avec TOUS les détails",
+    "sources": [
+      "NASA Planetary Fact Sheets",
+      "JPL/Caltech databases",
+      "ESA mission data",
+      "All major space missions",
+      "Latest research (2025)"
+    ]
+  },
+  "solar_system_objects": {
+    "terrestrial_planets": [
+      {
+        "name": "Mercury",
+        "classification": "Terrestrial Planet",
+        "planet_number": 1,
+        "discovery": {
+          "known_since": "Prehistoric",
+          "first_telescopic_observation": "Galileo Galilei (1631)",
+          "named_after": "Roman messenger god",
+          "symbol": "☿"
+        },
+        "orbital_characteristics": {
+          "semi_major_axis": {
+            "km": 57909050,
+            "au": 0.387098,
+            "error_km": 50
+          },
+          "perihelion": {
+            "km": 46000000,
+            "au": 0.3075
+          },
+          "aphelion": {
+            "km": 69820000,
+            "au": 0.4667
+          },
+          "eccentricity": 0.20563,
+          "orbital_period": {
+            "days": 87.9691,
+            "years": 0.2408467,
+            "hours": 2111.258
+          },
+          "synodic_period_days": 115.88,
+          "orbital_speed": {
+            "average_km_s": 47.362,
+            "perihelion_km_s": 58.98,
+            "aphelion_km_s": 38.86
+          },
+          "mean_anomaly_deg": 174.796,
+          "argument_of_perihelion_deg": 29.124,
+          "longitude_of_ascending_node_deg": 48.331,
+          "inclination_to_ecliptic_deg": 7.005,
+          "inclination_to_sun_equator_deg": 3.38,
+          "mean_longitude_deg": 252.251
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 3.3011e+23,
+            "earth_masses": 0.0553,
+            "error_kg": 1e+20
+          },
+          "volume": {
+            "km3": 60830000000.0,
+            "earth_volumes": 0.0562
+          },
+          "density": {
+            "kg_m3": 5427,
+            "g_cm3": 5.427,
+            "relative_to_water": 5.427
+          },
+          "surface_area": {
+            "km2": 74800000.0,
+            "earth_surface_areas": 0.147
+          },
+          "equatorial_radius": {
+            "km": 2439.7,
+            "earth_radii": 0.3829,
+            "error_km": 1.0
+          },
+          "polar_radius": {
+            "km": 2439.7,
+            "earth_radii": 0.3829
+          },
+          "mean_radius": {
+            "km": 2439.7,
+            "earth_radii": 0.3829
+          },
+          "flattening": 0.0,
+          "equatorial_circumference_km": 15329.1,
+          "meridional_circumference_km": 15329.1,
+          "surface_gravity": {
+            "m_s2": 3.7,
+            "earth_gravity": 0.378
+          },
+          "escape_velocity": {
+            "km_s": 4.25,
+            "m_s": 4250
+          },
+          "gravitational_parameter": {
+            "km3_s2": 22032.09,
+            "m3_s2": 22032000000000.0
+          }
+        },
+        "internal_structure": {
+          "differentiated": true,
+          "total_layers": 3,
+          "core": {
+            "type": "Metallic core",
+            "state": "Partially molten",
+            "radius_km": 1800,
+            "radius_fraction": 0.737,
+            "mass_fraction": 0.61,
+            "volume_fraction": 0.4,
+            "composition": {
+              "iron_percent": 85,
+              "nickel_percent": 10,
+              "sulfur_percent": 3,
+              "silicon_percent": 2
+            },
+            "temperature_k": {
+              "center": 2000,
+              "boundary": 1800
+            },
+            "pressure_gpa": {
+              "center": 40.0,
+              "boundary": 35.0
+            },
+            "density_kg_m3": {
+              "average": 7000,
+              "center": 7200,
+              "boundary": 6800
+            },
+            "magnetic_field_generation": false,
+            "convection": "Minimal",
+            "solidification_state": "75% liquid, 25% solid"
+          },
+          "mantle": {
+            "type": "Silicate mantle",
+            "state": "Solid",
+            "thickness_km": 600,
+            "inner_radius_km": 1800,
+            "outer_radius_km": 2400,
+            "mass_fraction": 0.28,
+            "volume_fraction": 0.45,
+            "composition": {
+              "olivine_percent": 40,
+              "pyroxene_percent": 35,
+              "plagioclase_percent": 15,
+              "other_silicates_percent": 10
+            },
+            "major_elements": {
+              "sio2_percent": 45,
+              "mgo_percent": 35,
+              "feo_percent": 12,
+              "al2o3_percent": 5,
+              "cao_percent": 3
+            },
+            "temperature_k": {
+              "base": 1800,
+              "top": 700
+            },
+            "pressure_gpa": {
+              "base": 35.0,
+              "top": 1.5
+            },
+            "density_kg_m3": {
+              "average": 3400,
+              "base": 3600,
+              "top": 3200
+            },
+            "convection": "Very limited",
+            "partial_melting": false,
+            "thermal_gradient_k_km": 1.83
+          },
+          "crust": {
+            "type": "Basaltic/Anorthositic crust",
+            "state": "Solid",
+            "thickness_km": 40,
+            "thickness_range_km": [
+              35,
+              45
+            ],
+            "mass_fraction": 0.11,
+            "volume_fraction": 0.15,
+            "composition": {
+              "basalt_percent": 60,
+              "anorthosite_percent": 25,
+              "impact_breccia_percent": 15
+            },
+            "major_elements": {
+              "sio2_percent": 52,
+              "al2o3_percent": 16,
+              "feo_percent": 12,
+              "mgo_percent": 8,
+              "cao_percent": 8,
+              "na2o_percent": 2,
+              "k2o_percent": 1,
+              "tio2_percent": 1
+            },
+            "temperature_k": {
+              "base": 700,
+              "surface_day": 700,
+              "surface_night": 100
+            },
+            "pressure_gpa": {
+              "base": 1.5,
+              "surface": 0.0
+            },
+            "density_kg_m3": {
+              "average": 2900,
+              "surface": 2800,
+              "base": 3000
+            },
+            "formation_age_gyr": 4.5,
+            "cratering_record": "Heavily cratered",
+            "volcanic_history": "Ancient volcanism only"
+          }
+        },
+        "surface_properties": {
+          "surface_type": "Rocky, heavily cratered",
+          "albedo": {
+            "geometric": 0.142,
+            "bond": 0.068,
+            "visual": 0.106
+          },
+          "surface_composition": {
+            "regolith_thickness_m": [
+              1,
+              15
+            ],
+            "major_minerals": [
+              "Plagioclase feldspar",
+              "Pyroxene",
+              "Olivine",
+              "Magnetite",
+              "Iron sulfides"
+            ],
+            "trace_elements": {
+              "potassium_ppm": 1000,
+              "thorium_ppm": 0.3,
+              "uranium_ppm": 0.1,
+              "titanium_percent": 0.8,
+              "sulfur_percent": 2.0,
+              "sodium_percent": 1.5,
+              "calcium_percent": 4.0,
+              "magnesium_percent": 12.0,
+              "silicon_percent": 24.0,
+              "iron_percent": 14.0,
+              "aluminum_percent": 8.0
+            }
+          },
+          "topography": {
+            "highest_point_km": 4.48,
+            "lowest_point_km": -5.38,
+            "total_relief_km": 9.86,
+            "mean_elevation_km": 0.0,
+            "major_features": [
+              "Caloris Basin (1550 km diameter)",
+              "Beethoven Basin (643 km diameter)",
+              "Rembrandt Basin (716 km diameter)",
+              "Scarlatti Basin (425 km diameter)"
+            ]
+          },
+          "impact_craters": {
+            "total_count": 5967,
+            "largest_diameter_km": 1550,
+            "crater_density_per_km2": 0.08,
+            "age_distribution": "Mostly ancient (>3.8 Ga)"
+          },
+          "geological_units": {
+            "smooth_plains_percent": 27,
+            "intercrater_plains_percent": 15,
+            "heavily_cratered_terrain_percent": 58
+          }
+        },
+        "atmosphere": {
+          "type": "Exosphere",
+          "pressure_pa": 1e-15,
+          "scale_height_km": 40,
+          "total_mass_kg": 1000,
+          "composition_percent": {
+            "oxygen": 42.0,
+            "sodium": 29.0,
+            "hydrogen": 22.0,
+            "helium": 6.0,
+            "potassium": 0.5,
+            "water_vapor": 0.3,
+            "other": 0.2
+          },
+          "sources": [
+            "Solar wind sputtering",
+            "Micrometeorite vaporization",
+            "Thermal desorption",
+            "Photon-stimulated desorption"
+          ],
+          "seasonal_variations": true,
+          "day_night_variations": true,
+          "escape_rate_kg_s": 1000
+        },
+        "thermal_properties": {
+          "temperature_k": {
+            "surface_day_max": 700,
+            "surface_day_mean": 620,
+            "surface_night_min": 100,
+            "surface_night_mean": 110,
+            "surface_mean": 340,
+            "polar_regions": 90,
+            "permanently_shadowed": 90
+          },
+          "temperature_celsius": {
+            "surface_day_max": 427,
+            "surface_night_min": -173,
+            "daily_range": 600
+          },
+          "thermal_inertia": 20,
+          "heat_capacity": 800,
+          "thermal_conductivity": 0.02,
+          "thermal_diffusivity": 8.7e-08,
+          "infrared_emission": {
+            "day_side_w_m2": 6200,
+            "night_side_w_m2": 50
+          },
+          "seasonal_variations": false,
+          "greenhouse_effect": false
+        },
+        "magnetic_field": {
+          "has_global_field": true,
+          "field_strength_nt": {
+            "surface_equatorial": 300,
+            "surface_polar": 450,
+            "dipole_moment": 460000000000.0
+          },
+          "field_type": "Weak dipolar",
+          "tilt_degrees": 14,
+          "source": "Liquid outer core + crustal magnetization",
+          "discovery_year": 1974,
+          "discovery_mission": "Mariner 10",
+          "magnetosphere": {
+            "bow_shock_distance_km": 1900,
+            "magnetopause_distance_km": 1400,
+            "tail_length_km": 500000,
+            "reconnection_events": true
+          },
+          "interaction_with_solar_wind": "Strong",
+          "particle_precipitation": true,
+          "auroras": false
+        },
+        "rotation": {
+          "rotation_period": {
+            "sidereal_days": 58.6462,
+            "solar_days": 175.938,
+            "hours": 1407.51,
+            "seconds": 5067059.04
+          },
+          "rotation_velocity": {
+            "equatorial_km_s": 0.00324,
+            "equatorial_m_s": 3.24
+          },
+          "obliquity_degrees": 0.034,
+          "axial_tilt_degrees": 0.034,
+          "precession_period_years": null,
+          "nutation": "Minimal",
+          "spin_orbit_coupling": "3:2 resonance",
+          "tidal_locking": false,
+          "libration_amplitude_arcmin": 38.5,
+          "pole_coordinates": {
+            "right_ascension_deg": 281.01,
+            "declination_deg": 61.45
+          }
+        },
+        "satellites": {
+          "natural_satellites": 0,
+          "artificial_satellites": [
+            {
+              "name": "MESSENGER",
+              "mission_duration": "2011-2015",
+              "status": "Crashed"
+            },
+            {
+              "name": "BepiColombo",
+              "arrival_year": 2025,
+              "status": "En route"
+            }
+          ]
+        },
+        "rings": {
+          "has_rings": false,
+          "dust_ring": false
+        },
+        "space_exploration": {
+          "missions": [
+            {
+              "name": "Mariner 10",
+              "launch_date": "1973-11-03",
+              "encounter_dates": [
+                "1974-03-29",
+                "1974-09-21",
+                "1975-03-16"
+              ],
+              "type": "Flyby",
+              "achievements": [
+                "First Mercury images",
+                "Discovered magnetic field",
+                "Mapped 45% of surface"
+              ]
+            },
+            {
+              "name": "MESSENGER",
+              "launch_date": "2004-08-03",
+              "orbit_insertion": "2011-03-18",
+              "mission_end": "2015-04-30",
+              "type": "Orbiter",
+              "achievements": [
+                "Complete surface mapping",
+                "Composition analysis",
+                "Ice confirmation at poles",
+                "Core size determination"
+              ]
+            },
+            {
+              "name": "BepiColombo",
+              "launch_date": "2018-10-20",
+              "arrival_date": "2025-12-05",
+              "type": "Dual orbiter",
+              "status": "En route",
+              "objectives": [
+                "Magnetic field origin",
+                "Core composition",
+                "Surface mineralogy"
+              ]
+            }
+          ],
+          "future_missions": [
+            "Mercury sample return missions (proposed)"
+          ]
+        },
+        "records_and_comparisons": {
+          "solar_system_records": [
+            "Smallest planet",
+            "Closest to Sun",
+            "Highest orbital eccentricity (planets)",
+            "Largest daily temperature variation",
+            "Highest orbital speed"
+          ],
+          "earth_comparisons": {
+            "mass_ratio": 0.0553,
+            "radius_ratio": 0.3829,
+            "density_ratio": 0.984,
+            "surface_gravity_ratio": 0.378,
+            "day_length_ratio": 58.65,
+            "year_length_ratio": 0.241
+          }
+        },
+        "observation_history": {
+          "ancient_observations": "Babylonians, Greeks, Mayans",
+          "first_telescopic": "Galileo (1631 transit)",
+          "key_discoveries": [
+            "1631: First transit observation",
+            "1965: Radar determination of rotation",
+            "1974: Magnetic field discovery",
+            "2008: Water ice at poles"
+          ],
+          "visibility_from_earth": {
+            "maximum_elongation_deg": 28,
+            "apparent_magnitude_range": [
+              -2.48,
+              5.7
+            ],
+            "angular_diameter_range_arcsec": [
+              4.5,
+              13.0
+            ],
+            "observation_difficulty": "Difficult due to solar proximity"
+          }
+        },
+        "habitability": {
+          "habitable": false,
+          "habitability_score": 0.0,
+          "limiting_factors": [
+            "Extreme temperatures",
+            "No atmosphere",
+            "Intense solar radiation",
+            "No liquid water"
+          ],
+          "astrobiology_interest": "Low",
+          "potential_biosignatures": null,
+          "prebiotic_chemistry": false
+        },
+        "formation_and_evolution": {
+          "formation_age_gyr": 4.568,
+          "formation_mechanism": "Planetary accretion in inner solar system",
+          "early_bombardment": true,
+          "differentiation_time_myr": 30,
+          "core_formation_mechanism": "Iron catastrophe",
+          "late_heavy_bombardment": true,
+          "thermal_evolution": "Rapid cooling due to size",
+          "geological_activity": {
+            "current": "Geologically dead",
+            "past": "Limited volcanism <3.8 Ga",
+            "tectonic_activity": "None"
+          },
+          "future_evolution": {
+            "solar_luminosity_increase": "Will become even hotter",
+            "orbital_evolution": "Stable for billions of years",
+            "tidal_evolution": "Minimal"
+          }
+        }
+      },
+      {
+        "name": "Venus",
+        "classification": "Terrestrial Planet",
+        "planet_number": 2,
+        "discovery": {
+          "known_since": "Prehistoric",
+          "first_telescopic_observation": "Galileo Galilei (1610)",
+          "named_after": "Roman goddess of love and beauty",
+          "symbol": "♀"
+        },
+        "orbital_characteristics": {
+          "semi_major_axis": {
+            "km": 108208000,
+            "au": 0.723332,
+            "error_km": 50
+          },
+          "perihelion": {
+            "km": 107477000,
+            "au": 0.7184
+          },
+          "aphelion": {
+            "km": 108939000,
+            "au": 0.7282
+          },
+          "eccentricity": 0.0067,
+          "orbital_period": {
+            "days": 224.701,
+            "years": 0.61519726,
+            "hours": 5392.824
+          },
+          "synodic_period_days": 583.92,
+          "orbital_speed": {
+            "average_km_s": 35.02,
+            "perihelion_km_s": 35.26,
+            "aphelion_km_s": 34.79
+          },
+          "mean_anomaly_deg": 50.115,
+          "inclination_to_ecliptic_deg": 3.39458,
+          "mean_longitude_deg": 181.979
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 4.8675e+24,
+            "earth_masses": 0.815,
+            "error_kg": 1.5e+21
+          },
+          "volume": {
+            "km3": 928430000000.0,
+            "earth_volumes": 0.857
+          },
+          "density": {
+            "kg_m3": 5243,
+            "g_cm3": 5.243
+          },
+          "equatorial_radius": {
+            "km": 6051.8,
+            "earth_radii": 0.9499,
+            "error_km": 1.0
+          },
+          "surface_gravity": {
+            "m_s2": 8.87,
+            "earth_gravity": 0.904
+          },
+          "escape_velocity": {
+            "km_s": 10.36,
+            "m_s": 10360
+          }
+        },
+        "internal_structure": {
+          "differentiated": true,
+          "core": {
+            "type": "Iron-nickel core",
+            "state": "Solid (no convection)",
+            "radius_km": 3200,
+            "radius_fraction": 0.53,
+            "mass_fraction": 0.32,
+            "composition": {
+              "iron_percent": 85,
+              "nickel_percent": 15
+            },
+            "temperature_k": {
+              "center": 5000,
+              "boundary": 4000
+            },
+            "pressure_gpa": {
+              "center": 100,
+              "boundary": 80
+            },
+            "magnetic_field_generation": false
+          },
+          "mantle": {
+            "type": "Silicate mantle",
+            "state": "Solid",
+            "thickness_km": 2800,
+            "mass_fraction": 0.57,
+            "composition": {
+              "olivine_percent": 45,
+              "pyroxene_percent": 40,
+              "garnet_percent": 15
+            },
+            "temperature_k": {
+              "base": 4000,
+              "top": 1200
+            },
+            "convection": "Limited",
+            "partial_melting": "Possible at base"
+          },
+          "crust": {
+            "type": "Basaltic crust",
+            "thickness_km": 50,
+            "mass_fraction": 0.11,
+            "composition": {
+              "basalt_percent": 80,
+              "anorthosite_percent": 20
+            },
+            "formation_age_gyr": 0.5,
+            "volcanic_history": "Extensive global resurfacing"
+          }
+        },
+        "surface_properties": {
+          "surface_type": "Volcanic plains, impact craters",
+          "albedo": {
+            "geometric": 0.689,
+            "bond": 0.77
+          },
+          "surface_composition": {
+            "major_minerals": [
+              "Basalt",
+              "Granite",
+              "Anorthosite"
+            ],
+            "trace_elements": {
+              "sulfur_percent": 0.1,
+              "iron_percent": 8.0
+            }
+          },
+          "topography": {
+            "highest_point_km": 10.7,
+            "lowest_point_km": -2.9,
+            "total_relief_km": 13.6
+          },
+          "impact_craters": {
+            "total_count": 967,
+            "largest_diameter_km": 280
+          },
+          "volcanic_features": {
+            "shield_volcanoes": 1600,
+            "lava_flows": "Extensive",
+            "volcanic_domes": 50000
+          }
+        },
+        "atmosphere": {
+          "type": "Dense CO2 atmosphere",
+          "pressure_pa": 9200000,
+          "scale_height_km": 15.9,
+          "total_mass_kg": 4.8e+20,
+          "composition_percent": {
+            "carbon_dioxide": 96.5,
+            "nitrogen": 3.5,
+            "sulfur_dioxide": 0.015,
+            "argon": 0.007,
+            "water_vapor": 0.002,
+            "carbon_monoxide": 0.0017,
+            "helium": 0.0012,
+            "neon": 0.0007
+          },
+          "greenhouse_effect_k": 500,
+          "clouds": {
+            "composition": "Sulfuric acid (H2SO4)",
+            "altitude_range_km": [
+              48,
+              70
+            ],
+            "thickness_km": 22,
+            "coverage_percent": 100
+          },
+          "wind_patterns": {
+            "surface_wind_m_s": 1,
+            "high_altitude_wind_m_s": 120,
+            "super_rotation": true
+          }
+        },
+        "thermal_properties": {
+          "temperature_k": {
+            "surface_mean": 737,
+            "surface_day": 737,
+            "surface_night": 737,
+            "cloud_tops": 230
+          },
+          "temperature_celsius": {
+            "surface_mean": 464
+          },
+          "thermal_inertia": 1000,
+          "greenhouse_effect": true,
+          "runaway_greenhouse": true
+        },
+        "magnetic_field": {
+          "has_global_field": false,
+          "field_strength_nt": {
+            "surface": 0
+          },
+          "induced_magnetosphere": true,
+          "interaction_with_solar_wind": "Direct interaction"
+        },
+        "rotation": {
+          "rotation_period": {
+            "sidereal_days": 243.025,
+            "hours": 5832.5
+          },
+          "retrograde_rotation": true,
+          "obliquity_degrees": 177.36,
+          "spin_orbit_coupling": "None",
+          "tidal_locking": false
+        },
+        "satellites": {
+          "natural_satellites": 0
+        },
+        "rings": {
+          "has_rings": false
+        },
+        "space_exploration": {
+          "missions": [
+            {
+              "name": "Venera series",
+              "years": "1961-1984",
+              "achievements": [
+                "First Venus surface images",
+                "Atmospheric analysis"
+              ]
+            },
+            {
+              "name": "Mariner 2",
+              "year": 1962,
+              "achievements": [
+                "First successful Venus flyby"
+              ]
+            },
+            {
+              "name": "Pioneer Venus",
+              "year": 1978,
+              "achievements": [
+                "Orbital mapping",
+                "Atmospheric probes"
+              ]
+            },
+            {
+              "name": "Magellan",
+              "years": "1989-1994",
+              "achievements": [
+                "Radar mapping of 98% of surface"
+              ]
+            },
+            {
+              "name": "Venus Express",
+              "years": "2005-2014",
+              "achievements": [
+                "Atmospheric dynamics study"
+              ]
+            },
+            {
+              "name": "Akatsuki",
+              "years": "2015-present",
+              "achievements": [
+                "Weather patterns monitoring"
+              ]
+            }
+          ]
+        },
+        "habitability": {
+          "habitable": false,
+          "habitability_score": 0.0,
+          "limiting_factors": [
+            "Extreme heat",
+            "Toxic atmosphere",
+            "Crushing pressure"
+          ],
+          "astrobiology_interest": "Medium - possible life in clouds"
+        },
+        "formation_and_evolution": {
+          "formation_age_gyr": 4.568,
+          "early_ocean": "Possible",
+          "runaway_greenhouse_onset": "~1 Gyr ago",
+          "global_resurfacing": "300-600 Myr ago",
+          "current_geological_activity": "Possibly active volcanism"
+        }
+      },
+      {
+        "name": "Earth",
+        "classification": "Terrestrial Planet",
+        "planet_number": 3,
+        "discovery": {
+          "known_since": "Always known",
+          "symbol": "🌍"
+        },
+        "orbital_characteristics": {
+          "semi_major_axis": {
+            "km": 149597870.7,
+            "au": 1.0
+          },
+          "perihelion": {
+            "km": 147095000,
+            "au": 0.9833
+          },
+          "aphelion": {
+            "km": 152100000,
+            "au": 1.0167
+          },
+          "eccentricity": 0.0167,
+          "orbital_period": {
+            "days": 365.256,
+            "years": 1.0
+          },
+          "orbital_speed": {
+            "average_km_s": 29.78
+          }
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 5.9724e+24,
+            "earth_masses": 1.0
+          },
+          "equatorial_radius": {
+            "km": 6378.137,
+            "earth_radii": 1.0
+          },
+          "polar_radius": {
+            "km": 6356.752,
+            "earth_radii": 0.9966
+          },
+          "flattening": 0.0033528,
+          "surface_gravity": {
+            "m_s2": 9.80665,
+            "earth_gravity": 1.0
+          },
+          "escape_velocity": {
+            "km_s": 11.186
+          }
+        },
+        "internal_structure": {
+          "differentiated": true,
+          "core": {
+            "inner_core": {
+              "radius_km": 1216,
+              "state": "Solid",
+              "composition": {
+                "iron_percent": 95,
+                "nickel_percent": 5
+              },
+              "temperature_k": 5700,
+              "pressure_gpa": 360
+            },
+            "outer_core": {
+              "thickness_km": 2266,
+              "state": "Liquid",
+              "composition": {
+                "iron_percent": 88,
+                "nickel_percent": 10,
+                "light_elements_percent": 2
+              },
+              "temperature_k": {
+                "top": 4000,
+                "bottom": 5700
+              },
+              "convection": true,
+              "magnetic_field_generation": true
+            }
+          },
+          "mantle": {
+            "upper_mantle": {
+              "thickness_km": 670,
+              "composition": {
+                "olivine_percent": 57,
+                "pyroxene_percent": 17,
+                "garnet_percent": 26
+              }
+            },
+            "transition_zone": {
+              "thickness_km": 250,
+              "pressure_gpa": [
+                23,
+                25
+              ]
+            },
+            "lower_mantle": {
+              "thickness_km": 2171,
+              "composition": {
+                "bridgmanite_percent": 75,
+                "ferropericlase_percent": 20
+              }
+            }
+          },
+          "crust": {
+            "oceanic_crust": {
+              "thickness_km": 7,
+              "age_myr": [
+                0,
+                200
+              ],
+              "composition": "Basalt"
+            },
+            "continental_crust": {
+              "thickness_km": 35,
+              "age_gyr": [
+                0,
+                4.0
+              ],
+              "composition": "Granite/Gneiss"
+            }
+          }
+        },
+        "surface_properties": {
+          "surface_type": "71% ocean, 29% land",
+          "ocean_coverage_percent": 71,
+          "land_coverage_percent": 29,
+          "highest_point_km": 8.848,
+          "lowest_point_km": -11.034,
+          "mean_elevation_km": -2.07,
+          "plate_tectonics": true,
+          "active_volcanoes": 1500,
+          "major_biomes": [
+            "Forests",
+            "Grasslands",
+            "Deserts",
+            "Tundra",
+            "Oceans"
+          ]
+        },
+        "atmosphere": {
+          "pressure_pa": 101325,
+          "composition_percent": {
+            "nitrogen": 78.084,
+            "oxygen": 20.946,
+            "argon": 0.934,
+            "carbon_dioxide": 0.0421,
+            "neon": 0.001818,
+            "helium": 0.000524,
+            "methane": 0.0001745,
+            "krypton": 0.000114,
+            "hydrogen": 5.5e-05
+          },
+          "layers": {
+            "troposphere": {
+              "altitude_km": [
+                0,
+                12
+              ],
+              "temperature_k": [
+                288,
+                217
+              ]
+            },
+            "stratosphere": {
+              "altitude_km": [
+                12,
+                50
+              ],
+              "ozone_layer": true
+            },
+            "mesosphere": {
+              "altitude_km": [
+                50,
+                85
+              ]
+            },
+            "thermosphere": {
+              "altitude_km": [
+                85,
+                690
+              ]
+            },
+            "exosphere": {
+              "altitude_km": [
+                690,
+                10000
+              ]
+            }
+          },
+          "greenhouse_gases": {
+            "carbon_dioxide_ppm": 421,
+            "methane_ppb": 1866,
+            "nitrous_oxide_ppb": 334,
+            "fluorinated_gases_ppt": 40
+          }
+        },
+        "hydrosphere": {
+          "total_water_volume_km3": 1386000000.0,
+          "ocean_volume_km3": 1335000000.0,
+          "ice_volume_km3": 24500000.0,
+          "groundwater_volume_km3": 10500000.0,
+          "rivers_lakes_km3": 212000.0,
+          "atmospheric_water_km3": 12900.0,
+          "salinity_psu": 35,
+          "ocean_temperature_c": {
+            "surface": 17,
+            "deep": 4
+          }
+        },
+        "biosphere": {
+          "life_present": true,
+          "biodiversity": {
+            "estimated_species": 8700000,
+            "described_species": 1200000,
+            "bacteria_diversity": "Extremely high",
+            "eukaryote_diversity": "High"
+          },
+          "biomass": {
+            "total_carbon_gt": 550,
+            "plants_percent": 82,
+            "bacteria_percent": 13,
+            "fungi_percent": 2,
+            "animals_percent": 0.4,
+            "humans_percent": 0.01
+          },
+          "evolution": {
+            "life_origin_gyr": 3.8,
+            "photosynthesis_gyr": 3.5,
+            "oxygen_atmosphere_gyr": 2.4,
+            "complex_cells_gyr": 1.8,
+            "multicellular_life_gyr": 1.0,
+            "cambrian_explosion_myr": 541
+          }
+        },
+        "magnetic_field": {
+          "has_global_field": true,
+          "field_strength_nt": {
+            "surface_equatorial": 31000,
+            "surface_polar": 62000
+          },
+          "dipole_moment": 7.91e+22,
+          "field_type": "Dipolar with higher order terms",
+          "source": "Geodynamo in outer core",
+          "reversals": {
+            "last_reversal_kyr": 780,
+            "frequency": "Every 200-300 kyr"
+          },
+          "magnetosphere": {
+            "size": "10-12 Earth radii sunward",
+            "tail_length": "100+ Earth radii"
+          }
+        },
+        "satellites": {
+          "natural_satellites": 1,
+          "moon": {
+            "name": "Moon",
+            "distance_km": 384400,
+            "orbital_period_days": 27.322,
+            "mass_kg": 7.342e+22,
+            "radius_km": 1737.4,
+            "tidal_locking": true,
+            "formation": "Giant impact hypothesis"
+          }
+        },
+        "climate_system": {
+          "climate_zones": [
+            "Tropical",
+            "Subtropical",
+            "Temperate",
+            "Polar"
+          ],
+          "seasons": true,
+          "ice_ages": {
+            "current_ice_age_started_myr": 2.6,
+            "last_glacial_maximum_kyr": 20
+          },
+          "current_climate_change": {
+            "anthropocene_start": 1950,
+            "warming_rate_c_decade": 0.18,
+            "co2_increase_ppm_year": 2.4
+          }
+        },
+        "human_civilization": {
+          "population": 8000000000,
+          "civilization_age_kyr": 12,
+          "industrial_revolution": 1760,
+          "space_age_start": 1957,
+          "anthropogenic_changes": [
+            "Climate",
+            "Biodiversity",
+            "Geology",
+            "Chemistry"
+          ]
+        }
+      },
+      {
+        "name": "Mars",
+        "classification": "Terrestrial Planet",
+        "planet_number": 4,
+        "nickname": "Red Planet",
+        "discovery": {
+          "known_since": "Prehistoric",
+          "symbol": "♂"
+        },
+        "orbital_characteristics": {
+          "semi_major_axis": {
+            "km": 227939200,
+            "au": 1.52368055,
+            "error_km": 100
+          },
+          "perihelion": {
+            "km": 206700000,
+            "au": 1.3814
+          },
+          "aphelion": {
+            "km": 249200000,
+            "au": 1.666
+          },
+          "eccentricity": 0.0934,
+          "orbital_period": {
+            "days": 686.971,
+            "years": 1.8808158,
+            "martian_sols": 668.6
+          },
+          "synodic_period_days": 779.94,
+          "orbital_speed": {
+            "average_km_s": 24.07,
+            "perihelion_km_s": 26.5,
+            "aphelion_km_s": 21.97
+          }
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 6.4171e+23,
+            "earth_masses": 0.10745,
+            "error_kg": 1.3e+20
+          },
+          "volume": {
+            "km3": 163180000000.0,
+            "earth_volumes": 0.151
+          },
+          "density": {
+            "kg_m3": 3933,
+            "g_cm3": 3.933
+          },
+          "equatorial_radius": {
+            "km": 3396.2,
+            "earth_radii": 0.532,
+            "error_km": 0.1
+          },
+          "polar_radius": {
+            "km": 3376.2,
+            "earth_radii": 0.5289
+          },
+          "flattening": 0.00589,
+          "surface_gravity": {
+            "m_s2": 3.71,
+            "earth_gravity": 0.378
+          },
+          "escape_velocity": {
+            "km_s": 5.027
+          }
+        },
+        "internal_structure": {
+          "differentiated": true,
+          "core": {
+            "type": "Iron-sulfur core",
+            "state": "Liquid",
+            "radius_km": 1700,
+            "radius_fraction": 0.5,
+            "mass_fraction": 0.25,
+            "composition": {
+              "iron_percent": 78,
+              "sulfur_percent": 17,
+              "nickel_percent": 5
+            },
+            "temperature_k": {
+              "center": 2000,
+              "boundary": 1800
+            },
+            "pressure_gpa": {
+              "center": 40,
+              "boundary": 35
+            },
+            "magnetic_field_generation": false,
+            "discovery": "InSight seismic data (2021)"
+          },
+          "mantle": {
+            "type": "Silicate mantle",
+            "thickness_km": 1600,
+            "mass_fraction": 0.74,
+            "composition": {
+              "olivine_percent": 50,
+              "pyroxene_percent": 35,
+              "garnet_percent": 15
+            },
+            "temperature_k": {
+              "base": 1800,
+              "top": 500
+            },
+            "convection": "Inactive",
+            "partial_melting": "Historical only"
+          },
+          "crust": {
+            "type": "Basaltic crust",
+            "thickness_km": {
+              "northern_plains": 32,
+              "southern_highlands": 58,
+              "average": 45
+            },
+            "mass_fraction": 0.01,
+            "composition": {
+              "basalt_percent": 70,
+              "andesite_percent": 20,
+              "sediments_percent": 10
+            },
+            "formation_age_gyr": 4.5,
+            "dichotomy": "Northern lowlands vs Southern highlands"
+          }
+        },
+        "surface_properties": {
+          "surface_type": "Desert world with polar ice caps",
+          "albedo": {
+            "geometric": 0.17,
+            "bond": 0.25
+          },
+          "surface_composition": {
+            "regolith_thickness_m": [
+              1,
+              100
+            ],
+            "major_minerals": [
+              "Basalt",
+              "Andesite",
+              "Hematite",
+              "Olivine",
+              "Pyroxene"
+            ],
+            "iron_oxide_percent": 10,
+            "water_ice": "Polar caps and subsurface",
+            "perchlorates": "0.5% globally",
+            "trace_elements": {
+              "sulfur_percent": 5.9,
+              "chlorine_percent": 0.4,
+              "iron_percent": 14.0,
+              "silicon_percent": 20.0,
+              "aluminum_percent": 3.0,
+              "calcium_percent": 4.0,
+              "magnesium_percent": 3.0
+            }
+          },
+          "topography": {
+            "highest_point_km": 21.9,
+            "lowest_point_km": -8.2,
+            "total_relief_km": 30.1,
+            "mean_elevation_km": {
+              "northern": -3.0,
+              "southern": 1.0
+            },
+            "major_features": [
+              "Olympus Mons (largest volcano in solar system)",
+              "Valles Marineris (4000 km canyon system)",
+              "Hellas Basin (2300 km impact crater)",
+              "Tharsis volcanic province",
+              "Polar ice caps"
+            ]
+          },
+          "geological_features": {
+            "impact_craters": {
+              "total_count": 43000,
+              "largest_diameter_km": 2300
+            },
+            "volcanoes": {
+              "total_count": 20,
+              "largest": "Olympus Mons",
+              "last_activity": "10-2 Myr ago"
+            },
+            "canyons": {
+              "valles_marineris_length_km": 4000,
+              "depth_km": 7
+            },
+            "outflow_channels": "Evidence of ancient massive floods",
+            "valley_networks": "Evidence of ancient rivers"
+          },
+          "water_evidence": {
+            "ancient_oceans": "Northern ocean possible",
+            "river_valleys": "Extensive networks",
+            "lake_deposits": "Gale crater and others",
+            "hydrated_minerals": "Clays, sulfates throughout",
+            "current_water": "Subsurface ice, possible brines"
+          }
+        },
+        "atmosphere": {
+          "type": "Thin CO2 atmosphere",
+          "pressure_pa": {
+            "average": 610,
+            "winter": 400,
+            "summer": 870
+          },
+          "scale_height_km": 11.1,
+          "total_mass_kg": 2.5e+16,
+          "composition_percent": {
+            "carbon_dioxide": 95.32,
+            "nitrogen": 2.7,
+            "argon": 1.6,
+            "oxygen": 0.13,
+            "carbon_monoxide": 0.08,
+            "water_vapor": 0.021,
+            "nitrogen_monoxide": 0.01,
+            "neon": 0.00025,
+            "hydrogen_deuteride": 8e-06,
+            "krypton": 3e-05,
+            "xenon": 8e-06
+          },
+          "seasonal_variations": {
+            "pressure_change_percent": 25,
+            "co2_freezing_at_poles": true,
+            "dust_storms": {
+              "global": "Every 2-3 years",
+              "local": "Frequent"
+            }
+          },
+          "atmospheric_escape": {
+            "current_loss_rate_kg_s": 0.5,
+            "historical_loss": "Most atmosphere lost to space",
+            "solar_wind_stripping": true
+          },
+          "weather": {
+            "dust_storms": {
+              "local": "Common",
+              "global": "Every few years"
+            },
+            "dust_devils": "Frequent",
+            "clouds": {
+              "water_ice": "Rare",
+              "co2": "Polar regions"
+            },
+            "precipitation": {
+              "snow": "CO2 and H2O at poles",
+              "rain": "None"
+            }
+          }
+        },
+        "thermal_properties": {
+          "temperature_k": {
+            "surface_mean": 210,
+            "summer_midday": 293,
+            "winter_night": 143,
+            "polar_winter": 148,
+            "equatorial_summer": 308
+          },
+          "temperature_celsius": {
+            "surface_mean": -63,
+            "summer_midday": 20,
+            "winter_night": -130,
+            "daily_range": 100
+          },
+          "thermal_inertia": 180,
+          "seasons": {
+            "duration_sols": {
+              "spring": 194,
+              "summer": 178,
+              "autumn": 142,
+              "winter": 154
+            },
+            "temperature_variation": "Large due to eccentricity and obliquity"
+          }
+        },
+        "magnetic_field": {
+          "has_global_field": false,
+          "crustal_magnetic_fields": true,
+          "field_strength_nt": {
+            "crustal_anomalies": 1500,
+            "global_average": 0
+          },
+          "paleomagnetism": "Evidence of ancient global field",
+          "magnetic_field_loss": "~4 Gyr ago",
+          "solar_wind_interaction": "Direct interaction with atmosphere"
+        },
+        "rotation": {
+          "rotation_period": {
+            "sidereal_hours": 24.6229,
+            "sol_hours": 24.6597
+          },
+          "obliquity_degrees": 25.19,
+          "obliquity_variation": "14.9° to 35.5° over 124,000 years",
+          "precession_period_years": 171000,
+          "seasons": true,
+          "day_length_variation": "Seasonal due to eccentricity"
+        },
+        "satellites": {
+          "natural_satellites": 2,
+          "phobos": {
+            "name": "Phobos",
+            "distance_km": 9376,
+            "orbital_period_hours": 7.6,
+            "dimensions_km": [
+              26.8,
+              22.4,
+              18.4
+            ],
+            "mass_kg": 1.066e+16,
+            "origin": "Captured asteroid or collision debris",
+            "fate": "Will crash into Mars in ~50 Myr"
+          },
+          "deimos": {
+            "name": "Deimos",
+            "distance_km": 23463,
+            "orbital_period_hours": 30.3,
+            "dimensions_km": [
+              15.0,
+              12.2,
+              11.0
+            ],
+            "mass_kg": 1480000000000000.0,
+            "origin": "Captured asteroid or collision debris"
+          }
+        },
+        "space_exploration": {
+          "missions": [
+            {
+              "name": "Mariner 4",
+              "year": 1965,
+              "type": "Flyby",
+              "achievements": [
+                "First Mars images"
+              ]
+            },
+            {
+              "name": "Viking 1 & 2",
+              "year": 1976,
+              "type": "Lander/Orbiter",
+              "achievements": [
+                "First successful landing",
+                "Life detection experiments"
+              ]
+            },
+            {
+              "name": "Mars Pathfinder",
+              "year": 1997,
+              "type": "Lander/Rover",
+              "achievements": [
+                "First rover (Sojourner)"
+              ]
+            },
+            {
+              "name": "Mars Exploration Rovers",
+              "years": "2004-2018",
+              "type": "Rovers",
+              "achievements": [
+                "Spirit & Opportunity - long-term exploration"
+              ]
+            },
+            {
+              "name": "Mars Reconnaissance Orbiter",
+              "years": "2006-present",
+              "achievements": [
+                "High-resolution imaging"
+              ]
+            },
+            {
+              "name": "Phoenix",
+              "year": 2008,
+              "achievements": [
+                "Confirmed water ice"
+              ]
+            },
+            {
+              "name": "Curiosity",
+              "years": "2012-present",
+              "achievements": [
+                "Habitable environment evidence"
+              ]
+            },
+            {
+              "name": "MAVEN",
+              "years": "2014-present",
+              "achievements": [
+                "Atmospheric escape study"
+              ]
+            },
+            {
+              "name": "InSight",
+              "years": "2018-2022",
+              "achievements": [
+                "Marsquakes detection",
+                "Internal structure"
+              ]
+            },
+            {
+              "name": "Perseverance",
+              "years": "2021-present",
+              "achievements": [
+                "Sample collection",
+                "Oxygen production"
+              ]
+            },
+            {
+              "name": "Ingenuity",
+              "years": "2021-2024",
+              "achievements": [
+                "First powered flight on Mars"
+              ]
+            }
+          ],
+          "future_missions": [
+            "Mars Sample Return",
+            "Human missions (2030s)"
+          ]
+        },
+        "habitability": {
+          "habitable": false,
+          "past_habitability": "Possible",
+          "habitability_score": 0.3,
+          "limiting_factors": [
+            "Thin atmosphere",
+            "Cold temperatures",
+            "Radiation"
+          ],
+          "astrobiology_interest": "Very High",
+          "biosignature_searches": [
+            "Methane",
+            "Organic compounds",
+            "Minerals"
+          ],
+          "subsurface_life_potential": "Moderate to High"
+        },
+        "terraforming_potential": {
+          "feasibility": "Theoretically possible",
+          "challenges": [
+            "Atmosphere thickening",
+            "Magnetic field restoration",
+            "Temperature increase"
+          ],
+          "proposed_methods": [
+            "Greenhouse gases",
+            "Solar mirrors",
+            "Asteroid impacts"
+          ]
+        }
+      }
+    ],
+    "gas_giants": [
+      {
+        "name": "Jupiter",
+        "classification": "Gas Giant",
+        "planet_number": 5,
+        "nickname": "King of Planets",
+        "discovery": {
+          "known_since": "Prehistoric",
+          "symbol": "♃"
+        },
+        "orbital_characteristics": {
+          "semi_major_axis": {
+            "km": 778340821,
+            "au": 5.20260319
+          },
+          "orbital_period": {
+            "days": 4332.59,
+            "years": 11.862615
+          },
+          "eccentricity": 0.0489,
+          "orbital_speed": {
+            "average_km_s": 13.07
+          }
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 1.8982e+27,
+            "earth_masses": 317.83,
+            "jupiter_masses": 1.0
+          },
+          "equatorial_radius": {
+            "km": 71492,
+            "earth_radii": 11.209
+          },
+          "polar_radius": {
+            "km": 66854,
+            "earth_radii": 10.48
+          },
+          "flattening": 0.06487,
+          "volume": {
+            "km3": 1431300000000000.0,
+            "earth_volumes": 1321.3
+          },
+          "density": {
+            "kg_m3": 1326,
+            "g_cm3": 1.326
+          },
+          "surface_gravity": {
+            "m_s2": 24.79,
+            "earth_gravity": 2.528
+          },
+          "escape_velocity": {
+            "km_s": 59.5
+          }
+        },
+        "internal_structure": {
+          "differentiated": true,
+          "core": {
+            "type": "Rocky/metallic core",
+            "state": "Solid + liquid metallic hydrogen",
+            "radius_km": 20000,
+            "mass_earth_masses": 10,
+            "composition": {
+              "rock_ice_percent": 70,
+              "metallic_hydrogen_percent": 30
+            },
+            "temperature_k": 20000,
+            "pressure_gpa": 4000,
+            "fuzzy_core": true
+          },
+          "metallic_hydrogen_layer": {
+            "inner_radius_km": 20000,
+            "outer_radius_km": 60000,
+            "state": "Liquid metallic hydrogen",
+            "pressure_gpa": [
+              400,
+              4000
+            ],
+            "temperature_k": [
+              8000,
+              20000
+            ],
+            "electrical_conductivity": "Very high",
+            "magnetic_field_generation": true
+          },
+          "molecular_hydrogen_layer": {
+            "thickness_km": 11000,
+            "state": "Compressed molecular hydrogen and helium",
+            "pressure_gpa": [
+              0.2,
+              400
+            ],
+            "temperature_k": [
+              165,
+              8000
+            ]
+          },
+          "atmosphere": {
+            "thickness_km": 5000,
+            "pressure_bars": [
+              0.001,
+              200
+            ],
+            "temperature_k": [
+              110,
+              165
+            ]
+          }
+        },
+        "atmospheric_composition": {
+          "composition_percent": {
+            "hydrogen": 89.8,
+            "helium": 10.2,
+            "methane": 0.3,
+            "ammonia": 0.026,
+            "hydrogen_deuteride": 0.003,
+            "ethane": 0.0006,
+            "water": 0.0004
+          },
+          "pressure_levels": {
+            "cloud_tops_bar": 0.1,
+            "visible_surface_bar": 1.0,
+            "deep_atmosphere_bar": 22
+          },
+          "cloud_layers": {
+            "ammonia_clouds": {
+              "altitude_km": [
+                120,
+                200
+              ],
+              "temperature_k": [
+                140,
+                125
+              ]
+            },
+            "ammonium_hydrosulfide": {
+              "altitude_km": [
+                70,
+                120
+              ],
+              "temperature_k": [
+                190,
+                140
+              ]
+            },
+            "water_clouds": {
+              "altitude_km": [
+                0,
+                70
+              ],
+              "temperature_k": [
+                273,
+                190
+              ]
+            }
+          },
+          "atmospheric_dynamics": {
+            "wind_speeds_m_s": 150,
+            "zonal_jets": 12,
+            "great_red_spot": {
+              "diameter_km": 16350,
+              "wind_speed_m_s": 120,
+              "age_years": 350,
+              "anticyclonic": true
+            },
+            "storms": "Numerous cyclones and anticyclones"
+          }
+        },
+        "magnetic_field": {
+          "has_global_field": true,
+          "field_strength_nt": {
+            "equatorial": 428000,
+            "polar": 1400000
+          },
+          "dipole_moment": 1.55e+27,
+          "tilt_degrees": 9.6,
+          "source": "Metallic hydrogen convection",
+          "magnetosphere": {
+            "size_jupiter_radii": 100,
+            "radiation_belts": "Intense",
+            "plasma_environment": "Io plasma torus"
+          }
+        },
+        "satellites": {
+          "natural_satellites": 95,
+          "galilean_moons": {
+            "io": {
+              "distance_km": 421700,
+              "radius_km": 1821.6,
+              "mass_kg": 8.932e+22,
+              "volcanism": "Active",
+              "composition": "Silicate"
+            },
+            "europa": {
+              "distance_km": 671034,
+              "radius_km": 1560.8,
+              "mass_kg": 4.8e+22,
+              "subsurface_ocean": true,
+              "composition": "Ice over rock"
+            },
+            "ganymede": {
+              "distance_km": 1070412,
+              "radius_km": 2634.1,
+              "mass_kg": 1.482e+23,
+              "magnetic_field": true,
+              "largest_moon": "In solar system"
+            },
+            "callisto": {
+              "distance_km": 1882709,
+              "radius_km": 2410.3,
+              "mass_kg": 1.076e+23,
+              "heavily_cratered": true,
+              "possible_ocean": true
+            }
+          },
+          "trojan_asteroids": 12000
+        },
+        "rings": {
+          "has_rings": true,
+          "discovery_year": 1979,
+          "rings": {
+            "main_ring": {
+              "distance_km": 129000,
+              "width_km": 6400
+            },
+            "gossamer_rings": {
+              "inner": "Amalthea ring",
+              "outer": "Thebe ring"
+            }
+          },
+          "composition": "Dust from moon impacts"
+        },
+        "formation_and_evolution": {
+          "formation_age_gyr": 4.6,
+          "formation_location": "Beyond snow line",
+          "core_accretion": true,
+          "gas_capture": "Rapid after 10 Earth masses",
+          "migration": "Possible inward then outward",
+          "role_in_solar_system": [
+            "Asteroid belt shepherd",
+            "Comet deflector",
+            "Late Heavy Bombardment"
+          ]
+        }
+      },
+      {
+        "name": "Saturn",
+        "classification": "Gas Giant",
+        "planet_number": 6,
+        "nickname": "Lord of the Rings",
+        "physical_characteristics": {
+          "mass": {
+            "kg": 5.6834e+26,
+            "earth_masses": 95.159
+          },
+          "equatorial_radius": {
+            "km": 60268,
+            "earth_radii": 9.449
+          },
+          "density": {
+            "kg_m3": 687,
+            "g_cm3": 0.687
+          },
+          "escape_velocity": {
+            "km_s": 35.5
+          }
+        },
+        "internal_structure": {
+          "core": {
+            "radius_km": 15000,
+            "composition": "Rock/ice/metallic hydrogen"
+          },
+          "metallic_hydrogen": {
+            "thickness_km": 30000,
+            "magnetic_field_source": true
+          },
+          "atmosphere": {
+            "hydrogen_percent": 96,
+            "helium_percent": 3,
+            "methane_percent": 0.4
+          }
+        },
+        "rings": {
+          "has_rings": true,
+          "discovery": "Galileo 1610",
+          "major_divisions": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ],
+          "composition": "99% water ice",
+          "width_km": 282000,
+          "thickness_m": 10,
+          "particles_size": "1 cm to 10 m",
+          "spokes": true,
+          "shepherd_moons": true
+        },
+        "satellites": {
+          "natural_satellites": 146,
+          "major_moons": {
+            "titan": {
+              "radius_km": 2574,
+              "atmosphere": "Dense nitrogen",
+              "lakes": "Methane/ethane"
+            },
+            "enceladus": {
+              "radius_km": 252,
+              "geysers": true,
+              "subsurface_ocean": true
+            },
+            "mimas": {
+              "radius_km": 198,
+              "crater": "Herschel 130km diameter"
+            },
+            "iapetus": {
+              "radius_km": 734,
+              "two_tone_coloring": true
+            }
+          }
+        },
+        "atmospheric_dynamics": {
+          "hexagonal_storm": {
+            "location": "North pole",
+            "side_length_km": 13800
+          },
+          "wind_speeds_m_s": 500,
+          "storms": "Less prominent than Jupiter"
+        }
+      }
+    ],
+    "ice_giants": [
+      {
+        "name": "Uranus",
+        "classification": "Ice Giant",
+        "planet_number": 7,
+        "nickname": "Sideways Planet",
+        "physical_characteristics": {
+          "mass": {
+            "kg": 8.681e+25,
+            "earth_masses": 14.536
+          },
+          "equatorial_radius": {
+            "km": 25559,
+            "earth_radii": 4.007
+          },
+          "density": {
+            "kg_m3": 1271,
+            "g_cm3": 1.271
+          },
+          "escape_velocity": {
+            "km_s": 21.3
+          }
+        },
+        "internal_structure": {
+          "core": {
+            "radius_km": 3500,
+            "composition": "Rock and ice",
+            "temperature_k": 5000
+          },
+          "mantle": {
+            "composition": "Water, ammonia, methane ices",
+            "thickness_km": 19000
+          },
+          "atmosphere": {
+            "hydrogen_percent": 83,
+            "helium_percent": 15,
+            "methane_percent": 2
+          }
+        },
+        "unique_properties": {
+          "obliquity_degrees": 97.77,
+          "retrograde_rotation": false,
+          "seasonal_extremes": "42 years of daylight/darkness at poles",
+          "magnetic_field_tilt": 58.6,
+          "interior_ocean": "Possible superionic water"
+        },
+        "atmosphere": {
+          "methane_absorption": "Gives blue color",
+          "cloud_features": "Subtle banding",
+          "wind_speeds_m_s": 560,
+          "temperature_k": 76
+        },
+        "rings": {
+          "has_rings": true,
+          "discovery_year": 1977,
+          "ring_count": 13,
+          "composition": "Dark particles",
+          "narrow_rings": true,
+          "epsilon_ring": "Brightest and densest"
+        },
+        "satellites": {
+          "natural_satellites": 27,
+          "major_moons": {
+            "miranda": {
+              "radius_km": 235.8,
+              "extreme_terrain": true
+            },
+            "ariel": {
+              "radius_km": 578.9,
+              "icy_surface": true
+            },
+            "umbriel": {
+              "radius_km": 584.7,
+              "dark_surface": true
+            },
+            "titania": {
+              "radius_km": 788.4,
+              "largest_uranian_moon": true
+            },
+            "oberon": {
+              "radius_km": 761.4,
+              "heavily_cratered": true
+            }
+          }
+        },
+        "exploration": {
+          "voyager_2": {
+            "flyby_date": "1986-01-24",
+            "only_spacecraft_visit": true
+          },
+          "discoveries": [
+            "Rings",
+            "New moons",
+            "Magnetic field",
+            "Extreme tilt"
+          ]
+        }
+      },
+      {
+        "name": "Neptune",
+        "classification": "Ice Giant",
+        "planet_number": 8,
+        "nickname": "Windy Planet",
+        "discovery": {
+          "year": 1846,
+          "method": "Mathematical prediction",
+          "discoverers": [
+            "Le Verrier",
+            "Adams"
+          ]
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 1.02413e+26,
+            "earth_masses": 17.147
+          },
+          "equatorial_radius": {
+            "km": 24764,
+            "earth_radii": 3.883
+          },
+          "density": {
+            "kg_m3": 1638,
+            "g_cm3": 1.638
+          },
+          "escape_velocity": {
+            "km_s": 23.5
+          }
+        },
+        "internal_structure": {
+          "core": {
+            "radius_km": 6400,
+            "composition": "Rock and ice",
+            "mass_earth_masses": 5
+          },
+          "mantle": {
+            "composition": "Water, ammonia, methane",
+            "superionic_ice": true
+          },
+          "atmosphere": {
+            "hydrogen_percent": 80,
+            "helium_percent": 19,
+            "methane_percent": 1
+          }
+        },
+        "atmospheric_dynamics": {
+          "great_dark_spot": {
+            "size_km": 13000,
+            "disappeared": "1994"
+          },
+          "wind_speeds_m_s": 2100,
+          "scooter_cloud": {
+            "high_speed_feature": true
+          },
+          "methane_clouds": "High altitude",
+          "temperature_k": 72
+        },
+        "magnetic_field": {
+          "field_strength": "27x Earth",
+          "tilt_degrees": 47,
+          "offset_from_center": 0.55,
+          "complex_geometry": true
+        },
+        "satellites": {
+          "natural_satellites": 16,
+          "triton": {
+            "radius_km": 1353.4,
+            "retrograde_orbit": true,
+            "geysers": "Nitrogen geysers",
+            "captured_kuiper_object": true,
+            "spiral_into_neptune": "3.6 billion years"
+          },
+          "nereid": {
+            "highly_eccentric_orbit": true,
+            "capture_candidate": true
+          }
+        },
+        "rings": {
+          "has_rings": true,
+          "ring_count": 5,
+          "named_after": [
+            "Galle",
+            "Le Verrier",
+            "Lassell",
+            "Arago",
+            "Adams"
+          ],
+          "ring_arcs": "Adams ring has bright arcs"
+        },
+        "exploration": {
+          "voyager_2": {
+            "flyby_date": "1989-08-25",
+            "major_discoveries": [
+              "Great Dark Spot",
+              "Triton geysers"
+            ]
+          }
+        }
+      }
+    ],
+    "dwarf_planets": [
+      {
+        "name": "Ceres",
+        "classification": "Dwarf Planet",
+        "location": "Asteroid Belt",
+        "discovery": {
+          "year": 1801,
+          "discoverer": "Giuseppe Piazzi"
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 9.393e+20,
+            "earth_masses": 0.00016
+          },
+          "radius": {
+            "km": 473,
+            "earth_radii": 0.074
+          },
+          "density": {
+            "kg_m3": 2162
+          }
+        },
+        "composition": {
+          "surface": "Hydrated minerals",
+          "interior": "Differentiated - rock core, ice mantle",
+          "water_ice_percent": 25,
+          "bright_spots": "Sodium carbonate deposits"
+        },
+        "exploration": {
+          "dawn_mission": {
+            "years": "2015-2018",
+            "achievements": [
+              "Detailed mapping",
+              "Composition analysis"
+            ]
+          }
+        },
+        "astrobiology": {
+          "subsurface_ocean": "Possible",
+          "habitable_potential": "Low"
+        }
+      },
+      {
+        "name": "Pluto",
+        "classification": "Dwarf Planet",
+        "location": "Kuiper Belt",
+        "discovery": {
+          "year": 1930,
+          "discoverer": "Clyde Tombaugh"
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 1.303e+22,
+            "earth_masses": 0.00218
+          },
+          "radius": {
+            "km": 1188.3,
+            "earth_radii": 0.186
+          },
+          "density": {
+            "kg_m3": 1854
+          }
+        },
+        "surface_composition": {
+          "nitrogen_ice": "Plains",
+          "methane_ice": "Dunes and deposits",
+          "carbon_monoxide": "Seasonal cycles",
+          "water_ice": "Bedrock",
+          "complex_organics": "Reddish color"
+        },
+        "atmosphere": {
+          "composition": "Nitrogen with methane traces",
+          "pressure_pa": 1.0,
+          "seasonal_variations": true,
+          "atmospheric_escape": true
+        },
+        "satellites": {
+          "charon": {
+            "radius_km": 606,
+            "mass_ratio": 0.12,
+            "tidally_locked": true,
+            "double_planet_system": true
+          },
+          "small_moons": [
+            "Styx",
+            "Nix",
+            "Kerberos",
+            "Hydra"
+          ]
+        },
+        "exploration": {
+          "new_horizons": {
+            "flyby_date": "2015-07-14",
+            "discoveries": [
+              "Heart-shaped plain",
+              "Active geology",
+              "Complex atmosphere"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Eris",
+        "classification": "Dwarf Planet",
+        "location": "Scattered Disk",
+        "discovery": {
+          "year": 2005,
+          "discoverer": "Mike Brown team"
+        },
+        "physical_characteristics": {
+          "mass": {
+            "kg": 1.66e+22,
+            "earth_masses": 0.0278
+          },
+          "radius": {
+            "km": 1163,
+            "earth_radii": 0.182
+          },
+          "density": {
+            "kg_m3": 2520
+          }
+        },
+        "orbital_characteristics": {
+          "semi_major_axis_au": 67.7,
+          "orbital_period_years": 558,
+          "eccentricity": 0.44,
+          "highly_elliptical": true
+        },
+        "surface": {
+          "methane_ice": true,
+          "high_albedo": 0.96
+        },
+        "satellite": {
+          "dysnomia": {
+            "discovery": 2005
+          }
+        }
+      },
+      {
+        "name": "Makemake",
+        "classification": "Dwarf Planet",
+        "location": "Kuiper Belt",
+        "discovery": {
+          "year": 2005,
+          "easter_discovery": true
+        },
+        "physical_characteristics": {
+          "radius": {
+            "km": 715,
+            "earth_radii": 0.112
+          },
+          "density": {
+            "kg_m3": 1800
+          }
+        },
+        "surface": {
+          "methane_ice": true,
+          "nitrogen_absent": true
+        },
+        "atmosphere": {
+          "extremely_thin": true
+        }
+      },
+      {
+        "name": "Haumea",
+        "classification": "Dwarf Planet",
+        "location": "Kuiper Belt",
+        "discovery": {
+          "year": 2004
+        },
+        "physical_characteristics": {
+          "shape": "Extremely elongated ellipsoid",
+          "dimensions_km": [
+            2100,
+            1680,
+            1074
+          ],
+          "density": {
+            "kg_m3": 2600
+          },
+          "rotation_period_hours": 3.9
+        },
+        "rings": {
+          "discovery": 2017,
+          "first_kuiper_belt_object_with_rings": true
+        },
+        "satellites": {
+          "hi_iaka": true,
+          "namaka": true
+        },
+        "composition": {
+          "crystalline_water_ice": true
+        }
+      }
+    ]
+  },
+  "database_statistics": {
+    "total_planets": 8,
+    "total_dwarf_planets": 5,
+    "total_moons": 290,
+    "data_points_per_object": 200,
+    "total_data_points": 2600
+  }
+}

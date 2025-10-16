@@ -1,0 +1,50 @@
+{
+  "scenario": "baseline",
+  "results": [
+    {
+      "year": 2030,
+      "albedo": 0.3,
+      "k": 0.646,
+      "T_eq": 254.6,
+      "T_surf": 288.4,
+      "hz_inner_au": 0.953,
+      "hz_outer_au": 1.374
+    },
+    {
+      "year": 2050,
+      "albedo": 0.3,
+      "k": 0.678,
+      "T_eq": 254.6,
+      "T_surf": 289.7,
+      "hz_inner_au": 0.953,
+      "hz_outer_au": 1.374
+    },
+    {
+      "year": 2100,
+      "albedo": 0.3,
+      "k": 0.758,
+      "T_eq": 254.6,
+      "T_surf": 293.1,
+      "hz_inner_au": 0.953,
+      "hz_outer_au": 1.374
+    },
+    {
+      "year": 2200,
+      "albedo": 0.3,
+      "k": 0.758,
+      "T_eq": 254.6,
+      "T_surf": 293.1,
+      "hz_inner_au": 0.953,
+      "hz_outer_au": 1.374
+    },
+    {
+      "year": 2500,
+      "albedo": 0.3,
+      "k": 0.758,
+      "T_eq": 254.6,
+      "T_surf": 293.1,
+      "hz_inner_au": 0.953,
+      "hz_outer_au": 1.374
+    }
+  ]
+}

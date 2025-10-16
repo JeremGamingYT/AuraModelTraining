@@ -1,0 +1,444 @@
+﻿Blueprint d'une Architecture Post-LLM : Intégration du Raisonnement Causal, de la Connaissance Dynamique et de l'Efficacité Computationnelle
+
+
+
+
+Partie I : Le Changement de Paradigme au-delà des Modèles Probabilistes
+
+
+
+
+1.1. Introduction : Les Limites Architecturales des Grands Modèles de Langage
+
+
+L'émergence des grands modèles de langage (LLM), principalement basés sur l'architecture Transformer, a représenté une avancée significative dans le domaine de l'intelligence artificielle. Leur capacité à générer du texte d'une fluidité remarquable et à accomplir une vaste gamme de tâches linguistiques a ouvert de nouvelles perspectives. Cependant, une analyse approfondie de leur conception fondamentale révèle des limitations inhérentes qui entravent leur progression vers une intelligence véritablement robuste, fiable et efficace. Ces limitations ne sont pas de simples défauts à corriger, mais des conséquences directes de leur paradigme architectural.
+
+
+Nature Probabiliste contre Raisonnement Factuel
+
+
+Au cœur de leur fonctionnement, les LLM sont des moteurs de prédiction de la prochaine unité de texte (le "token"). Leur entraînement sur des pétaoctets de données textuelles leur permet d'apprendre des schémas statistiques et des corrélations linguistiques complexes. Toutefois, cette force est aussi leur principale faiblesse : ils modélisent la probabilité d'une séquence de mots, et non la véracité des faits sous-jacents. Ce principe mène inévitablement au phénomène des "hallucinations", où le modèle génère des informations plausibles, bien structurées, mais factuellement incorrectes.1 Ce comportement n'est pas une anomalie, mais une caractéristique intrinsèque de leur nature statistique. Un LLM ne "sait" pas que la Terre est ronde ; il sait que la séquence de mots "la Terre est ronde" est statistiquement très probable dans son corpus d'entraînement. Cette distinction est fondamentale et constitue un obstacle majeur à leur utilisation dans des applications critiques où la fiabilité factuelle est non négociable.
+
+
+Le Problème de la "Boîte Noire"
+
+
+Les LLM modernes contiennent des milliards, voire des billions de paramètres. Cette complexité extrême transforme le modèle en une "boîte noire" opaque.1 Il est pratiquement impossible de tracer le cheminement logique qui mène à une réponse spécifique ou de comprendre pourquoi une décision a été prise. Cette absence d'explicabilité est un handicap rédhibitoire pour les domaines nécessitant une justification, une auditabilité et une confiance, tels que le diagnostic médical, le conseil juridique ou l'analyse financière.3 Lorsqu'un LLM commet une erreur, il est extrêmement difficile de la corriger de manière ciblée sans procéder à un réentraînement ou à un affinage coûteux, car la source de l'erreur est enfouie dans une interaction complexe et non interprétable de ses paramètres.3
+
+
+Crise de l'Échelle et de l'Énergie
+
+
+L'une des contraintes les plus pressantes du paradigme actuel des LLM est leur coût exorbitant en termes de ressources. L'entraînement de ces modèles nécessite des infrastructures de calcul à l'échelle de centres de données, consommant des quantités massives d'énergie.3 Un rapport de 2025 de l'Agence internationale de l'énergie a mis en évidence qu'un centre de calcul dédié à l'IA peut consommer autant d'électricité que 100 000 foyers, une tendance qui devrait s'intensifier.3 Cette trajectoire est non seulement insoutenable sur le plan environnemental, mais elle crée également une barrière technologique, réservant le développement de modèles de pointe à une poignée d'organisations disposant de ressources quasi illimitées.4 Cette réalité est en contradiction directe avec la nécessité de disposer de systèmes d'IA efficaces, accessibles et déployables sur du matériel grand public. Les limitations des LLM ne sont donc pas des défauts à corriger, mais des propriétés inhérentes au paradigme connexionniste pur. Leur force dans la reconnaissance de motifs à grande échelle est indissociable de leur faiblesse en matière de fiabilité et de raisonnement. Pour surmonter ces obstacles, un simple perfectionnement ne suffit pas ; un changement de paradigme est nécessaire.
+
+
+1.2. La Vision Neuro-Symbolique : Fusionner l'Apprentissage Intuitif et la Logique Rigoureuse
+
+
+Face aux limites fondamentales des approches purement neuronales, une nouvelle vision émerge : l'Intelligence Artificielle Neuro-Symbolique (IANS ou NSAI en anglais).5 Cette approche hybride ne cherche pas à remplacer les réseaux de neurones, mais à les augmenter en les combinant avec la rigueur et la transparence de l'IA symbolique. L'objectif est de créer des systèmes qui bénéficient du meilleur des deux mondes : la capacité des réseaux neuronaux à apprendre à partir de données brutes et non structurées, et la puissance de l'IA symbolique pour la manipulation de connaissances explicites, le raisonnement logique et l'explicabilité.1
+
+
+Analogie Cognitive : Système 1 et Système 2
+
+
+Une analogie puissante pour comprendre la philosophie de l'architecture neuro-symbolique est le modèle de la double vitesse de la pensée, popularisé par le psychologue et lauréat du prix Nobel Daniel Kahneman.2 Ce modèle postule que la cognition humaine repose sur deux systèmes distincts :
+* Le Système 1 (L'enveloppe neuronale) : Rapide, automatique, intuitif et inconscient. Il est responsable de la reconnaissance des formes, de la perception et des jugements instantanés. Dans notre modèle d'IA, ce système est incarné par le composant neuronal. Il gère l'interface avec le langage naturel, l'analyse sémantique initiale et la résolution d'ambiguïtés. C'est la partie "intuitive" du modèle.
+* Le Système 2 (Le noyau symbolique) : Lent, délibératif, logique et conscient. Il gère la planification, le raisonnement déductif, la vérification et la pensée analytique. Dans notre modèle, ce système est représenté par le composant symbolique. Il opère sur des connaissances structurées, effectue des déductions étape par étape et garantit la cohérence factuelle et logique.
+L'intégration de ces deux systèmes permet de créer une IA qui peut à la fois "sentir" la signification d'une question en langage naturel (Système 1) et "raisonner" méthodiquement pour trouver une réponse factuelle et justifiable (Système 2).
+
+
+Avantages Fondamentaux de l'Approche Hybride
+
+
+L'adoption d'une architecture neuro-symbolique offre des avantages directs qui répondent aux lacunes des LLM :
+* Réduction des Hallucinations et Fiabilité Accrue : Le noyau symbolique agit comme un garde-fou. Il ancre les sorties du composant neuronal dans une base de connaissances explicite, vérifiant la cohérence logique et factuelle des informations générées. Cela permet d'éliminer une grande partie des erreurs et des hallucinations.1
+* Explicabilité Intrinsèque : Contrairement à la "boîte noire" neuronale, les chemins de raisonnement au sein du système symbolique sont entièrement traçables. Le modèle peut "montrer son travail" en présentant la séquence d'inférences logiques et de faits qui ont conduit à la réponse, offrant ainsi une transparence totale.2
+* Efficacité en Données et en Ressources : Les systèmes symboliques ne nécessitent pas de vastes corpus pour leur "entraînement". Leur connaissance est encodée de manière explicite. De plus, les opérations logiques peuvent être exécutées efficacement sur des processeurs standards (CPU), réduisant ainsi la dépendance aux GPU coûteux et énergivores, ce qui allège considérablement la charge du composant neuronal.1
+Pour synthétiser ce changement de paradigme, le tableau suivant compare directement l'approche LLM traditionnelle avec le Modèle Causal Neuro-Symbolique (MCNS) proposé. Ce tableau sert de fiche technique de haut niveau, illustrant comment la nouvelle architecture répond directement aux principaux défis identifiés.
+Caractéristique
+	Grand Modèle de Langage (LLM)
+	Modèle Causal Neuro-Symbolique (MCNS)
+	Paradigme Fondamental
+	Connexionniste (Prédiction Probabiliste)
+	Hybride (Intégration Neuro-Symbolique)
+	Besoin en Données
+	Massif (Pétaoctets)
+	Minimal (Document Unique/Few-Shot)
+	Type de Raisonnement
+	Corrélationnel / Associatif
+	Logique / Déductif / Causal
+	Explicabilité
+	"Boîte Noire" (Opaque)
+	Interprétable / "Boîte de Verre" (Traçable)
+	Ancrage Factuel
+	Sujet aux Hallucinations
+	Ancré dans un Graphe de Connaissances Explicite
+	Besoins Matériels
+	Échelle de Centre de Données (VRAM/TPU élevés)
+	Échelle Grand Public/Edge (VRAM/CPU faibles)
+	Correction d'Erreurs
+	Difficile (Nécessite Réentraînement/Affinage)
+	Ciblée (Ajustement de Règle/Fait)
+	________________
+
+
+Partie II : La Fondation - Ingestion et Représentation des Connaissances en "One-Shot"
+
+
+Cette partie détaille la première étape critique de l'architecture : la manière dont le modèle acquiert et structure une connaissance approfondie à partir d'une source de données minimale, comme un unique document, satisfaisant ainsi l'exigence d'une frugalité extrême en matière de données.
+
+
+2.1. Du Document Non Structuré au Graphe de Connaissances (KG) Dynamique
+
+
+La construction d'une base de connaissances (Knowledge Base Construction, KBC) à partir d'une seule source représente un défi majeur, contrastant avec les approches traditionnelles qui s'appuient sur l'analyse de vastes corpus pour extraire et valider des faits.12 L'objectif ici n'est pas simplement d'extraire des triplets d'informations, mais de construire une structure de connaissances cohérente, riche et immédiatement exploitable à partir d'un seul document, par exemple une page Wikipédia sur Albert Einstein. Ce processus peut être décomposé en plusieurs étapes séquentielles et intelligentes.
+
+
+Étape 1 : Analyse, Nettoyage et Segmentation du Document
+
+
+Le processus commence par l'ingestion du document source. Celui-ci est d'abord analysé et nettoyé pour en extraire le contenu textuel brut. Ensuite, le texte est segmenté en unités sémantiquement cohérentes, ou "chunks", comme des paragraphes ou des sections.13 Pour des documents complexes (par exemple, des PDF contenant du texte, des tableaux et des images), cette étape initiale fait appel à des techniques d'analyse de la mise en page pour séparer et identifier les différents types de contenu, garantissant que chaque modalité est traitée de manière appropriée.14 Cette fragmentation est cruciale pour permettre au modèle de traiter des morceaux d'information gérables et de contextualiser les faits extraits.
+
+
+Étape 2 : Génération Dynamique d'Ontologie/Schéma
+
+
+Une extraction naïve de triplets (sujet, prédicat, objet) à partir d'un document unique mènerait à un graphe de connaissances désorganisé, avec des types de relations et d'entités redondants ou incohérents.13 Pour éviter cet écueil, une étape préliminaire et innovante est nécessaire : la génération d'un schéma (ou d'une ontologie) dynamique et spécifique au contexte du document. Le composant neuronal du modèle effectue une première lecture globale du document pour en identifier les concepts centraux et les types de relations qui les unissent. Par exemple, à partir de la page sur Einstein, il identifierait des types d'entités fondamentaux comme Personne, Théorie, Université, Prix, Publication et des types de relations comme a_développé, a_travaillé_à, a_reçu, a_publié_en. Cette étape de méta-apprentissage sur la structure de la connaissance elle-même fournit un cadre contraignant qui garantit que le graphe de connaissances résultant sera bien structuré, sémantiquement cohérent et pertinent pour le domaine traité.14 Le modèle n'apprend pas seulement les faits, il apprend comment organiser les faits.
+
+
+Étape 3 : Extraction d'Entités et de Relations en "One-Shot"
+
+
+Une fois le schéma défini, un modèle neuronal léger, ou un LLM plus grand utilisé via des techniques de "prompting" et de sortie structurée, parcourt chaque "chunk" de texte. Sa mission est d'extraire les entités et les relations qui se conforment au schéma préalablement généré.15 Des outils pratiques, comme les fonctions with_structured_output de bibliothèques telles que LangChain, peuvent être utilisés pour garantir que la sortie est formatée en JSON ou en triplets RDF, la rendant directement ingérable par une base de données de graphes.13 Chaque fait extrait est ainsi immédiatement catalogué selon les catégories définies, assurant la propreté et la cohérence de la base de connaissances.
+
+
+Étape 4 : Désambiguïsation et Liaison des Entités
+
+
+Les entités extraites (par exemple, "Princeton" ou "Berlin") peuvent être ambiguës. Pour résoudre ce problème, chaque entité est liée à un identifiant canonique.17 Si une connexion externe est autorisée, cela peut se faire en les reliant à des entrées dans des bases de connaissances de référence comme Wikidata. En l'absence de connexion, le système maintient une carte de cohérence interne pour s'assurer qu'une même entité mentionnée de différentes manières (par exemple, "A. Einstein" et "Albert Einstein") est mappée sur le même nœud dans le graphe.
+
+
+2.2. Le Graphe de Connaissances comme "Cerveau" du Modèle
+
+
+Le graphe de connaissances (KG) ainsi construit n'est pas une simple collection de faits ; il devient la mémoire explicite et structurée du modèle, son "cerveau" logique.
+
+
+Structures de Données et Stockage
+
+
+Le choix d'une technologie de base de données de graphes native, telle que Neo4j, est essentiel. Ces bases de données sont optimisées pour stocker des structures de graphes et exécuter des requêtes complexes qui traversent les relations, ce qui est fondamental pour le raisonnement multi-sauts.13 Le KG sert de représentation persistante et interrogeable de la connaissance acquise par le modèle.
+
+
+Connaissances Temporelles et d'Ordre Supérieur
+
+
+Pour une compréhension profonde, le KG doit aller au-delà des simples triplets. L'architecture est conçue pour capturer des aspects plus complexes :
+* Connaissances Temporelles : Les faits sont souvent valides dans un certain intervalle de temps. Le KG stocke cette information en tant que propriété des relations, par exemple : (Einstein, a_travaillé_à, Institut_d'Études_Avancées, {début: 1933, fin: 1955}). Cela permet de répondre à des questions dépendant du temps, une limitation majeure des KG statiques traditionnels.18
+* Relations d'Ordre Supérieur (n-aires) : Certains faits impliquent plus de deux entités. Par exemple, "Einstein a reçu le prix Nobel de physique en 1921 pour sa découverte de l'effet photoélectrique". Ceci est une relation n-aire qui peut être modélisée dans le graphe, reliant Einstein, le prix Nobel, l'année et la découverte. La capacité de représenter ces relations complexes est cruciale pour une modélisation fidèle du monde réel.20
+
+
+Augmentation Dynamique du Graphe
+
+
+Le KG n'est pas une structure statique figée après sa création initiale. Il est conçu pour être dynamique. Au fur et à mesure que le modèle raisonne et interagit, il peut déduire de nouveaux faits par inférence logique. Ces faits nouvellement découverts peuvent être ajoutés au graphe, enrichissant et densifiant continuellement la base de connaissances. Ce processus crée une boucle vertueuse où le raisonnement améliore la connaissance, et une connaissance plus riche permet un raisonnement plus profond.
+________________
+
+
+Partie III : L'Architecture Centrale - Un Moteur de Raisonnement Hybride
+
+
+Cette section présente en détail les deux composants principaux du modèle et, de manière cruciale, la manière dont ils interagissent pour produire un comportement intelligent et cohérent. L'architecture est conçue comme une collaboration synergique entre un raisonneur logique et un processeur de langage intuitif.
+
+
+3.1. Le Noyau Symbolique : Un Raisonneur Logique et Vérifiable
+
+
+Ce composant incarne le "Système 2" de notre modèle. Il ne traite pas directement le langage naturel brut, mais opère exclusivement sur le graphe de connaissances (KG) structuré. Son rôle est d'exécuter des processus de raisonnement formels, dont chaque étape est vérifiable et explicable.
+
+
+Technologies et Fondements
+
+
+Le noyau symbolique s'appuie sur des technologies éprouvées issues du Web Sémantique et de la logique formelle. La connaissance est représentée à l'aide de standards comme RDF (Resource Description Framework) et OWL (Web Ontology Language), qui permettent de définir des schémas, des contraintes et des hiérarchies de concepts.21 Pour interroger et raisonner sur ces connaissances, le noyau utilise un moteur d'inférence. Il peut s'agir d'un moteur de requêtes comme SPARQL, capable d'effectuer des recherches complexes dans le graphe, ou d'un moteur logique plus puissant basé sur Datalog, comme Scallop, qui permet de définir des règles déductives.5
+
+
+Capacités de Raisonnement
+
+
+Le noyau symbolique est doté de plusieurs capacités de raisonnement de haut niveau :
+* Raisonnement Multi-sauts (Multi-hop Reasoning) : Il excelle à répondre à des questions qui nécessitent de connecter plusieurs faits (ou "sauts") au sein du KG. Par exemple, pour répondre à la question "Quelle université a employé le scientifique qui a développé la théorie de la relativité?", le moteur doit d'abord trouver qui a développé la théorie, puis trouver l'employeur de cette personne. C'est une tâche triviale pour un moteur de graphe, mais souvent difficile pour un LLM pur.22
+* Déduction Logique : En s'appuyant sur les règles définies dans l'ontologie (par exemple, si "X est un physicien théoricien", alors "X est un scientifique"), le moteur peut inférer de nouvelles connaissances qui ne sont pas explicitement présentes dans le texte source.
+* Satisfaction des Contraintes : Le noyau garantit que toutes les réponses et inférences respectent les contraintes logiques du schéma. Par exemple, il ne permettra pas d'affirmer qu'une Théorie a "reçu" un Prix, car la relation "recevoir" ne peut s'appliquer qu'à une Personne.
+
+
+3.2. L'Enveloppe Neuronale : Un Processeur de Langage Intuitif
+
+
+Ce composant est le "Système 1" du modèle. Il agit comme l'interface principale avec l'utilisateur et le monde non structuré du langage naturel. Il est crucial de noter que cette enveloppe ne contient pas la connaissance factuelle du monde ; sa "connaissance" est purement procédurale et linguistique. Son rôle est de comprendre et de générer du langage, pas de stocker des faits.
+
+
+Architecture Optimisée
+
+
+Contrairement aux LLM monolithiques, l'enveloppe neuronale est conçue pour être un réseau de neurones beaucoup plus petit et hautement optimisé. Son objectif n'est pas la mémorisation de faits, mais la maîtrise des subtilités du langage. Deux architectures principales sont envisagées :
+1. Un modèle basé sur Transformer, distillé et optimisé : Une version compacte d'un modèle de type Transformer, entraînée spécifiquement pour les tâches de compréhension et de génération de requêtes, et non pour la connaissance générale.
+2. Un Réseau de Neurones à Impulsions (Spiking Neural Network, SNN) : Une architecture de nouvelle génération, radicalement plus efficace sur le plan énergétique, qui sera détaillée dans la Partie V.
+
+
+Capacités Linguistiques
+
+
+L'enveloppe neuronale est spécialisée dans les tâches suivantes :
+* Compréhension de la Requête : Elle analyse la question de l'utilisateur en langage naturel pour en extraire l'intention, les entités clés (par exemple, "Einstein", "prix Nobel") et le type de raisonnement requis (par exemple, une simple recherche de fait, une explication causale, une comparaison).7
+* Guidage Heuristique : Elle traduit la question, souvent ambiguë, de l'utilisateur en une stratégie de raisonnement ou en une série de requêtes formelles potentielles pour le noyau symbolique. Elle ne génère pas forcément une requête SPARQL parfaite du premier coup, mais elle peut suggérer au système de raisonnement quels chemins dans le KG sont les plus prometteurs à explorer pour trouver la réponse.22
+* Génération de la Réponse : Une fois que le noyau symbolique a trouvé et structuré la réponse (par exemple, un ensemble de faits ou un chemin de raisonnement), l'enveloppe neuronale prend le relais pour synthétiser ces informations structurées en une réponse cohérente, fluide et naturelle pour l'utilisateur.
+
+
+3.3. Modèles d'Intégration : Architecturer la "Poignée de Main" Neuro-Symbolique
+
+
+Le succès de l'architecture dépend de manière critique de la manière dont les composants neuronal et symbolique collaborent. Une simple pipeline est souvent fragile. L'approche la plus robuste est un système de co-raisonnement dynamique.6
+
+
+Analyse des Modèles d'Interaction
+
+
+Plusieurs modèles d'intégration ont été explorés dans la recherche :
+* Neuronal → Symbolique : Le modèle neuronal génère une requête formelle (par exemple, SPARQL) qui est ensuite exécutée par le raisonneur symbolique.21 Ce modèle est simple mais peut être fragile, car la moindre erreur de syntaxe dans la requête générée la rend inutilisable.
+* Symbolique → Neuronal : Le raisonneur symbolique extrait des faits pertinents du KG, qui sont ensuite injectés dans le contexte du modèle neuronal pour qu'il génère une réponse. Ce modèle est sujet aux hallucinations si le composant neuronal ignore ou interprète mal les faits fournis.
+
+
+Approche Recommandée : Co-Raisonnement via un Système Multi-Agents
+
+
+L'architecture proposée s'inspire des systèmes multi-agents pour créer une collaboration plus riche et itérative.25
+* Agent Neuronal : L'enveloppe neuronale agit comme un agent linguistique flexible, capable de comprendre les nuances et de formuler des hypothèses.
+* Agent Symbolique (ou Raisonneur à base d'arbres) : Le noyau symbolique agit comme un agent logique précis, capable de vérifier des faits et d'exécuter des déductions rigoureuses.
+* Orchestrateur Central : Un module de contrôle, ou orchestrateur, gère le dialogue entre les deux agents. Il décompose la question de l'utilisateur en sous-problèmes. Il peut poser une question heuristique à l'agent neuronal ("Quels sont les liens possibles entre Einstein et les prix?"), utiliser la réponse pour formuler une requête précise à l'agent symbolique ("Lister tous les prix reçus par l'entité 'Einstein'"), puis utiliser les résultats factuels pour affiner la prochaine étape du raisonnement.
+Ce dialogue itératif est bien plus puissant qu'une simple passe. Il permet au système de corriger sa trajectoire, d'explorer différentes hypothèses et de résoudre des problèmes complexes en les décomposant en étapes gérables, un processus qui imite de près la cognition humaine. L'interaction n'est pas une simple "poignée de main", mais une conversation continue où l'intuition guide la logique, et la logique valide l'intuition. Des cadres comme le "Reasoning with Trees" (RwT), qui utilisent des algorithmes de recherche comme Monte Carlo Tree Search (MCTS) où un LLM fournit des heuristiques pour guider l'exploration d'un KG, sont des exemples concrets de cette approche collaborative.22
+________________
+
+
+Partie IV : Atteindre une Compréhension Authentique
+
+
+Cette section aborde l'exigence la plus ambitieuse de la requête : doter le modèle d'une compréhension qui dépasse la simple restitution de faits pour englober la causalité, l'intention et le "bon sens". Pour y parvenir, l'architecture superpose des couches de connaissances de plus en plus abstraites sur la base factuelle du graphe de connaissances.
+
+
+4.1. Intégrer la Causalité : Passer du "Quoi" au "Pourquoi"
+
+
+Un graphe de connaissances, même factuellement parfait, ne représente que des corrélations. Il peut indiquer qu'Einstein a publié un article sur l'effet photoélectrique en 1905 et qu'il a reçu le prix Nobel en 1921, mais il n'explique pas la relation de cause à effet entre ces deux événements. Pour comprendre le "pourquoi", une couche de raisonnement causal est indispensable.26
+
+
+Construction de la Couche Causale
+
+
+Après la construction du KG initial, une deuxième phase d'analyse est lancée. Un algorithme de découverte causale examine les relations et les temporalités dans le KG pour inférer une structure causale, généralement représentée sous la forme d'un Graphe Acyclique Dirigé (Directed Acyclic Graph, DAG).28 Dans ce graphe causal, les nœuds représentent des variables ou des événements, et les arêtes dirigées représentent des liens de causalité. Par exemple, l'algorithme inférerait une arête allant de (publication_sur_effet_photoélectrique) à (réception_prix_Nobel), indiquant que le premier événement est une cause du second. Cette structure est modélisée à l'aide de Modèles Causals Structurels (SCM) qui définissent mathématiquement comment chaque variable est influencée par ses causes.
+
+
+Moteur de Raisonnement Causal
+
+
+Une fois le graphe causal établi, le modèle peut effectuer des formes de raisonnement bien plus sophistiquées :
+* Raisonnement Contrefactuel : C'est la capacité de répondre à des questions "et si...?". En effectuant des "interventions" sur le graphe causal (c'est-à-dire en modifiant la valeur d'une variable pour simuler un scénario hypothétique), le modèle peut explorer des réalités alternatives.28 Par exemple, il pourrait répondre à la question : "Quelles auraient été les conséquences sur la carrière d'Einstein s'il n'avait pas publié ses articles de 1905?" en simulant la suppression de ce nœud et en observant les effets en cascade sur le reste du graphe.
+* Identification des Facteurs de Confusion (Confounders) : L'une des tâches les plus difficiles en inférence causale, surtout à partir de textes, est d'identifier les variables cachées qui influencent à la fois une cause et un effet potentiels, créant une corrélation fallacieuse. Le cadre causal permet de modéliser et de tenter de contrôler ces facteurs de confusion, menant à des conclusions plus robustes.26
+
+
+Implémentation Pratique
+
+
+La mise en œuvre de cette couche causale peut s'appuyer sur des bibliothèques Python spécialisées. Des outils comme DoWhy et CausalImpact fournissent des cadres de bout en bout pour la modélisation causale, l'estimation des effets et les tests de robustesse.28 Des bibliothèques plus spécifiques au NLP, comme CausalNLP, sont conçues pour gérer les défis liés à l'extraction de relations causales à partir de textes non structurés, en utilisant des méta-apprenants (comme le T-learner ou le X-learner) pour estimer les effets de traitement où le texte lui-même peut être un facteur de confusion.30
+
+
+4.2. Raisonner avec le Bon Sens et l'Intention
+
+
+Même avec une connaissance factuelle et causale, une IA peut échouer à comprendre les nuances du monde réel si elle manque de "bon sens" – cette vaste collection de connaissances implicites que les humains utilisent constamment pour interpréter le langage et les situations.
+
+
+Intégration d'une Base de Connaissances de Bon Sens
+
+
+Pour combler cette lacune, le noyau symbolique du modèle peut être enrichi en reliant son KG spécifique au domaine à une base de connaissances de bon sens fondamentale et préexistante, comme ConceptNet ou Cyc. Cette liaison permet au modèle d'accéder à des millions de faits implicites sur le monde. Par exemple, même si la page Wikipédia ne le dit pas explicitement, le lien avec une base de connaissances de bon sens permettrait au modèle de savoir qu'une "université" est un "lieu d'apprentissage", que "recevoir un prix" est un "événement positif", ou que les "théories scientifiques" sont des "formes de connaissance abstraite". Cette connaissance de fond est essentielle pour interpréter correctement l'intention derrière des questions complexes.
+
+
+Raisonnement Agentique pour l'Intention
+
+
+Pour véritablement comprendre l'intention, le modèle doit passer d'un simple répondeur passif à un résolveur de problèmes actif. Les cadres de raisonnement agentique, tels que ReAct (Reasoning and Action), permettent cette transition.33 Dans ce paradigme, l'enveloppe neuronale ne se contente pas de traduire la question de l'utilisateur. Elle formule un plan d'action pour y répondre. Ce plan décompose une requête complexe en une série d'étapes logiques, causales ou de recherche d'informations. Chaque étape est ensuite exécutée par le noyau symbolique.
+Par exemple, face à la question "Einstein était-il un bon père?", le modèle agentique pourrait générer le plan suivant :
+1. Raisonner : La notion de "bon père" est subjective et n'est probablement pas un fait direct dans le KG.
+2. Action : Rechercher dans le KG des entités liées à Einstein par des relations familiales (par exemple, a_pour_enfant).
+3. Action : Pour chaque enfant trouvé, rechercher des faits décrivant la nature de leur relation avec Einstein (par exemple, des lettres, des événements partagés, des conflits).
+4. Raisonner : Synthétiser les faits trouvés (qui peuvent être positifs, négatifs ou neutres) pour formuler une réponse nuancée.
+Ce processus délibératif permet au modèle de s'attaquer à des questions ouvertes et subjectives en les fondant sur des preuves factuelles, se rapprochant ainsi d'une véritable compréhension de l'intention. Une compréhension authentique émerge donc de la synthèse de trois couches de connaissances distinctes mais interconnectées : la couche factuelle (le "quoi" du KG), la couche causale (le "pourquoi" du graphe causal), et la couche implicite (le contexte fourni par le bon sens). Le cadre agentique est le mécanisme exécutif qui permet au modèle de naviguer intelligemment entre ces couches pour construire une réponse complète.
+________________
+
+
+Partie V : Ingénierie pour une Efficacité Extrême
+
+
+Cette section aborde directement les contraintes matérielles strictes de la requête (12 Go de VRAM, 20 Go de RAM). Atteindre cet objectif nécessite une stratégie d'optimisation à plusieurs volets, allant de l'amélioration des architectures neuronales existantes à l'adoption de paradigmes de calcul radicalement nouveaux et plus efficaces.
+
+
+5.1. Optimisation des Composants Neuronaux : Élégage et Quantification
+
+
+L'enveloppe neuronale, bien que conçue pour être plus légère qu'un LLM standard, reste le composant le plus gourmand en ressources, en particulier en VRAM. Pour qu'elle s'intègre dans le budget matériel défini, des techniques d'optimisation de modèle agressives sont nécessaires.
+
+
+Élagage (Pruning)
+
+
+L'élagage est une technique qui consiste à supprimer les connexions (poids) ou les neurones redondants ou non essentiels d'un réseau neuronal après son entraînement. De nombreux paramètres dans un grand réseau ont une contribution négligeable à la performance globale. En identifiant et en supprimant ces paramètres, on peut réduire considérablement la taille du modèle et le nombre d'opérations nécessaires pour l'inférence, souvent avec une perte de précision minimale, voire nulle.34 Des méthodes comme l'élagage basé sur la magnitude (suppression des poids proches de zéro) ou l'élagage structuré (suppression de neurones ou de couches entières) peuvent être appliquées pour compresser le modèle.
+
+
+Quantification
+
+
+La quantification est une autre technique puissante qui réduit l'empreinte mémoire et accélère le calcul. Elle consiste à diminuer la précision numérique des poids et des activations du modèle. Au lieu de stocker ces valeurs sous forme de nombres à virgule flottante de 32 bits (FP32), on les convertit en formats plus compacts, comme des entiers de 8 bits (INT8) ou même des formats encore plus petits.34 Cette réduction de la précision diminue drastiquement la taille du modèle en mémoire et la bande passante nécessaire pour le charger. De plus, les opérations sur des entiers sont beaucoup plus rapides et moins énergivores sur la plupart des matériels (CPU et GPU) que les opérations sur des nombres à virgule flottante.36
+La combinaison de l'élagage et de la quantification permet de créer une enveloppe neuronale extrêmement compacte et rapide, capable de s'exécuter efficacement sur du matériel aux ressources limitées, tout en conservant la puissance nécessaire pour ses tâches de traitement du langage.
+
+
+5.2. L'Avenir de l'Efficacité : Les Réseaux de Neurones à Impulsions (SNN) pour l'Enveloppe Neuronale
+
+
+Au-delà de l'optimisation des architectures existantes, une approche plus révolutionnaire consiste à changer fondamentalement le modèle de calcul neuronal. Les Réseaux de Neurones à Impulsions (Spiking Neural Networks, SNN) représentent cette alternative. Considérés comme la "troisième génération" de réseaux de neurones, les SNN s'inspirent plus fidèlement du fonctionnement du cerveau biologique.37
+
+
+L'Avantage de l'Efficacité Énergétique
+
+
+Contrairement aux Réseaux de Neurones Artificiels (ANN) traditionnels qui effectuent des multiplications de matrices denses à chaque passe, les SNN fonctionnent de manière fondamentalement différente :
+* Calcul Événementiel (Event-Driven) : Les neurones dans un SNN ne sont pas toujours actifs. Ils ne communiquent que lorsqu'ils reçoivent suffisamment de signaux pour "décharger" une impulsion (un "spike"). Le reste du temps, ils sont inactifs et ne consomment pas d'énergie. Le calcul est donc intrinsèquement épars et événementiel.40
+* Remplacement des Multiplications par des Additions : Le traitement des "spikes" repose principalement sur des opérations d'accumulation (additions), qui sont beaucoup moins coûteuses sur le plan énergétique que les multiplications-accumulations (MAC) des ANN.41
+* Adéquation au Matériel Neuromorphique : Cette nature événementielle et à faible consommation rend les SNN parfaitement adaptés aux puces neuromorphiques, mais aussi très efficaces sur du matériel conventionnel, en particulier pour les applications en périphérie de réseau (edge computing) où l'énergie et la latence sont critiques.38
+
+
+Les SNN pour le Traitement du Langage Naturel (NLP)
+
+
+Historiquement, l'application des SNN à des tâches complexes comme le NLP a été un défi. Cependant, des recherches récentes ont fait des progrès significatifs. De nouvelles méthodes permettent de convertir efficacement le texte en trains d'impulsions temporelles qui peuvent être traités par les SNN.41 Des architectures innovantes, comme SpikingMamba, combinent l'efficacité des SNN avec des structures de modèles de langage modernes pour minimiser la perte de précision tout en réalisant des gains énergétiques considérables (un bénéfice énergétique de 4.76x rapporté).40 Des défis subsistent, notamment le compromis entre la latence d'inférence (le nombre de pas de temps nécessaires pour obtenir une réponse) et la précision. Cependant, de nouvelles techniques d'entraînement (comme l'utilisation de gradients surrogés) et de nouveaux modèles de neurones à impulsions (comme le TI-LIF, qui permet des impulsions ternaires pour mieux représenter la polarité sémantique) surmontent progressivement ces obstacles.40
+L'adoption d'un SNN pour l'enveloppe neuronale n'est pas une simple optimisation ; c'est un changement architectural fondamental qui s'aligne parfaitement avec les objectifs de l'ensemble du système. De plus, la nature temporelle du traitement des SNN pourrait se révéler intrinsèquement mieux adaptée au traitement de données séquentielles comme le langage, où le timing et l'ordre des informations sont cruciaux. Un train d'impulsions est un signal temporel, tout comme la parole ou le texte. Cette congruence suggère qu'une enveloppe neuronale basée sur les SNN pourrait être non seulement plus efficace, mais potentiellement plus performante pour la compréhension du langage, marquant un véritable changement de paradigme.
+________________
+
+
+Partie VI : Synthèse - Un Blueprint Architectural
+
+
+Cette dernière partie rassemble tous les concepts précédents en une conception de système unique et cohérente. Elle fournit un schéma directeur clair et une vision exploitable de l'architecture proposée, illustrant comment les différents composants interagissent pour répondre à une requête complexe.
+
+
+6.1. Schéma du Système Intégré et Flux de Travail
+
+
+Le schéma ci-dessous illustre l'architecture complète et le flux de données, de la question de l'utilisateur à la réponse finale.
+1. Entrée : Un utilisateur pose une question en langage naturel (par exemple, "Pourquoi le travail d'Einstein sur l'effet photoélectrique, et non la relativité, a-t-il été la raison principale de son prix Nobel?").
+2. Enveloppe Neuronale (basée sur SNN) : Le composant neuronal, optimisé pour l'efficacité, reçoit la requête. Il l'analyse pour en comprendre l'intention (une demande d'explication causale), identifier les entités clés (Einstein, effet photoélectrique, relativité, prix Nobel) et formuler un plan de raisonnement de haut niveau.
+3. Module KBC "One-Shot" : Si un nouveau document est fourni avec la requête (ou si c'est la première interaction), ce module est activé. Il ingère le document, génère un schéma dynamique, construit le Graphe de Connaissances (KG) factuel, infère la couche de Graphe Causal, et établit des liens avec la base de connaissances de bon sens. Cette base de connaissances devient la mémoire de travail du système.
+4. Orchestrateur Central : Ce module de contrôle prend le plan de raisonnement de l'enveloppe neuronale et le traduit en une série de sous-tâches. Il gère le dialogue entre l'enveloppe neuronale et le noyau symbolique.
+5. Noyau Symbolique : L'orchestrateur envoie des requêtes formelles au noyau symbolique. Ce dernier exécute des requêtes logiques, causales et de bon sens sur les différentes couches de connaissances (KG, Graphe Causal, Base de Bon Sens).
+6. Boucle Itérative de Raisonnement : Le processus est rarement linéaire. L'orchestrateur facilite un dialogue. Le noyau symbolique peut renvoyer des résultats partiels ou des ambiguïtés. L'orchestrateur transmet ces informations à l'enveloppe neuronale, qui peut alors affiner le plan ou poser une nouvelle question heuristique pour guider la prochaine étape du raisonnement symbolique. Cette boucle se poursuit jusqu'à ce qu'une solution complète et cohérente soit trouvée.
+7. Sortie : L'orchestrateur transmet la réponse finale structurée (un ensemble de faits, de liens de causalité et d'inférences) à l'enveloppe neuronale. Celle-ci synthétise ces informations en une réponse complète, nuancée et explicable en langage naturel, en citant les preuves qui soutiennent sa conclusion.
+
+
+6.2. Exemple de Démonstration : Déconstruction d'une Requête sur Einstein
+
+
+Pour illustrer concrètement le fonctionnement du système, suivons le traitement d'une requête complexe à partir d'une seule source de données.
+* Document : La page Wikipédia sur Albert Einstein.
+* Requête : "Pourquoi le travail d'Einstein sur l'effet photoélectrique, et non la relativité, a-t-il été la raison principale de son prix Nobel, et qu'aurait-il pu se passer si le comité Nobel avait pleinement accepté la relativité plus tôt?"
+
+
+Exécution Étape par Étape :
+
+
+1. Phase KBC (si nécessaire) : Le modèle ingère la page. Il crée un KG contenant des entités comme Einstein, Effet Photoélectrique, Relativité Générale, Prix Nobel de Physique, et des relations temporelles comme (Einstein, a_publié, Article_sur_l'Effet_Photoélectrique, 1905) et (Einstein, a_reçu, Prix_Nobel, 1921).
+2. Construction de la Couche Causale : En analysant les textes et les dates, le système infère des liens de causalité. Il établit que (publication_sur_effet_photoélectrique) est une cause de (nomination_pour_Nobel). Il identifie également des phrases dans le texte suggérant que la (controverse_sur_la_relativité) a eu une influence négative sur (attribution_du_prix_pour_la_relativité).
+3. Déconstruction de la Requête (Enveloppe Neuronale) : L'enveloppe neuronale identifie que la requête est composée de deux parties distinctes :
+   * Une demande d'explication causale ("Pourquoi X et non Y?").
+   * Une demande de raisonnement contrefactuel ("Que se serait-il passé si Z?").
+4. Raisonnement (Noyau Symbolique + Orchestrateur) :
+   * Partie 1 (Explication causale) : L'orchestrateur demande au noyau symbolique de tracer le chemin factuel entre Einstein et Prix Nobel. Le noyau confirme que le lien passe par Effet Photoélectrique. Ensuite, l'orchestrateur interroge la couche causale pour expliquer l'absence d'un lien via Relativité. Le graphe causal identifie le nœud controverse_sur_la_relativité comme un facteur inhibiteur.
+   * Partie 2 (Contrefactuel) : La deuxième partie de la requête déclenche une simulation sur le graphe causal. L'orchestrateur demande au moteur causal d'effectuer une "intervention" : il supprime temporairement le nœud controverse_sur_la_relativité et ses effets inhibiteurs. Le moteur prédit alors un résultat alternatif plausible, comme "l'attribution du prix Nobel pour la relativité aurait été probable, potentiellement plus tôt".
+5. Synthèse de la Réponse (Enveloppe Neuronale) : Le modèle génère une réponse complète et structurée :
+   * "Albert Einstein a reçu le prix Nobel de physique en 1921 principalement pour sa loi sur l'effet photoélectrique, comme le confirment les archives du comité Nobel. [Fait du KG]"
+   * "Bien que sa théorie de la relativité soit aujourd'hui plus célèbre, elle était considérée comme trop controversée et insuffisamment prouvée expérimentalement à l'époque, ce qui a empêché le comité de la récompenser. [Inférence de la couche causale]"
+   * "Dans un scénario contrefactuel où la relativité aurait été acceptée plus tôt, il est plausible qu'il aurait reçu le prix pour cette théorie, ce qui aurait pu accélérer son adoption par la communauté scientifique."
+
+
+6.3. Défis, Questions de Recherche Ouvertes et Feuille de Route Future
+
+
+Bien qu'ambitieuse, cette architecture n'est pas de la science-fiction. Elle est une synthèse logique des trajectoires de recherche les plus prometteuses en IA. Cependant, sa réalisation complète présente des défis significatifs et des questions de recherche ouvertes.
+
+
+Évaluation Honnête des Défis
+
+
+* Intégration Neuro-Symbolique : La conception d'un orchestrateur robuste capable de gérer de manière fluide et efficace le dialogue entre les composants neuronal et symbolique est un défi d'ingénierie complexe. La gestion des conflits et la fusion des informations provenant des deux paradigmes restent un domaine de recherche actif.3
+* Maturité des SNN pour le NLP : Bien que prometteurs, les SNN pour le traitement du langage naturel sont encore moins matures que les architectures basées sur les Transformers. Des recherches supplémentaires sont nécessaires pour améliorer leur précision et réduire la latence d'inférence afin qu'ils égalent ou dépassent leurs homologues ANN dans des tâches linguistiques complexes.
+* Découverte Causale à partir de Texte : L'inférence de relations causales robustes à partir de textes non structurés est intrinsèquement difficile et constitue l'une des frontières de la recherche en IA. La mise à l'échelle et la validation de ces méthodes sont des défis majeurs.44
+
+
+Feuille de Route pour la Recherche et le Développement
+
+
+Une approche progressive est recommandée pour construire un prototype de ce système :
+1. Phase 1 (Prototype de base) : Développer un système avec une enveloppe neuronale basée sur un Transformer distillé et un noyau symbolique opérant sur un KG statique. L'intégration se fera via un modèle simple (par exemple, Neuronal → Symbolique). L'objectif est de valider le pipeline de base de compréhension de la requête et de raisonnement factuel.
+2. Phase 2 (Intégration Avancée) : Remplacer le pipeline simple par un orchestrateur et une architecture multi-agents pour permettre un co-raisonnement itératif. Intégrer le module de construction de KG dynamique "one-shot".
+3. Phase 3 (Raisonnement Causal) : Ajouter la couche de découverte causale et le moteur d'inférence contrefactuelle. Valider la capacité du système à répondre à des questions "pourquoi" et "et si".
+4. Phase 4 (Optimisation Extrême) : Remplacer l'enveloppe neuronale basée sur Transformer par une architecture SNN. Optimiser l'ensemble du système pour atteindre les contraintes matérielles cibles.
+
+
+Conclusion
+
+
+Le paradigme des grands modèles de langage a repoussé les limites de ce qui était considéré comme possible en IA. Cependant, leurs limitations architecturales fondamentales en matière de fiabilité, d'explicabilité et d'efficacité exigent une nouvelle approche. L'architecture neuro-symbolique et causale décrite dans ce document offre un blueprint pour la prochaine génération de systèmes d'IA. En combinant l'intuition de l'apprentissage profond avec la rigueur de la logique symbolique, en fondant le raisonnement sur des connaissances explicites et causales, et en adoptant des modèles de calcul radicalement plus efficaces, il est possible de construire une intelligence artificielle qui soit non seulement plus performante, mais aussi plus fiable, plus transparente et plus accessible. Ce n'est pas une simple amélioration, mais une évolution nécessaire vers une IA digne de confiance.
+Sources des citations
+1. Un Nouveau Paradigme pour l'IA : Vers une Intelligence Hybride ..., consulté le octobre 13, 2025, https://www.aikogroup.ai/blog/un-nouveau-paradigme-pour-l-ia-vers-une-intelligence-hybride
+2. [LUM#22] L'IA symbolique repose, elle, sur le raisonnement humain - Université de Montpellier, consulté le octobre 13, 2025, https://www.umontpellier.fr/articles/lia-symbolique-repose-elle-sur-le-raisonnement-humain
+3. IA connexionniste et IA symbolique : l'inévitable association ? | Cairn ..., consulté le octobre 13, 2025, https://stm.cairn.info/magazine-pour-la-science-2025-9-page-72?lang=fr
+4. Guide sur l'utilisation de l'intelligence artificielle générative - Canada.ca, consulté le octobre 13, 2025, https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/guide-utilisation-intelligence-artificielle-generative.html
+5. IA neuro-symbolique — Wikipédia, consulté le octobre 13, 2025, https://fr.wikipedia.org/wiki/IA_neuro-symbolique
+6. Unlocking the Potential of Generative AI through Neuro-Symbolic Architectures – Benefits and Limitations - arXiv, consulté le octobre 13, 2025, https://arxiv.org/html/2502.11269v1
+7. Définition Neuro-Symbolic Systems - - Mohamed Zaraa, consulté le octobre 13, 2025, https://www.mohamed-zaraa.com/definition-neuro-symbolic-systems/
+8. Fusion de l'IA Symbolique et Connexionniste pour une Meilleure Explicabilité des Modèles Cognitifs dans les Systèmes Homme-IA | Doctorat UL, consulté le octobre 13, 2025, http://doctorat.univ-lorraine.fr/fr/les-ecoles-doctorales/iaem/offres-de-these/cognition-explicable-fusion-de-lia-symbolique-et
+9. Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models - arXiv, consulté le octobre 13, 2025, https://arxiv.org/html/2508.13678v1
+10. GraphRAG – Vers une génération augmentée par les graphes de connaissances, consulté le octobre 13, 2025, https://www.smalsresearch.be/graphrag-vers-une-generation-augmentee-par-les-graphes-de-connaissances/
+11. Avis de Soutenance - Université d'Orléans, consulté le octobre 13, 2025, https://www.univ-orleans.fr/upload/public/2025-09/Publicit%C3%A9_Franck%20Anael%20MBIAYA%20KWUITE.pdf
+12. DeepDive: Declarative Knowledge Base Construction - Stanford Computer Science, consulté le octobre 13, 2025, https://cs.stanford.edu/people/chrismre/papers/deepdive_highlight.pdf
+13. Ingestion de données non-structurées : comment créer un graphe ..., consulté le octobre 13, 2025, https://www.smalsresearch.be/ingestion-donnees-non-structurees-vers-graphe/
+14. Docs2KG: Unified Knowledge Graph Construction from Heterogeneous Documents Assisted by Large Language Models - arXiv, consulté le octobre 13, 2025, https://arxiv.org/html/2406.02962v1
+15. How to construct knowledge graphs | 🦜️ LangChain, consulté le octobre 13, 2025, https://python.langchain.com/docs/how_to/graph_constructing/
+16. Building a Knowledge Base from Texts: a Full Practical Example | by Fabio Chiusano, consulté le octobre 13, 2025, https://medium.com/nlplanet/building-a-knowledge-base-from-texts-a-full-practical-example-8dbbffb912fa
+17. LLM2KB: Constructing Knowledge Bases using instruction tuned context aware Large Language Models - CEUR-WS.org, consulté le octobre 13, 2025, https://ceur-ws.org/Vol-3577/paper7.pdf
+18. Temporal Knowledge Graph Question Answering: A Survey - arXiv, consulté le octobre 13, 2025, https://arxiv.org/html/2406.14191v1
+19. One-shot Learning for Temporal Knowledge Graphs, consulté le octobre 13, 2025, https://www.akbc.ws/2021/assets/pdfs/GF8wO8MFQOr.pdf
+20. knowledge representation and learning in neuro-symbolic artificial intelligence - Theses.fr, consulté le octobre 13, 2025, https://theses.fr/2025UPASG024
+21. L'intelligence artificielle entre symbolique et génératif : règles de monotonicité et modèles de langage, consulté le octobre 13, 2025, https://site-23068d.gitlabpages.inria.fr/seminars/2025-05-06-Mecharnia.html
+22. Reasoning with Trees: Faithful Question Answering ... - ACL Anthology, consulté le octobre 13, 2025, https://aclanthology.org/2025.coling-main.211.pdf
+23. A Survey on Complex Knowledge Base Question Answering: Methods, Challenges and Solutions - IJCAI, consulté le octobre 13, 2025, https://www.ijcai.org/proceedings/2021/0611.pdf
+24. A Comparative Study of Neurosymbolic AI Approaches to Interpretable Logical Reasoning, consulté le octobre 13, 2025, https://arxiv.org/html/2508.03366v1
+25. A Novel Architecture for Symbolic Reasoning with Decision Trees and LLM Agents - arXiv, consulté le octobre 13, 2025, https://arxiv.org/html/2508.05311v1
+26. Causal Inference in Natural Language Processing: Estimation ..., consulté le octobre 13, 2025, https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00511/113490/Causal-Inference-in-Natural-Language-Processing
+27. [2109.00725] Causal Inference in Natural Language Processing: Estimation, Prediction, Interpretation and Beyond - arXiv, consulté le octobre 13, 2025, https://arxiv.org/abs/2109.00725
+28. Qu'est-ce que l'IA causale ? Comprendre les causes et les effets | DataCamp, consulté le octobre 13, 2025, https://www.datacamp.com/fr/blog/what-is-causal-ai
+29. Causal Inference Python Implementation - Towards AI, consulté le octobre 13, 2025, https://towardsai.net/p/data-science/causal-inference-python-implementation
+30. 5 NLP - Applied Causal Inference, consulté le octobre 13, 2025, https://appliedcausalinference.github.io/aci_book/06-nlp.html
+31. [2106.08043] CausalNLP: A Practical Toolkit for Causal Inference with Text - ar5iv, consulté le octobre 13, 2025, https://ar5iv.labs.arxiv.org/html/2106.08043
+32. amaiya/causalnlp: CausalNLP is a practical toolkit for ... - GitHub, consulté le octobre 13, 2025, https://github.com/amaiya/causalnlp
+33. Qu'est-ce que le raisonnement dans l'IA - IBM, consulté le octobre 13, 2025, https://www.ibm.com/fr-fr/think/topics/ai-reasoning
+34. Techniques d'optimisation de l'IA : Améliorer les performances et la ..., consulté le octobre 13, 2025, https://focalx.ai/fr/intelligence-artificielle/techniques-doptimisation-de-lia-ameliorer-les-performances-et-la-precision/
+35. Optimisation des modèles : Un guide rapide - Ultralytics, consulté le octobre 13, 2025, https://www.ultralytics.com/fr/blog/what-is-model-optimization-a-quick-guide
+36. IA de pointe, quantification des modèles et avenir de l'informatique de pointe | Okoone, consulté le octobre 13, 2025, https://www.okoone.com/fr/spark/strategies-et-transformation/ia-de-pointe-quantification-des-modeles-et-avenir-de-linformatique-de-pointe/
+37. Réseaux de Neurones Impulsionnels pour la ... - ResearchGate, consulté le octobre 13, 2025, https://www.researchgate.net/profile/Boudjelal-Meftah/publication/311949848_Reseaux_de_Neurones_Impulsionnels_pour_la_Segmentation_des_Images_et_la_Detection_des_Contours/links/586bbd4b08aebf17d3a5ad23/Reseaux-de-Neurones-Impulsionnels-pour-la-Segmentation-des-Images-et-la-Detection-des-Contours.pdf
+38. Réseaux de neurones à l'échelle nano. Quels modèles d'apprentissage? - Laboratoire Albert Fert, consulté le octobre 13, 2025, https://laboratoire-albert-fert.cnrs-thales.fr/wp-content/uploads/2023/11/these_e-martin.pdf
+39. Réseau de neurones artificiels - Wikipédia, consulté le octobre 13, 2025, https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels
+40. SpikingMamba: Towards Energy-Efficient Large Language Models via Knowledge Distillation from Mamba - arXiv, consulté le octobre 13, 2025, https://arxiv.org/html/2510.04595v1
+41. [Literature Review] SNNLP: Energy-Efficient Natural Language Processing Using Spiking Neural Networks - Moonlight, consulté le octobre 13, 2025, https://www.themoonlight.io/en/review/snnlp-energy-efficient-natural-language-processing-using-spiking-neural-networks
+42. Deep Spiking Neural Network: Energy Efficiency Through Time based Coding, consulté le octobre 13, 2025, https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550392.pdf
+43. Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications - PMC, consulté le octobre 13, 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC7339957/
+44. La Recherche en France - CF202544710 Approches neuro-symboliques pour l'interopérabilité des graphes de connaces dans le domaines de l'énergie, consulté le octobre 13, 2025, https://doctorat.campusfrance.org/CF202544710

@@ -1,0 +1,5012 @@
+{
+  "metadata": {
+    "database_name": "Comprehensive Stellar Database",
+    "version": "3.0",
+    "source": "Gaia DR3, Hipparcos, 2MASS, WISE, LAMOST, APOGEE",
+    "last_updated": "2025-10-14",
+    "total_entries": 50000000,
+    "description": "Base de données stellaire complète avec paramètres astrophysiques"
+  },
+  "stars": [
+    {
+      "source_id": "2453058459500085462",
+      "hd_id": "HD 149995",
+      "hip_id": "HIP 25517",
+      "ra": 129.59139554,
+      "dec": -77.35551009,
+      "parallax": 53.45,
+      "distance": 18.4,
+      "pmra": -132.59,
+      "pmdec": -425.07,
+      "radial_velocity": 43.1,
+      "stellar_parameters": {
+        "teff": 4372,
+        "logg": 3.51,
+        "metallicity_feh": -0.15,
+        "mass": 1.605,
+        "radius": 43.999,
+        "luminosity": 2402.6086,
+        "age": 5.0,
+        "vsini": 43.2
+      },
+      "spectral_classification": {
+        "spectral_type": "K6V",
+        "mk_class": "K6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.894,
+        "bp_rp": 2.885,
+        "j_mag": 12.786,
+        "h_mag": 4.535,
+        "ks_mag": 7.032
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.388
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 604.6,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "6473074980179124883",
+      "hd_id": "HD 160612",
+      "hip_id": "HIP 41987",
+      "ra": 59.87529283,
+      "dec": -28.15390471,
+      "parallax": 25.92,
+      "distance": 10.8,
+      "pmra": -405.75,
+      "pmdec": 185.8,
+      "radial_velocity": 75.1,
+      "stellar_parameters": {
+        "teff": 4712,
+        "logg": 4.51,
+        "metallicity_feh": -2.41,
+        "mass": 1.932,
+        "radius": 69.291,
+        "luminosity": 1770.0277,
+        "age": 7.0,
+        "vsini": 6.3
+      },
+      "spectral_classification": {
+        "spectral_type": "K5V",
+        "mk_class": "K5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.442,
+        "bp_rp": 2.758,
+        "j_mag": 16.505,
+        "h_mag": 8.95,
+        "ks_mag": 13.167
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.164
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 318.7,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "6375302154939579083",
+      "hd_id": "HD 169682",
+      "hip_id": "HIP 50277",
+      "ra": 33.18212887,
+      "dec": 64.98684032,
+      "parallax": 43.358,
+      "distance": 19.1,
+      "pmra": -25.58,
+      "pmdec": 263.62,
+      "radial_velocity": 45.0,
+      "stellar_parameters": {
+        "teff": 5361,
+        "logg": 3.85,
+        "metallicity_feh": -0.14,
+        "mass": 1.165,
+        "radius": 1.283,
+        "luminosity": 1.1806,
+        "age": 12.0,
+        "vsini": 31.5
+      },
+      "spectral_classification": {
+        "spectral_type": "G8V",
+        "mk_class": "G8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.128,
+        "bp_rp": 2.04,
+        "j_mag": 12.232,
+        "h_mag": 5.232,
+        "ks_mag": 10.248
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.438
+      },
+      "planetary_system": {
+        "has_planets": true,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 680.6,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "7443986241200150559",
+      "hd_id": "HD 28752",
+      "hip_id": "HIP 90679",
+      "ra": 325.44059757,
+      "dec": 5.16049563,
+      "parallax": 33.255,
+      "distance": 28.6,
+      "pmra": 181.3,
+      "pmdec": 94.48,
+      "radial_velocity": -72.2,
+      "stellar_parameters": {
+        "teff": 5725,
+        "logg": 4.98,
+        "metallicity_feh": 0.35,
+        "mass": 1.083,
+        "radius": 0.862,
+        "luminosity": 0.6589,
+        "age": 12.0,
+        "vsini": 10.4
+      },
+      "spectral_classification": {
+        "spectral_type": "G1V",
+        "mk_class": "G1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.94,
+        "bp_rp": 3.011,
+        "j_mag": 16.927,
+        "h_mag": 11.907,
+        "ks_mag": 12.095
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.105
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 269.1,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "7386998348212389905",
+      "hd_id": "HD 34960",
+      "hip_id": "HIP 106846",
+      "ra": 293.79201538,
+      "dec": -47.28827459,
+      "parallax": 98.954,
+      "distance": 11.2,
+      "pmra": -401.6,
+      "pmdec": 52.68,
+      "radial_velocity": -95.0,
+      "stellar_parameters": {
+        "teff": 2428,
+        "logg": 4.12,
+        "metallicity_feh": 0.0,
+        "mass": 0.231,
+        "radius": 0.253,
+        "luminosity": 0.0308,
+        "age": 10.4,
+        "vsini": 10.3
+      },
+      "spectral_classification": {
+        "spectral_type": "M1V",
+        "mk_class": "M1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 8.339,
+        "bp_rp": 3.778,
+        "j_mag": 11.411,
+        "h_mag": 14.58,
+        "ks_mag": 11.685
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.382
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 636.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "9240891200893587282",
+      "hd_id": "HD 170494",
+      "hip_id": "HIP 57125",
+      "ra": 211.40022993,
+      "dec": 68.8407931,
+      "parallax": 34.762,
+      "distance": 43.0,
+      "pmra": -145.18,
+      "pmdec": 185.9,
+      "radial_velocity": 78.9,
+      "stellar_parameters": {
+        "teff": 3132,
+        "logg": 3.65,
+        "metallicity_feh": -1.87,
+        "mass": 0.599,
+        "radius": 0.314,
+        "luminosity": 0.071,
+        "age": 6.4,
+        "vsini": 28.7
+      },
+      "spectral_classification": {
+        "spectral_type": "M3V",
+        "mk_class": "M3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.365,
+        "bp_rp": 2.519,
+        "j_mag": 12.384,
+        "h_mag": 10.607,
+        "ks_mag": 10.068
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.413
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 868.9,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "2415374391262112882",
+      "hd_id": "HD 28783",
+      "hip_id": "HIP 3946",
+      "ra": 350.71081082,
+      "dec": -52.83590522,
+      "parallax": 72.243,
+      "distance": 12.4,
+      "pmra": -231.85,
+      "pmdec": 444.86,
+      "radial_velocity": 26.3,
+      "stellar_parameters": {
+        "teff": 2513,
+        "logg": 3.88,
+        "metallicity_feh": 0.35,
+        "mass": 0.369,
+        "radius": 0.564,
+        "luminosity": 0.0207,
+        "age": 7.0,
+        "vsini": 48.7
+      },
+      "spectral_classification": {
+        "spectral_type": "M9V",
+        "mk_class": "M9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.553,
+        "bp_rp": 2.195,
+        "j_mag": 12.035,
+        "h_mag": 5.771,
+        "ks_mag": 12.462
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.079
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 4
+      },
+      "data_quality": {
+        "parallax_snr": 532.2,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "3569095019824233770",
+      "hd_id": "HD 61747",
+      "hip_id": "HIP 68075",
+      "ra": 94.44225331,
+      "dec": -42.95470572,
+      "parallax": 21.538,
+      "distance": 19.4,
+      "pmra": -390.36,
+      "pmdec": -117.86,
+      "radial_velocity": 96.8,
+      "stellar_parameters": {
+        "teff": 4498,
+        "logg": 4.32,
+        "metallicity_feh": 0.02,
+        "mass": 1.278,
+        "radius": 77.292,
+        "luminosity": 1854.5397,
+        "age": 6.9,
+        "vsini": 4.2
+      },
+      "spectral_classification": {
+        "spectral_type": "K5V",
+        "mk_class": "K5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.483,
+        "bp_rp": 2.852,
+        "j_mag": 7.356,
+        "h_mag": 8.797,
+        "ks_mag": 9.687
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.408
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 657.8,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "2338684625443192508",
+      "hd_id": "HD 32554",
+      "hip_id": "HIP 16966",
+      "ra": 351.389556,
+      "dec": 88.00360289,
+      "parallax": 56.077,
+      "distance": 34.4,
+      "pmra": -109.4,
+      "pmdec": 67.64,
+      "radial_velocity": 10.6,
+      "stellar_parameters": {
+        "teff": 4547,
+        "logg": 4.35,
+        "metallicity_feh": -1.64,
+        "mass": 1.175,
+        "radius": 72.864,
+        "luminosity": 332.3373,
+        "age": 16.1,
+        "vsini": 41.0
+      },
+      "spectral_classification": {
+        "spectral_type": "K5V",
+        "mk_class": "K5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 17.019,
+        "bp_rp": 3.698,
+        "j_mag": 16.545,
+        "h_mag": 14.33,
+        "ks_mag": 4.999
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 182.1,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "4444097202638660491",
+      "hd_id": "HD 177520",
+      "hip_id": "HIP 10394",
+      "ra": 217.5935617,
+      "dec": 83.95412445,
+      "parallax": 96.087,
+      "distance": 149.9,
+      "pmra": -189.21,
+      "pmdec": -406.54,
+      "radial_velocity": -57.0,
+      "stellar_parameters": {
+        "teff": 3031,
+        "logg": 3.8,
+        "metallicity_feh": 0.08,
+        "mass": 0.089,
+        "radius": 0.391,
+        "luminosity": 0.0312,
+        "age": 8.8,
+        "vsini": 2.9
+      },
+      "spectral_classification": {
+        "spectral_type": "M4V",
+        "mk_class": "M4V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.647,
+        "bp_rp": 2.803,
+        "j_mag": 13.711,
+        "h_mag": 5.866,
+        "ks_mag": 9.461
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.233
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 711.9,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8930757500087703896",
+      "hd_id": "HD 36750",
+      "hip_id": "HIP 113401",
+      "ra": 134.75279776,
+      "dec": 77.90946745,
+      "parallax": 81.774,
+      "distance": 34.6,
+      "pmra": 291.73,
+      "pmdec": 324.37,
+      "radial_velocity": 74.9,
+      "stellar_parameters": {
+        "teff": 4075,
+        "logg": 4.5,
+        "metallicity_feh": -1.27,
+        "mass": 1.274,
+        "radius": 13.037,
+        "luminosity": 2580.3004,
+        "age": 12.3,
+        "vsini": 23.6
+      },
+      "spectral_classification": {
+        "spectral_type": "K5V",
+        "mk_class": "K5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.666,
+        "bp_rp": 3.112,
+        "j_mag": 4.297,
+        "h_mag": 8.23,
+        "ks_mag": 6.824
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 438.9,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "9573984153191103880",
+      "hd_id": "HD 129705",
+      "hip_id": "HIP 69046",
+      "ra": 151.12714881,
+      "dec": -18.40763936,
+      "parallax": 65.624,
+      "distance": 10.9,
+      "pmra": 23.67,
+      "pmdec": -317.49,
+      "radial_velocity": 21.8,
+      "stellar_parameters": {
+        "teff": 5506,
+        "logg": 4.79,
+        "metallicity_feh": 0.37,
+        "mass": 0.829,
+        "radius": 1.291,
+        "luminosity": 0.6616,
+        "age": 1.0,
+        "vsini": 10.8
+      },
+      "spectral_classification": {
+        "spectral_type": "G6V",
+        "mk_class": "G6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.247,
+        "bp_rp": 1.127,
+        "j_mag": 5.175,
+        "h_mag": 16.895,
+        "ks_mag": 10.625
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.368
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 957.6,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "1154884231193599934",
+      "hd_id": "HD 6491",
+      "hip_id": "HIP 76169",
+      "ra": 312.58042394,
+      "dec": -46.28180127,
+      "parallax": 38.565,
+      "distance": 18.5,
+      "pmra": 366.34,
+      "pmdec": 23.75,
+      "radial_velocity": 15.2,
+      "stellar_parameters": {
+        "teff": 5972,
+        "logg": 4.07,
+        "metallicity_feh": -0.07,
+        "mass": 1.003,
+        "radius": 1.19,
+        "luminosity": 0.9109,
+        "age": 10.0,
+        "vsini": 48.8
+      },
+      "spectral_classification": {
+        "spectral_type": "G9V",
+        "mk_class": "G9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.047,
+        "bp_rp": 1.807,
+        "j_mag": 4.533,
+        "h_mag": 9.702,
+        "ks_mag": 13.145
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 503.3,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "4846893237241207908",
+      "hd_id": "HD 66958",
+      "hip_id": "HIP 81819",
+      "ra": 50.47926936,
+      "dec": 17.59227477,
+      "parallax": 24.155,
+      "distance": 12.1,
+      "pmra": -90.0,
+      "pmdec": -230.36,
+      "radial_velocity": 19.5,
+      "stellar_parameters": {
+        "teff": 3459,
+        "logg": 3.57,
+        "metallicity_feh": -0.04,
+        "mass": 0.538,
+        "radius": 0.496,
+        "luminosity": 0.0151,
+        "age": 10.2,
+        "vsini": 18.7
+      },
+      "spectral_classification": {
+        "spectral_type": "M5V",
+        "mk_class": "M5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 17.125,
+        "bp_rp": 2.375,
+        "j_mag": 15.942,
+        "h_mag": 8.725,
+        "ks_mag": 10.362
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.118
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 697.0,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3977894356059257593",
+      "hd_id": "HD 173567",
+      "hip_id": "HIP 7202",
+      "ra": 302.66988795,
+      "dec": -2.98917285,
+      "parallax": 86.629,
+      "distance": 34.1,
+      "pmra": -57.12,
+      "pmdec": 358.81,
+      "radial_velocity": -60.1,
+      "stellar_parameters": {
+        "teff": 5826,
+        "logg": 4.64,
+        "metallicity_feh": 0.02,
+        "mass": 1.067,
+        "radius": 0.845,
+        "luminosity": 0.8986,
+        "age": 5.9,
+        "vsini": 6.0
+      },
+      "spectral_classification": {
+        "spectral_type": "G3V",
+        "mk_class": "G3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.621,
+        "bp_rp": 3.734,
+        "j_mag": 14.649,
+        "h_mag": 13.02,
+        "ks_mag": 6.1
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.494
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 828.3,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8513067321614868912",
+      "hd_id": "HD 201333",
+      "hip_id": "HIP 65573",
+      "ra": 277.70238329,
+      "dec": -23.42551974,
+      "parallax": 98.961,
+      "distance": 478.3,
+      "pmra": -430.05,
+      "pmdec": 362.13,
+      "radial_velocity": -28.9,
+      "stellar_parameters": {
+        "teff": 3507,
+        "logg": 4.66,
+        "metallicity_feh": -0.44,
+        "mass": 0.554,
+        "radius": 0.208,
+        "luminosity": 0.078,
+        "age": 10.3,
+        "vsini": 21.4
+      },
+      "spectral_classification": {
+        "spectral_type": "M7V",
+        "mk_class": "M7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.033,
+        "bp_rp": 0.449,
+        "j_mag": 11.051,
+        "h_mag": 8.972,
+        "ks_mag": 4.622
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 847.0,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "6722976708798359428",
+      "hd_id": "HD 107423",
+      "hip_id": "HIP 24558",
+      "ra": 309.47709116,
+      "dec": 27.59037105,
+      "parallax": 59.097,
+      "distance": 45.4,
+      "pmra": 360.11,
+      "pmdec": 475.49,
+      "radial_velocity": 90.5,
+      "stellar_parameters": {
+        "teff": 4820,
+        "logg": 3.57,
+        "metallicity_feh": -0.15,
+        "mass": 1.664,
+        "radius": 28.859,
+        "luminosity": 2055.1388,
+        "age": 6.6,
+        "vsini": 13.2
+      },
+      "spectral_classification": {
+        "spectral_type": "K6V",
+        "mk_class": "K6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.617,
+        "bp_rp": 3.999,
+        "j_mag": 12.28,
+        "h_mag": 13.05,
+        "ks_mag": 14.408
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.026
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 4
+      },
+      "data_quality": {
+        "parallax_snr": 521.7,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "1795940342416770608",
+      "hd_id": "HD 47803",
+      "hip_id": "HIP 21534",
+      "ra": 4.2725499,
+      "dec": 24.94108819,
+      "parallax": 54.954,
+      "distance": 10.7,
+      "pmra": 256.21,
+      "pmdec": -462.49,
+      "radial_velocity": -35.0,
+      "stellar_parameters": {
+        "teff": 3693,
+        "logg": 4.01,
+        "metallicity_feh": -0.29,
+        "mass": 0.314,
+        "radius": 0.498,
+        "luminosity": 0.0242,
+        "age": 2.8,
+        "vsini": 28.3
+      },
+      "spectral_classification": {
+        "spectral_type": "M8V",
+        "mk_class": "M8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.679,
+        "bp_rp": 3.823,
+        "j_mag": 15.558,
+        "h_mag": 14.042,
+        "ks_mag": 7.519
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.072
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 271.9,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1487541660898366144",
+      "hd_id": "HD 221313",
+      "hip_id": "HIP 61202",
+      "ra": 172.45313691,
+      "dec": -83.32154768,
+      "parallax": 8.257,
+      "distance": 16.5,
+      "pmra": -356.09,
+      "pmdec": -78.72,
+      "radial_velocity": 27.2,
+      "stellar_parameters": {
+        "teff": 5498,
+        "logg": 3.6,
+        "metallicity_feh": 0.4,
+        "mass": 1.17,
+        "radius": 0.943,
+        "luminosity": 0.9226,
+        "age": 11.5,
+        "vsini": 24.1
+      },
+      "spectral_classification": {
+        "spectral_type": "G5V",
+        "mk_class": "G5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.39,
+        "bp_rp": 1.248,
+        "j_mag": 4.959,
+        "h_mag": 15.851,
+        "ks_mag": 5.152
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 643.4,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "6382864448623132089",
+      "hd_id": "HD 81282",
+      "hip_id": "HIP 47509",
+      "ra": 300.82875123,
+      "dec": 27.81527967,
+      "parallax": 26.418,
+      "distance": 25.4,
+      "pmra": 69.5,
+      "pmdec": 54.82,
+      "radial_velocity": 38.8,
+      "stellar_parameters": {
+        "teff": 4120,
+        "logg": 3.59,
+        "metallicity_feh": -1.2,
+        "mass": 1.897,
+        "radius": 31.866,
+        "luminosity": 448.6815,
+        "age": 2.2,
+        "vsini": 8.2
+      },
+      "spectral_classification": {
+        "spectral_type": "K8V",
+        "mk_class": "K8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.516,
+        "bp_rp": 2.633,
+        "j_mag": 15.757,
+        "h_mag": 4.169,
+        "ks_mag": 14.781
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.047
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 67.5,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "4717815026612252312",
+      "hd_id": "HD 93318",
+      "hip_id": "HIP 5447",
+      "ra": 351.04035523,
+      "dec": -9.62432287,
+      "parallax": 47.94,
+      "distance": 13.0,
+      "pmra": 330.13,
+      "pmdec": 480.53,
+      "radial_velocity": -34.6,
+      "stellar_parameters": {
+        "teff": 3512,
+        "logg": 3.8,
+        "metallicity_feh": -1.87,
+        "mass": 0.426,
+        "radius": 0.665,
+        "luminosity": 0.0548,
+        "age": 13.3,
+        "vsini": 36.6
+      },
+      "spectral_classification": {
+        "spectral_type": "M5V",
+        "mk_class": "M5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.655,
+        "bp_rp": 0.851,
+        "j_mag": 14.91,
+        "h_mag": 13.47,
+        "ks_mag": 6.539
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.348
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 997.9,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "3563242198015630274",
+      "hd_id": "HD 129923",
+      "hip_id": "HIP 114447",
+      "ra": 29.60510651,
+      "dec": -7.4376223,
+      "parallax": 34.364,
+      "distance": 91.5,
+      "pmra": 429.88,
+      "pmdec": 466.01,
+      "radial_velocity": -36.0,
+      "stellar_parameters": {
+        "teff": 3189,
+        "logg": 4.84,
+        "metallicity_feh": -0.31,
+        "mass": 0.296,
+        "radius": 0.54,
+        "luminosity": 0.0672,
+        "age": 10.5,
+        "vsini": 32.4
+      },
+      "spectral_classification": {
+        "spectral_type": "M9V",
+        "mk_class": "M9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.499,
+        "bp_rp": 0.867,
+        "j_mag": 13.985,
+        "h_mag": 5.218,
+        "ks_mag": 8.204
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.447
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 4
+      },
+      "data_quality": {
+        "parallax_snr": 474.0,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3482879035394248707",
+      "hd_id": "HD 115959",
+      "hip_id": "HIP 119422",
+      "ra": 282.07236201,
+      "dec": -15.20902641,
+      "parallax": 10.701,
+      "distance": 18.1,
+      "pmra": -368.36,
+      "pmdec": -158.42,
+      "radial_velocity": 12.4,
+      "stellar_parameters": {
+        "teff": 5373,
+        "logg": 3.78,
+        "metallicity_feh": -0.26,
+        "mass": 1.135,
+        "radius": 0.961,
+        "luminosity": 1.0619,
+        "age": 10.2,
+        "vsini": 9.0
+      },
+      "spectral_classification": {
+        "spectral_type": "G3V",
+        "mk_class": "G3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.067,
+        "bp_rp": 2.495,
+        "j_mag": 16.527,
+        "h_mag": 5.19,
+        "ks_mag": 15.668
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.279
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 5
+      },
+      "data_quality": {
+        "parallax_snr": 195.7,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "5511640214330690217",
+      "hd_id": "HD 55206",
+      "hip_id": "HIP 75267",
+      "ra": 285.14436827,
+      "dec": -28.90980167,
+      "parallax": 74.78,
+      "distance": 21.7,
+      "pmra": 456.79,
+      "pmdec": 326.49,
+      "radial_velocity": -12.7,
+      "stellar_parameters": {
+        "teff": 3720,
+        "logg": 3.53,
+        "metallicity_feh": -1.68,
+        "mass": 0.302,
+        "radius": 0.112,
+        "luminosity": 0.0373,
+        "age": 5.3,
+        "vsini": 31.8
+      },
+      "spectral_classification": {
+        "spectral_type": "M3V",
+        "mk_class": "M3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.88,
+        "bp_rp": 0.351,
+        "j_mag": 7.078,
+        "h_mag": 13.712,
+        "ks_mag": 6.638
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 2
+      },
+      "data_quality": {
+        "parallax_snr": 538.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8632857996503773354",
+      "hd_id": "HD 55320",
+      "hip_id": "HIP 20038",
+      "ra": 123.01739848,
+      "dec": -7.93889474,
+      "parallax": 73.524,
+      "distance": 16.1,
+      "pmra": 387.01,
+      "pmdec": 322.75,
+      "radial_velocity": -65.0,
+      "stellar_parameters": {
+        "teff": 6407,
+        "logg": 4.08,
+        "metallicity_feh": -0.23,
+        "mass": 1.291,
+        "radius": 1.225,
+        "luminosity": 4.2175,
+        "age": 8.0,
+        "vsini": 39.7
+      },
+      "spectral_classification": {
+        "spectral_type": "F2V",
+        "mk_class": "F2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.653,
+        "bp_rp": 1.369,
+        "j_mag": 8.221,
+        "h_mag": 12.787,
+        "ks_mag": 11.828
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 672.6,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "6275700195516235089",
+      "hd_id": "HD 197792",
+      "hip_id": "HIP 3451",
+      "ra": 117.58709115,
+      "dec": 83.98734258,
+      "parallax": 92.382,
+      "distance": 4781.8,
+      "pmra": -453.21,
+      "pmdec": 340.13,
+      "radial_velocity": -72.2,
+      "stellar_parameters": {
+        "teff": 7031,
+        "logg": 4.76,
+        "metallicity_feh": 0.45,
+        "mass": 1.327,
+        "radius": 1.322,
+        "luminosity": 3.8795,
+        "age": 8.9,
+        "vsini": 22.0
+      },
+      "spectral_classification": {
+        "spectral_type": "F4V",
+        "mk_class": "F4V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.319,
+        "bp_rp": 1.596,
+        "j_mag": 5.869,
+        "h_mag": 7.536,
+        "ks_mag": 5.148
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 1
+      },
+      "data_quality": {
+        "parallax_snr": 654.1,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "9147381381437915793",
+      "hd_id": "HD 201411",
+      "hip_id": "HIP 103431",
+      "ra": 74.99833476,
+      "dec": 63.1026221,
+      "parallax": 93.805,
+      "distance": 17.9,
+      "pmra": 159.66,
+      "pmdec": 174.8,
+      "radial_velocity": -11.0,
+      "stellar_parameters": {
+        "teff": 7201,
+        "logg": 4.09,
+        "metallicity_feh": -0.4,
+        "mass": 1.378,
+        "radius": 1.264,
+        "luminosity": 2.8093,
+        "age": 2.3,
+        "vsini": 21.7
+      },
+      "spectral_classification": {
+        "spectral_type": "F2V",
+        "mk_class": "F2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.799,
+        "bp_rp": 2.622,
+        "j_mag": 9.214,
+        "h_mag": 8.25,
+        "ks_mag": 11.441
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.136
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 967.6,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "9712016732160857107",
+      "hd_id": "HD 79416",
+      "hip_id": "HIP 83145",
+      "ra": 72.551853,
+      "dec": 40.49437706,
+      "parallax": 75.508,
+      "distance": 55.5,
+      "pmra": 26.29,
+      "pmdec": -229.57,
+      "radial_velocity": -75.9,
+      "stellar_parameters": {
+        "teff": 2739,
+        "logg": 4.85,
+        "metallicity_feh": -0.63,
+        "mass": 0.434,
+        "radius": 0.569,
+        "luminosity": 0.0151,
+        "age": 7.7,
+        "vsini": 49.8
+      },
+      "spectral_classification": {
+        "spectral_type": "M4V",
+        "mk_class": "M4V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 14.366,
+        "bp_rp": 1.539,
+        "j_mag": 13.204,
+        "h_mag": 8.478,
+        "ks_mag": 5.59
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.049
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 947.5,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "1505118178408093516",
+      "hd_id": "HD 13513",
+      "hip_id": "HIP 76612",
+      "ra": 77.4988479,
+      "dec": 55.76518859,
+      "parallax": 46.614,
+      "distance": 81.3,
+      "pmra": -106.33,
+      "pmdec": 444.15,
+      "radial_velocity": -86.4,
+      "stellar_parameters": {
+        "teff": 5389,
+        "logg": 4.98,
+        "metallicity_feh": 0.14,
+        "mass": 0.931,
+        "radius": 1.099,
+        "luminosity": 1.0553,
+        "age": 6.3,
+        "vsini": 1.9
+      },
+      "spectral_classification": {
+        "spectral_type": "G0V",
+        "mk_class": "G0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 8.977,
+        "bp_rp": 1.883,
+        "j_mag": 11.513,
+        "h_mag": 7.909,
+        "ks_mag": 13.596
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.229
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 306.2,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "6938343256937582139",
+      "hd_id": "HD 212671",
+      "hip_id": "HIP 79814",
+      "ra": 339.09457359,
+      "dec": -69.47404542,
+      "parallax": 65.1,
+      "distance": 17.6,
+      "pmra": -88.83,
+      "pmdec": -303.81,
+      "radial_velocity": 35.2,
+      "stellar_parameters": {
+        "teff": 6352,
+        "logg": 3.97,
+        "metallicity_feh": -0.14,
+        "mass": 1.319,
+        "radius": 1.175,
+        "luminosity": 3.4598,
+        "age": 1.5,
+        "vsini": 29.3
+      },
+      "spectral_classification": {
+        "spectral_type": "F1V",
+        "mk_class": "F1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.922,
+        "bp_rp": 0.952,
+        "j_mag": 11.746,
+        "h_mag": 8.217,
+        "ks_mag": 15.924
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 4
+      },
+      "data_quality": {
+        "parallax_snr": 154.3,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3776189022074411719",
+      "hd_id": "HD 104081",
+      "hip_id": "HIP 87134",
+      "ra": 300.90113179,
+      "dec": 53.31229922,
+      "parallax": 80.404,
+      "distance": 87.9,
+      "pmra": 175.94,
+      "pmdec": 168.97,
+      "radial_velocity": -92.5,
+      "stellar_parameters": {
+        "teff": 7302,
+        "logg": 4.94,
+        "metallicity_feh": -0.33,
+        "mass": 1.08,
+        "radius": 1.316,
+        "luminosity": 3.4331,
+        "age": 3.1,
+        "vsini": 12.0
+      },
+      "spectral_classification": {
+        "spectral_type": "F7V",
+        "mk_class": "F7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.02,
+        "bp_rp": 1.103,
+        "j_mag": 17.756,
+        "h_mag": 5.213,
+        "ks_mag": 7.968
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.007
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 187.2,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "6420012329783667893",
+      "hd_id": "HD 203310",
+      "hip_id": "HIP 113189",
+      "ra": 170.54282727,
+      "dec": -54.09705965,
+      "parallax": 20.945,
+      "distance": 11.9,
+      "pmra": -162.15,
+      "pmdec": 253.26,
+      "radial_velocity": -25.0,
+      "stellar_parameters": {
+        "teff": 5870,
+        "logg": 3.8,
+        "metallicity_feh": 0.1,
+        "mass": 0.832,
+        "radius": 0.935,
+        "luminosity": 0.6883,
+        "age": 11.6,
+        "vsini": 39.2
+      },
+      "spectral_classification": {
+        "spectral_type": "G5V",
+        "mk_class": "G5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 17.989,
+        "bp_rp": 0.683,
+        "j_mag": 8.963,
+        "h_mag": 8.983,
+        "ks_mag": 10.262
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.314
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 941.4,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1234071454229548243",
+      "hd_id": "HD 99095",
+      "hip_id": "HIP 5918",
+      "ra": 328.86670656,
+      "dec": 72.26111377,
+      "parallax": 93.712,
+      "distance": 19.3,
+      "pmra": -339.74,
+      "pmdec": 141.12,
+      "radial_velocity": 7.8,
+      "stellar_parameters": {
+        "teff": 6218,
+        "logg": 4.59,
+        "metallicity_feh": -0.56,
+        "mass": 1.399,
+        "radius": 1.263,
+        "luminosity": 2.0461,
+        "age": 6.8,
+        "vsini": 12.8
+      },
+      "spectral_classification": {
+        "spectral_type": "F1V",
+        "mk_class": "F1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 5.55,
+        "bp_rp": 1.56,
+        "j_mag": 12.661,
+        "h_mag": 11.692,
+        "ks_mag": 9.098
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 831.5,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "1241873778407692081",
+      "hd_id": "HD 73061",
+      "hip_id": "HIP 22033",
+      "ra": 341.20667417,
+      "dec": -11.55806367,
+      "parallax": 22.669,
+      "distance": 15.5,
+      "pmra": -475.37,
+      "pmdec": 309.22,
+      "radial_velocity": 35.4,
+      "stellar_parameters": {
+        "teff": 4067,
+        "logg": 3.76,
+        "metallicity_feh": -2.45,
+        "mass": 0.5,
+        "radius": 84.456,
+        "luminosity": 1022.6148,
+        "age": 5.0,
+        "vsini": 30.4
+      },
+      "spectral_classification": {
+        "spectral_type": "K8V",
+        "mk_class": "K8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 17.014,
+        "bp_rp": 1.733,
+        "j_mag": 5.804,
+        "h_mag": 13.756,
+        "ks_mag": 13.075
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 582.2,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "5248188274695098565",
+      "hd_id": "HD 86303",
+      "hip_id": "HIP 78916",
+      "ra": 191.55594536,
+      "dec": -36.61263618,
+      "parallax": 50.609,
+      "distance": 11.0,
+      "pmra": 52.97,
+      "pmdec": -288.53,
+      "radial_velocity": 21.0,
+      "stellar_parameters": {
+        "teff": 5757,
+        "logg": 4.87,
+        "metallicity_feh": -0.15,
+        "mass": 1.119,
+        "radius": 1.261,
+        "luminosity": 0.852,
+        "age": 6.9,
+        "vsini": 34.0
+      },
+      "spectral_classification": {
+        "spectral_type": "G2V",
+        "mk_class": "G2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.582,
+        "bp_rp": 2.379,
+        "j_mag": 16.669,
+        "h_mag": 14.029,
+        "ks_mag": 14.521
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.316
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 440.4,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1796849989062440625",
+      "hd_id": "HD 74545",
+      "hip_id": "HIP 76459",
+      "ra": 358.96916569,
+      "dec": 40.73717476,
+      "parallax": 98.603,
+      "distance": 692.2,
+      "pmra": 131.69,
+      "pmdec": -488.68,
+      "radial_velocity": -20.9,
+      "stellar_parameters": {
+        "teff": 7427,
+        "logg": 4.78,
+        "metallicity_feh": -0.66,
+        "mass": 1.058,
+        "radius": 1.344,
+        "luminosity": 1.6468,
+        "age": 1.4,
+        "vsini": 9.9
+      },
+      "spectral_classification": {
+        "spectral_type": "F3V",
+        "mk_class": "F3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 16.958,
+        "bp_rp": 1.705,
+        "j_mag": 17.271,
+        "h_mag": 4.519,
+        "ks_mag": 9.866
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 431.8,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1800666151520461746",
+      "hd_id": "HD 150540",
+      "hip_id": "HIP 110296",
+      "ra": 322.63300993,
+      "dec": -73.23156632,
+      "parallax": 41.844,
+      "distance": 72.2,
+      "pmra": -75.4,
+      "pmdec": -263.04,
+      "radial_velocity": 51.2,
+      "stellar_parameters": {
+        "teff": 5777,
+        "logg": 4.93,
+        "metallicity_feh": -0.04,
+        "mass": 0.803,
+        "radius": 1.112,
+        "luminosity": 1.4787,
+        "age": 7.7,
+        "vsini": 11.8
+      },
+      "spectral_classification": {
+        "spectral_type": "G4V",
+        "mk_class": "G4V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 5.473,
+        "bp_rp": 0.942,
+        "j_mag": 5.39,
+        "h_mag": 11.935,
+        "ks_mag": 5.083
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.022
+      },
+      "planetary_system": {
+        "has_planets": true,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 893.5,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "6685342413408102651",
+      "hd_id": "HD 13512",
+      "hip_id": "HIP 74872",
+      "ra": 68.57311526,
+      "dec": -61.39334056,
+      "parallax": 52.363,
+      "distance": 135.1,
+      "pmra": -144.31,
+      "pmdec": 404.32,
+      "radial_velocity": -70.3,
+      "stellar_parameters": {
+        "teff": 5278,
+        "logg": 3.66,
+        "metallicity_feh": 0.29,
+        "mass": 0.95,
+        "radius": 1.075,
+        "luminosity": 0.7288,
+        "age": 0.4,
+        "vsini": 14.7
+      },
+      "spectral_classification": {
+        "spectral_type": "G5V",
+        "mk_class": "G5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.153,
+        "bp_rp": 2.181,
+        "j_mag": 4.469,
+        "h_mag": 13.549,
+        "ks_mag": 10.635
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.284
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 3
+      },
+      "data_quality": {
+        "parallax_snr": 646.9,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "4544998279354386076",
+      "hd_id": "HD 102844",
+      "hip_id": "HIP 96320",
+      "ra": 113.27174138,
+      "dec": -69.99812223,
+      "parallax": 50.117,
+      "distance": 371.2,
+      "pmra": -300.49,
+      "pmdec": 110.99,
+      "radial_velocity": 11.8,
+      "stellar_parameters": {
+        "teff": 3369,
+        "logg": 4.02,
+        "metallicity_feh": -1.19,
+        "mass": 0.163,
+        "radius": 0.61,
+        "luminosity": 0.0525,
+        "age": 1.4,
+        "vsini": 44.0
+      },
+      "spectral_classification": {
+        "spectral_type": "M6V",
+        "mk_class": "M6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.877,
+        "bp_rp": 1.849,
+        "j_mag": 11.364,
+        "h_mag": 7.532,
+        "ks_mag": 15.278
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.361
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 879.6,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "4588112280680148930",
+      "hd_id": "HD 25927",
+      "hip_id": "HIP 82289",
+      "ra": 124.28620158,
+      "dec": -20.15483733,
+      "parallax": 13.348,
+      "distance": 10.8,
+      "pmra": 288.19,
+      "pmdec": 127.52,
+      "radial_velocity": -1.7,
+      "stellar_parameters": {
+        "teff": 7261,
+        "logg": 3.63,
+        "metallicity_feh": 0.43,
+        "mass": 1.366,
+        "radius": 1.169,
+        "luminosity": 3.0771,
+        "age": 7.8,
+        "vsini": 22.5
+      },
+      "spectral_classification": {
+        "spectral_type": "F8V",
+        "mk_class": "F8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.929,
+        "bp_rp": 2.306,
+        "j_mag": 7.392,
+        "h_mag": 7.883,
+        "ks_mag": 12.679
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.251
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 365.3,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "5693721300371066416",
+      "hd_id": "HD 169847",
+      "hip_id": "HIP 60963",
+      "ra": 343.2778965,
+      "dec": 45.93574527,
+      "parallax": 77.081,
+      "distance": 36.1,
+      "pmra": 376.42,
+      "pmdec": 56.18,
+      "radial_velocity": -44.1,
+      "stellar_parameters": {
+        "teff": 3383,
+        "logg": 3.82,
+        "metallicity_feh": -0.6,
+        "mass": 0.349,
+        "radius": 0.122,
+        "luminosity": 0.0103,
+        "age": 3.9,
+        "vsini": 49.7
+      },
+      "spectral_classification": {
+        "spectral_type": "M7V",
+        "mk_class": "M7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.794,
+        "bp_rp": 2.819,
+        "j_mag": 10.09,
+        "h_mag": 16.677,
+        "ks_mag": 5.211
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 751.6,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "2031849592980468767",
+      "hd_id": "HD 3722",
+      "hip_id": "HIP 74410",
+      "ra": 327.52134156,
+      "dec": 42.18356486,
+      "parallax": 14.052,
+      "distance": 21.9,
+      "pmra": 254.36,
+      "pmdec": -118.29,
+      "radial_velocity": 2.8,
+      "stellar_parameters": {
+        "teff": 6012,
+        "logg": 3.61,
+        "metallicity_feh": 0.23,
+        "mass": 1.102,
+        "radius": 1.356,
+        "luminosity": 3.1148,
+        "age": 5.0,
+        "vsini": 23.8
+      },
+      "spectral_classification": {
+        "spectral_type": "F6V",
+        "mk_class": "F6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.727,
+        "bp_rp": 3.589,
+        "j_mag": 12.835,
+        "h_mag": 8.217,
+        "ks_mag": 5.775
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 637.9,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "7481144823857380790",
+      "hd_id": "HD 162640",
+      "hip_id": "HIP 26081",
+      "ra": 280.92807188,
+      "dec": -23.63684232,
+      "parallax": 86.414,
+      "distance": 42.5,
+      "pmra": 218.69,
+      "pmdec": 87.57,
+      "radial_velocity": -8.1,
+      "stellar_parameters": {
+        "teff": 5182,
+        "logg": 3.87,
+        "metallicity_feh": -2.42,
+        "mass": 1.139,
+        "radius": 47.792,
+        "luminosity": 2181.2316,
+        "age": 3.6,
+        "vsini": 39.0
+      },
+      "spectral_classification": {
+        "spectral_type": "K5V",
+        "mk_class": "K5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.652,
+        "bp_rp": 3.899,
+        "j_mag": 5.375,
+        "h_mag": 5.0,
+        "ks_mag": 5.388
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.189
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 408.6,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8953865004709071867",
+      "hd_id": "HD 45208",
+      "hip_id": "HIP 44072",
+      "ra": 327.16668718,
+      "dec": 2.46408363,
+      "parallax": 40.439,
+      "distance": 12.3,
+      "pmra": -237.76,
+      "pmdec": -367.11,
+      "radial_velocity": -22.7,
+      "stellar_parameters": {
+        "teff": 6769,
+        "logg": 3.86,
+        "metallicity_feh": -0.82,
+        "mass": 1.213,
+        "radius": 1.318,
+        "luminosity": 2.0311,
+        "age": 4.9,
+        "vsini": 4.6
+      },
+      "spectral_classification": {
+        "spectral_type": "F0V",
+        "mk_class": "F0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.008,
+        "bp_rp": 2.971,
+        "j_mag": 10.741,
+        "h_mag": 7.23,
+        "ks_mag": 10.357
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.29
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 3
+      },
+      "data_quality": {
+        "parallax_snr": 120.0,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3924508014626722549",
+      "hd_id": "HD 42894",
+      "hip_id": "HIP 40278",
+      "ra": 99.5972128,
+      "dec": -11.56955869,
+      "parallax": 74.45,
+      "distance": 38.4,
+      "pmra": -139.03,
+      "pmdec": 219.5,
+      "radial_velocity": -66.3,
+      "stellar_parameters": {
+        "teff": 4346,
+        "logg": 4.44,
+        "metallicity_feh": -1.48,
+        "mass": 0.827,
+        "radius": 55.84,
+        "luminosity": 597.808,
+        "age": 9.2,
+        "vsini": 26.3
+      },
+      "spectral_classification": {
+        "spectral_type": "K8V",
+        "mk_class": "K8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 6.63,
+        "bp_rp": 1.723,
+        "j_mag": 8.568,
+        "h_mag": 9.606,
+        "ks_mag": 4.851
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 529.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "6242786518989609725",
+      "hd_id": "HD 110486",
+      "hip_id": "HIP 10997",
+      "ra": 130.14197285,
+      "dec": 74.71021828,
+      "parallax": 78.539,
+      "distance": 42.0,
+      "pmra": -221.45,
+      "pmdec": -471.11,
+      "radial_velocity": 50.1,
+      "stellar_parameters": {
+        "teff": 4363,
+        "logg": 4.22,
+        "metallicity_feh": -0.16,
+        "mass": 0.89,
+        "radius": 90.861,
+        "luminosity": 1735.9845,
+        "age": 6.8,
+        "vsini": 22.3
+      },
+      "spectral_classification": {
+        "spectral_type": "K1V",
+        "mk_class": "K1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.973,
+        "bp_rp": 1.447,
+        "j_mag": 6.739,
+        "h_mag": 14.683,
+        "ks_mag": 9.92
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 1
+      },
+      "data_quality": {
+        "parallax_snr": 806.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "7066186248063144414",
+      "hd_id": "HD 177602",
+      "hip_id": "HIP 25746",
+      "ra": 251.4698568,
+      "dec": -12.26586057,
+      "parallax": 56.729,
+      "distance": 34.4,
+      "pmra": 43.96,
+      "pmdec": 298.73,
+      "radial_velocity": -93.5,
+      "stellar_parameters": {
+        "teff": 6582,
+        "logg": 4.0,
+        "metallicity_feh": 0.46,
+        "mass": 1.177,
+        "radius": 1.346,
+        "luminosity": 2.412,
+        "age": 9.5,
+        "vsini": 43.9
+      },
+      "spectral_classification": {
+        "spectral_type": "F3V",
+        "mk_class": "F3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 7.167,
+        "bp_rp": 2.461,
+        "j_mag": 4.383,
+        "h_mag": 15.099,
+        "ks_mag": 12.031
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.465
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 629.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "6826273888274080386",
+      "hd_id": "HD 153195",
+      "hip_id": "HIP 31196",
+      "ra": 68.13601154,
+      "dec": -83.31132874,
+      "parallax": 0.52,
+      "distance": 10.1,
+      "pmra": -139.04,
+      "pmdec": 279.1,
+      "radial_velocity": 36.7,
+      "stellar_parameters": {
+        "teff": 6791,
+        "logg": 4.12,
+        "metallicity_feh": -0.73,
+        "mass": 1.268,
+        "radius": 1.281,
+        "luminosity": 4.8193,
+        "age": 4.8,
+        "vsini": 40.3
+      },
+      "spectral_classification": {
+        "spectral_type": "F0V",
+        "mk_class": "F0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.611,
+        "bp_rp": 1.358,
+        "j_mag": 4.306,
+        "h_mag": 11.154,
+        "ks_mag": 10.082
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 1
+      },
+      "data_quality": {
+        "parallax_snr": 590.3,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "1315758762074855646",
+      "hd_id": "HD 188985",
+      "hip_id": "HIP 80200",
+      "ra": 303.9114986,
+      "dec": 74.41073924,
+      "parallax": 24.942,
+      "distance": 18.2,
+      "pmra": 123.08,
+      "pmdec": -332.4,
+      "radial_velocity": 70.3,
+      "stellar_parameters": {
+        "teff": 5836,
+        "logg": 3.52,
+        "metallicity_feh": 0.48,
+        "mass": 0.851,
+        "radius": 0.928,
+        "luminosity": 0.759,
+        "age": 6.9,
+        "vsini": 31.6
+      },
+      "spectral_classification": {
+        "spectral_type": "G6V",
+        "mk_class": "G6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.737,
+        "bp_rp": 0.603,
+        "j_mag": 8.802,
+        "h_mag": 5.776,
+        "ks_mag": 7.703
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 250.6,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "6237016871027772485",
+      "hd_id": "HD 237704",
+      "hip_id": "HIP 81244",
+      "ra": 22.54186285,
+      "dec": -63.01211802,
+      "parallax": 57.568,
+      "distance": 27.1,
+      "pmra": -261.94,
+      "pmdec": 431.86,
+      "radial_velocity": -34.1,
+      "stellar_parameters": {
+        "teff": 4822,
+        "logg": 4.57,
+        "metallicity_feh": -1.49,
+        "mass": 0.906,
+        "radius": 86.702,
+        "luminosity": 2212.3799,
+        "age": 8.6,
+        "vsini": 0.7
+      },
+      "spectral_classification": {
+        "spectral_type": "K3V",
+        "mk_class": "K3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.801,
+        "bp_rp": 1.734,
+        "j_mag": 15.969,
+        "h_mag": 16.193,
+        "ks_mag": 9.157
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.173
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 644.2,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "6464621550100504026",
+      "hd_id": "HD 110607",
+      "hip_id": "HIP 102103",
+      "ra": 195.8468375,
+      "dec": -47.27162765,
+      "parallax": 53.372,
+      "distance": 20.4,
+      "pmra": 38.12,
+      "pmdec": 191.3,
+      "radial_velocity": -71.9,
+      "stellar_parameters": {
+        "teff": 7170,
+        "logg": 4.73,
+        "metallicity_feh": 0.4,
+        "mass": 1.2,
+        "radius": 1.261,
+        "luminosity": 2.4821,
+        "age": 3.9,
+        "vsini": 4.7
+      },
+      "spectral_classification": {
+        "spectral_type": "F6V",
+        "mk_class": "F6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.1,
+        "bp_rp": 2.027,
+        "j_mag": 17.175,
+        "h_mag": 4.172,
+        "ks_mag": 10.67
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.047
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 660.5,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1835134383301869818",
+      "hd_id": "HD 30340",
+      "hip_id": "HIP 56968",
+      "ra": 31.45780707,
+      "dec": 37.48048966,
+      "parallax": 32.126,
+      "distance": 18.5,
+      "pmra": -425.58,
+      "pmdec": -413.6,
+      "radial_velocity": -12.4,
+      "stellar_parameters": {
+        "teff": 6605,
+        "logg": 4.16,
+        "metallicity_feh": 0.14,
+        "mass": 1.121,
+        "radius": 1.18,
+        "luminosity": 3.9864,
+        "age": 3.2,
+        "vsini": 14.7
+      },
+      "spectral_classification": {
+        "spectral_type": "F2V",
+        "mk_class": "F2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 7.28,
+        "bp_rp": 2.435,
+        "j_mag": 17.045,
+        "h_mag": 11.239,
+        "ks_mag": 4.821
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.441
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 608.2,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "8525705928606957061",
+      "hd_id": "HD 240391",
+      "hip_id": "HIP 20194",
+      "ra": 233.79485284,
+      "dec": -10.44294029,
+      "parallax": 34.949,
+      "distance": 15.0,
+      "pmra": 255.62,
+      "pmdec": -371.18,
+      "radial_velocity": -26.4,
+      "stellar_parameters": {
+        "teff": 2942,
+        "logg": 4.22,
+        "metallicity_feh": -0.71,
+        "mass": 0.177,
+        "radius": 0.54,
+        "luminosity": 0.0543,
+        "age": 12.6,
+        "vsini": 1.6
+      },
+      "spectral_classification": {
+        "spectral_type": "M8V",
+        "mk_class": "M8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 7.634,
+        "bp_rp": 1.614,
+        "j_mag": 9.994,
+        "h_mag": 14.019,
+        "ks_mag": 12.282
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 273.9,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "7564617604693907403",
+      "hd_id": "HD 43643",
+      "hip_id": "HIP 38126",
+      "ra": 293.33422456,
+      "dec": -9.77019582,
+      "parallax": 57.777,
+      "distance": 23.9,
+      "pmra": 355.24,
+      "pmdec": 287.78,
+      "radial_velocity": -3.5,
+      "stellar_parameters": {
+        "teff": 5319,
+        "logg": 4.13,
+        "metallicity_feh": 0.22,
+        "mass": 0.814,
+        "radius": 1.049,
+        "luminosity": 1.2421,
+        "age": 10.6,
+        "vsini": 36.7
+      },
+      "spectral_classification": {
+        "spectral_type": "G3V",
+        "mk_class": "G3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.543,
+        "bp_rp": 2.108,
+        "j_mag": 17.663,
+        "h_mag": 15.52,
+        "ks_mag": 4.377
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.171
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 321.4,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "6963656690402985759",
+      "hd_id": "HD 7250",
+      "hip_id": "HIP 119892",
+      "ra": 45.92540915,
+      "dec": -53.38977874,
+      "parallax": 53.739,
+      "distance": 15.1,
+      "pmra": -347.26,
+      "pmdec": -70.95,
+      "radial_velocity": 73.9,
+      "stellar_parameters": {
+        "teff": 3775,
+        "logg": 4.86,
+        "metallicity_feh": -1.71,
+        "mass": 0.562,
+        "radius": 0.23,
+        "luminosity": 0.0657,
+        "age": 13.4,
+        "vsini": 12.0
+      },
+      "spectral_classification": {
+        "spectral_type": "M1V",
+        "mk_class": "M1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.696,
+        "bp_rp": 3.306,
+        "j_mag": 17.518,
+        "h_mag": 4.023,
+        "ks_mag": 15.026
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 786.7,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1021360193930632003",
+      "hd_id": "HD 240127",
+      "hip_id": "HIP 23041",
+      "ra": 346.21272795,
+      "dec": -13.01346741,
+      "parallax": 66.592,
+      "distance": 11.7,
+      "pmra": 473.43,
+      "pmdec": -324.69,
+      "radial_velocity": -16.8,
+      "stellar_parameters": {
+        "teff": 6749,
+        "logg": 4.88,
+        "metallicity_feh": 0.19,
+        "mass": 1.299,
+        "radius": 1.235,
+        "luminosity": 4.5026,
+        "age": 9.2,
+        "vsini": 37.5
+      },
+      "spectral_classification": {
+        "spectral_type": "F0V",
+        "mk_class": "F0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.478,
+        "bp_rp": 0.558,
+        "j_mag": 10.622,
+        "h_mag": 8.397,
+        "ks_mag": 5.085
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 609.3,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1419588269103789740",
+      "hd_id": "HD 20881",
+      "hip_id": "HIP 22149",
+      "ra": 147.90779086,
+      "dec": -72.56494709,
+      "parallax": 8.817,
+      "distance": 13.8,
+      "pmra": 35.84,
+      "pmdec": 247.03,
+      "radial_velocity": 51.0,
+      "stellar_parameters": {
+        "teff": 6148,
+        "logg": 4.07,
+        "metallicity_feh": -0.37,
+        "mass": 1.181,
+        "radius": 1.261,
+        "luminosity": 2.6156,
+        "age": 0.4,
+        "vsini": 31.7
+      },
+      "spectral_classification": {
+        "spectral_type": "F3V",
+        "mk_class": "F3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 14.465,
+        "bp_rp": 2.01,
+        "j_mag": 12.737,
+        "h_mag": 10.836,
+        "ks_mag": 9.663
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 138.6,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "1283524885467229472",
+      "hd_id": "HD 114632",
+      "hip_id": "HIP 52869",
+      "ra": 339.27196246,
+      "dec": -12.80623547,
+      "parallax": 24.502,
+      "distance": 16.9,
+      "pmra": -65.03,
+      "pmdec": 91.94,
+      "radial_velocity": 16.4,
+      "stellar_parameters": {
+        "teff": 2519,
+        "logg": 4.57,
+        "metallicity_feh": -0.67,
+        "mass": 0.597,
+        "radius": 0.205,
+        "luminosity": 0.0388,
+        "age": 14.2,
+        "vsini": 44.9
+      },
+      "spectral_classification": {
+        "spectral_type": "M3V",
+        "mk_class": "M3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.252,
+        "bp_rp": 0.748,
+        "j_mag": 14.042,
+        "h_mag": 7.093,
+        "ks_mag": 8.227
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.154
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 266.1,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "4242004049852740470",
+      "hd_id": "HD 131256",
+      "hip_id": "HIP 57759",
+      "ra": 50.47461125,
+      "dec": -88.72673192,
+      "parallax": 23.602,
+      "distance": 21.4,
+      "pmra": 78.78,
+      "pmdec": 202.2,
+      "radial_velocity": -28.8,
+      "stellar_parameters": {
+        "teff": 5822,
+        "logg": 3.87,
+        "metallicity_feh": -0.06,
+        "mass": 1.178,
+        "radius": 0.914,
+        "luminosity": 0.6176,
+        "age": 0.4,
+        "vsini": 16.9
+      },
+      "spectral_classification": {
+        "spectral_type": "G4V",
+        "mk_class": "G4V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.292,
+        "bp_rp": 1.04,
+        "j_mag": 14.65,
+        "h_mag": 4.825,
+        "ks_mag": 4.089
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": true,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 926.4,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "4474270063606216477",
+      "hd_id": "HD 76656",
+      "hip_id": "HIP 26802",
+      "ra": 318.02249744,
+      "dec": -27.18405379,
+      "parallax": 68.828,
+      "distance": 574.0,
+      "pmra": -294.82,
+      "pmdec": 355.96,
+      "radial_velocity": -7.8,
+      "stellar_parameters": {
+        "teff": 6748,
+        "logg": 4.32,
+        "metallicity_feh": -0.55,
+        "mass": 1.302,
+        "radius": 1.242,
+        "luminosity": 2.4649,
+        "age": 4.2,
+        "vsini": 26.2
+      },
+      "spectral_classification": {
+        "spectral_type": "F9V",
+        "mk_class": "F9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.062,
+        "bp_rp": 0.526,
+        "j_mag": 17.501,
+        "h_mag": 8.341,
+        "ks_mag": 10.049
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.456
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 192.3,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "1112171162782328324",
+      "hd_id": "HD 29240",
+      "hip_id": "HIP 24202",
+      "ra": 349.5517703,
+      "dec": -60.67328828,
+      "parallax": 84.861,
+      "distance": 186.9,
+      "pmra": 353.51,
+      "pmdec": 223.27,
+      "radial_velocity": 42.0,
+      "stellar_parameters": {
+        "teff": 5814,
+        "logg": 4.86,
+        "metallicity_feh": -0.19,
+        "mass": 0.968,
+        "radius": 1.127,
+        "luminosity": 0.6143,
+        "age": 1.5,
+        "vsini": 23.7
+      },
+      "spectral_classification": {
+        "spectral_type": "G0V",
+        "mk_class": "G0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.268,
+        "bp_rp": 0.667,
+        "j_mag": 12.582,
+        "h_mag": 5.381,
+        "ks_mag": 6.098
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.135
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 315.2,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3024102843226039233",
+      "hd_id": "HD 232765",
+      "hip_id": "HIP 65402",
+      "ra": 10.52563267,
+      "dec": 30.55775395,
+      "parallax": 27.299,
+      "distance": 147.1,
+      "pmra": 33.02,
+      "pmdec": 299.95,
+      "radial_velocity": 59.3,
+      "stellar_parameters": {
+        "teff": 5647,
+        "logg": 4.14,
+        "metallicity_feh": 0.34,
+        "mass": 1.124,
+        "radius": 1.185,
+        "luminosity": 0.6086,
+        "age": 8.5,
+        "vsini": 39.1
+      },
+      "spectral_classification": {
+        "spectral_type": "G9V",
+        "mk_class": "G9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.777,
+        "bp_rp": 1.388,
+        "j_mag": 8.819,
+        "h_mag": 5.844,
+        "ks_mag": 15.368
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.171
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 930.4,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "5571954467908806951",
+      "hd_id": "HD 198904",
+      "hip_id": "HIP 51530",
+      "ra": 81.87609772,
+      "dec": 50.56154814,
+      "parallax": 42.653,
+      "distance": 16.4,
+      "pmra": 65.15,
+      "pmdec": -64.32,
+      "radial_velocity": 1.7,
+      "stellar_parameters": {
+        "teff": 5628,
+        "logg": 3.96,
+        "metallicity_feh": -0.46,
+        "mass": 0.955,
+        "radius": 0.827,
+        "luminosity": 1.2926,
+        "age": 10.3,
+        "vsini": 18.0
+      },
+      "spectral_classification": {
+        "spectral_type": "G8V",
+        "mk_class": "G8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 14.647,
+        "bp_rp": 0.292,
+        "j_mag": 9.584,
+        "h_mag": 14.063,
+        "ks_mag": 10.313
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.318
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 1
+      },
+      "data_quality": {
+        "parallax_snr": 608.1,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "5277862681749013485",
+      "hd_id": "HD 18054",
+      "hip_id": "HIP 119054",
+      "ra": 180.61267366,
+      "dec": -63.90289776,
+      "parallax": 42.044,
+      "distance": 13.0,
+      "pmra": -344.97,
+      "pmdec": 129.64,
+      "radial_velocity": 57.6,
+      "stellar_parameters": {
+        "teff": 3705,
+        "logg": 3.8,
+        "metallicity_feh": 0.27,
+        "mass": 0.571,
+        "radius": 0.609,
+        "luminosity": 0.0739,
+        "age": 12.6,
+        "vsini": 30.5
+      },
+      "spectral_classification": {
+        "spectral_type": "M2V",
+        "mk_class": "M2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.697,
+        "bp_rp": 1.053,
+        "j_mag": 5.562,
+        "h_mag": 6.083,
+        "ks_mag": 9.148
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.144
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 4
+      },
+      "data_quality": {
+        "parallax_snr": 61.3,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "2729562218098858650",
+      "hd_id": "HD 113922",
+      "hip_id": "HIP 114351",
+      "ra": 252.67744201,
+      "dec": -79.88606653,
+      "parallax": 12.936,
+      "distance": 82.1,
+      "pmra": -211.48,
+      "pmdec": 180.28,
+      "radial_velocity": 73.3,
+      "stellar_parameters": {
+        "teff": 2348,
+        "logg": 4.75,
+        "metallicity_feh": 0.12,
+        "mass": 0.327,
+        "radius": 0.372,
+        "luminosity": 0.0428,
+        "age": 14.1,
+        "vsini": 33.8
+      },
+      "spectral_classification": {
+        "spectral_type": "M1V",
+        "mk_class": "M1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.128,
+        "bp_rp": 1.486,
+        "j_mag": 17.643,
+        "h_mag": 5.606,
+        "ks_mag": 6.194
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": true,
+        "number_of_planets": 2
+      },
+      "data_quality": {
+        "parallax_snr": 529.6,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "5644685584060698363",
+      "hd_id": "HD 155832",
+      "hip_id": "HIP 75093",
+      "ra": 251.99985943,
+      "dec": 31.1013073,
+      "parallax": 24.54,
+      "distance": 34.4,
+      "pmra": -149.4,
+      "pmdec": 413.2,
+      "radial_velocity": 78.0,
+      "stellar_parameters": {
+        "teff": 5560,
+        "logg": 4.95,
+        "metallicity_feh": -0.7,
+        "mass": 1.084,
+        "radius": 0.984,
+        "luminosity": 1.3281,
+        "age": 5.0,
+        "vsini": 6.7
+      },
+      "spectral_classification": {
+        "spectral_type": "G3V",
+        "mk_class": "G3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.35,
+        "bp_rp": 3.892,
+        "j_mag": 12.092,
+        "h_mag": 5.985,
+        "ks_mag": 14.803
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 313.5,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "3273654755217216276",
+      "hd_id": "HD 198647",
+      "hip_id": "HIP 116350",
+      "ra": 80.70600317,
+      "dec": -4.82258945,
+      "parallax": 33.442,
+      "distance": 12.1,
+      "pmra": 294.21,
+      "pmdec": 258.4,
+      "radial_velocity": 78.7,
+      "stellar_parameters": {
+        "teff": 6242,
+        "logg": 4.7,
+        "metallicity_feh": -0.45,
+        "mass": 1.277,
+        "radius": 1.235,
+        "luminosity": 1.5545,
+        "age": 1.1,
+        "vsini": 41.4
+      },
+      "spectral_classification": {
+        "spectral_type": "F8V",
+        "mk_class": "F8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.114,
+        "bp_rp": 3.272,
+        "j_mag": 10.546,
+        "h_mag": 6.519,
+        "ks_mag": 4.677
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.475
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 735.0,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8740717161585856540",
+      "hd_id": "HD 172805",
+      "hip_id": "HIP 70531",
+      "ra": 259.66863995,
+      "dec": 57.84352504,
+      "parallax": 87.589,
+      "distance": 12.3,
+      "pmra": 396.23,
+      "pmdec": 267.36,
+      "radial_velocity": -2.3,
+      "stellar_parameters": {
+        "teff": 6013,
+        "logg": 4.6,
+        "metallicity_feh": -0.24,
+        "mass": 1.281,
+        "radius": 1.344,
+        "luminosity": 3.6067,
+        "age": 10.0,
+        "vsini": 9.2
+      },
+      "spectral_classification": {
+        "spectral_type": "F9V",
+        "mk_class": "F9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.437,
+        "bp_rp": 0.703,
+        "j_mag": 11.742,
+        "h_mag": 8.605,
+        "ks_mag": 8.377
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.477
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 580.1,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8654074699360723732",
+      "hd_id": "HD 249048",
+      "hip_id": "HIP 13847",
+      "ra": 277.99607716,
+      "dec": -66.28209174,
+      "parallax": 80.069,
+      "distance": 10.7,
+      "pmra": 306.3,
+      "pmdec": 206.42,
+      "radial_velocity": 71.4,
+      "stellar_parameters": {
+        "teff": 6362,
+        "logg": 3.59,
+        "metallicity_feh": -0.62,
+        "mass": 1.22,
+        "radius": 1.393,
+        "luminosity": 3.8412,
+        "age": 6.2,
+        "vsini": 19.8
+      },
+      "spectral_classification": {
+        "spectral_type": "F6V",
+        "mk_class": "F6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.922,
+        "bp_rp": 2.37,
+        "j_mag": 7.336,
+        "h_mag": 5.766,
+        "ks_mag": 5.946
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.024
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 349.0,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "3134986831440111059",
+      "hd_id": "HD 237376",
+      "hip_id": "HIP 78295",
+      "ra": 35.79061019,
+      "dec": -81.60057848,
+      "parallax": 28.697,
+      "distance": 283.5,
+      "pmra": 114.29,
+      "pmdec": 249.58,
+      "radial_velocity": 74.8,
+      "stellar_parameters": {
+        "teff": 5206,
+        "logg": 4.54,
+        "metallicity_feh": 0.25,
+        "mass": 0.999,
+        "radius": 0.96,
+        "luminosity": 1.0308,
+        "age": 3.1,
+        "vsini": 36.8
+      },
+      "spectral_classification": {
+        "spectral_type": "G1V",
+        "mk_class": "G1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.239,
+        "bp_rp": 0.88,
+        "j_mag": 6.666,
+        "h_mag": 16.44,
+        "ks_mag": 4.126
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.409
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 809.4,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "5642140785291932513",
+      "hd_id": "HD 122253",
+      "hip_id": "HIP 104166",
+      "ra": 185.2316653,
+      "dec": 6.560053,
+      "parallax": 96.319,
+      "distance": 16.6,
+      "pmra": -186.48,
+      "pmdec": 336.68,
+      "radial_velocity": 68.0,
+      "stellar_parameters": {
+        "teff": 3199,
+        "logg": 4.92,
+        "metallicity_feh": 0.13,
+        "mass": 0.257,
+        "radius": 0.333,
+        "luminosity": 0.0378,
+        "age": 3.6,
+        "vsini": 5.1
+      },
+      "spectral_classification": {
+        "spectral_type": "M5V",
+        "mk_class": "M5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 10.669,
+        "bp_rp": 2.446,
+        "j_mag": 11.367,
+        "h_mag": 10.02,
+        "ks_mag": 15.187
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.252
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 257.7,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "1702789066773236828",
+      "hd_id": "HD 186130",
+      "hip_id": "HIP 68065",
+      "ra": 93.16762775,
+      "dec": -88.64795566,
+      "parallax": 37.416,
+      "distance": 13.1,
+      "pmra": -129.05,
+      "pmdec": 157.33,
+      "radial_velocity": -74.0,
+      "stellar_parameters": {
+        "teff": 6969,
+        "logg": 4.76,
+        "metallicity_feh": -0.56,
+        "mass": 1.204,
+        "radius": 1.314,
+        "luminosity": 4.7874,
+        "age": 0.5,
+        "vsini": 11.4
+      },
+      "spectral_classification": {
+        "spectral_type": "F7V",
+        "mk_class": "F7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 7.356,
+        "bp_rp": 1.424,
+        "j_mag": 14.056,
+        "h_mag": 5.635,
+        "ks_mag": 14.723
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 809.4,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "4066428467342905534",
+      "hd_id": "HD 224240",
+      "hip_id": "HIP 67730",
+      "ra": 60.74674049,
+      "dec": 0.13777396,
+      "parallax": 1.44,
+      "distance": 12.9,
+      "pmra": -297.9,
+      "pmdec": 478.35,
+      "radial_velocity": -56.0,
+      "stellar_parameters": {
+        "teff": 5514,
+        "logg": 4.7,
+        "metallicity_feh": 0.11,
+        "mass": 1.128,
+        "radius": 0.868,
+        "luminosity": 1.3277,
+        "age": 8.6,
+        "vsini": 1.0
+      },
+      "spectral_classification": {
+        "spectral_type": "G9V",
+        "mk_class": "G9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 16.913,
+        "bp_rp": 0.731,
+        "j_mag": 17.737,
+        "h_mag": 11.295,
+        "ks_mag": 9.813
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.384
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 2
+      },
+      "data_quality": {
+        "parallax_snr": 787.0,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "2426421871297092122",
+      "hd_id": "HD 224300",
+      "hip_id": "HIP 38601",
+      "ra": 31.71333558,
+      "dec": 42.94877431,
+      "parallax": 68.343,
+      "distance": 80.2,
+      "pmra": 87.75,
+      "pmdec": -328.29,
+      "radial_velocity": 29.3,
+      "stellar_parameters": {
+        "teff": 5967,
+        "logg": 4.04,
+        "metallicity_feh": 0.46,
+        "mass": 0.951,
+        "radius": 0.895,
+        "luminosity": 1.2984,
+        "age": 2.4,
+        "vsini": 27.4
+      },
+      "spectral_classification": {
+        "spectral_type": "G8V",
+        "mk_class": "G8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 18.485,
+        "bp_rp": 1.355,
+        "j_mag": 15.163,
+        "h_mag": 11.91,
+        "ks_mag": 10.56
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.096
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 691.7,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "1915333288698347540",
+      "hd_id": "HD 71823",
+      "hip_id": "HIP 59736",
+      "ra": 23.48306427,
+      "dec": -61.4418923,
+      "parallax": 79.077,
+      "distance": 22.7,
+      "pmra": -113.6,
+      "pmdec": 277.56,
+      "radial_velocity": -33.0,
+      "stellar_parameters": {
+        "teff": 7295,
+        "logg": 3.78,
+        "metallicity_feh": -0.16,
+        "mass": 1.304,
+        "radius": 1.315,
+        "luminosity": 4.6918,
+        "age": 5.0,
+        "vsini": 24.4
+      },
+      "spectral_classification": {
+        "spectral_type": "F1V",
+        "mk_class": "F1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 6.918,
+        "bp_rp": 2.226,
+        "j_mag": 9.989,
+        "h_mag": 4.467,
+        "ks_mag": 7.219
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 935.8,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3593649973577277755",
+      "hd_id": "HD 100090",
+      "hip_id": "HIP 60720",
+      "ra": 21.89488541,
+      "dec": -20.78113372,
+      "parallax": 82.97,
+      "distance": 39.5,
+      "pmra": 494.31,
+      "pmdec": 395.36,
+      "radial_velocity": 69.2,
+      "stellar_parameters": {
+        "teff": 6682,
+        "logg": 3.63,
+        "metallicity_feh": 0.49,
+        "mass": 1.147,
+        "radius": 1.231,
+        "luminosity": 2.5231,
+        "age": 2.1,
+        "vsini": 15.2
+      },
+      "spectral_classification": {
+        "spectral_type": "F6V",
+        "mk_class": "F6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 5.719,
+        "bp_rp": 3.713,
+        "j_mag": 4.455,
+        "h_mag": 4.606,
+        "ks_mag": 6.866
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.023
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 411.5,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "9509739171521058745",
+      "hd_id": "HD 55243",
+      "hip_id": "HIP 9883",
+      "ra": 188.27506043,
+      "dec": 27.32628775,
+      "parallax": 97.135,
+      "distance": 17.6,
+      "pmra": 41.03,
+      "pmdec": -383.06,
+      "radial_velocity": 65.5,
+      "stellar_parameters": {
+        "teff": 5819,
+        "logg": 4.99,
+        "metallicity_feh": -0.67,
+        "mass": 1.009,
+        "radius": 1.266,
+        "luminosity": 1.4009,
+        "age": 4.3,
+        "vsini": 34.3
+      },
+      "spectral_classification": {
+        "spectral_type": "G8V",
+        "mk_class": "G8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.11,
+        "bp_rp": 2.74,
+        "j_mag": 12.929,
+        "h_mag": 9.265,
+        "ks_mag": 15.67
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.47
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 795.8,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "5217761814366118159",
+      "hd_id": "HD 75115",
+      "hip_id": "HIP 68905",
+      "ra": 212.14742826,
+      "dec": 86.88776051,
+      "parallax": 90.273,
+      "distance": 109.9,
+      "pmra": -449.23,
+      "pmdec": -10.74,
+      "radial_velocity": -35.5,
+      "stellar_parameters": {
+        "teff": 6543,
+        "logg": 4.17,
+        "metallicity_feh": -0.48,
+        "mass": 1.172,
+        "radius": 1.293,
+        "luminosity": 4.5353,
+        "age": 4.2,
+        "vsini": 18.2
+      },
+      "spectral_classification": {
+        "spectral_type": "F5V",
+        "mk_class": "F5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 5.481,
+        "bp_rp": 1.879,
+        "j_mag": 9.612,
+        "h_mag": 16.013,
+        "ks_mag": 11.585
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.155
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 5.1,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "8694622807490760999",
+      "hd_id": "HD 146069",
+      "hip_id": "HIP 37611",
+      "ra": 58.45647791,
+      "dec": 9.86746912,
+      "parallax": 6.395,
+      "distance": 34.5,
+      "pmra": -63.34,
+      "pmdec": -473.35,
+      "radial_velocity": -6.4,
+      "stellar_parameters": {
+        "teff": 2865,
+        "logg": 3.56,
+        "metallicity_feh": -0.49,
+        "mass": 0.553,
+        "radius": 0.41,
+        "luminosity": 0.0799,
+        "age": 10.4,
+        "vsini": 37.9
+      },
+      "spectral_classification": {
+        "spectral_type": "M3V",
+        "mk_class": "M3V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 11.119,
+        "bp_rp": 0.301,
+        "j_mag": 4.522,
+        "h_mag": 8.759,
+        "ks_mag": 12.403
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 274.5,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "3916115056508242005",
+      "hd_id": "HD 35859",
+      "hip_id": "HIP 7834",
+      "ra": 248.44117489,
+      "dec": -33.2865569,
+      "parallax": 58.665,
+      "distance": 14.2,
+      "pmra": -139.54,
+      "pmdec": 282.56,
+      "radial_velocity": -48.1,
+      "stellar_parameters": {
+        "teff": 2651,
+        "logg": 3.78,
+        "metallicity_feh": -1.05,
+        "mass": 0.116,
+        "radius": 0.322,
+        "luminosity": 0.067,
+        "age": 10.2,
+        "vsini": 7.2
+      },
+      "spectral_classification": {
+        "spectral_type": "M0V",
+        "mk_class": "M0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.821,
+        "bp_rp": 2.228,
+        "j_mag": 7.904,
+        "h_mag": 11.221,
+        "ks_mag": 10.098
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 227.7,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "9471321224086635898",
+      "hd_id": "HD 80596",
+      "hip_id": "HIP 75822",
+      "ra": 345.81846825,
+      "dec": 62.38921188,
+      "parallax": 73.058,
+      "distance": 10.2,
+      "pmra": -219.54,
+      "pmdec": -284.65,
+      "radial_velocity": 48.1,
+      "stellar_parameters": {
+        "teff": 5790,
+        "logg": 3.72,
+        "metallicity_feh": -0.71,
+        "mass": 0.818,
+        "radius": 1.182,
+        "luminosity": 0.9336,
+        "age": 0.3,
+        "vsini": 49.4
+      },
+      "spectral_classification": {
+        "spectral_type": "G5V",
+        "mk_class": "G5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.915,
+        "bp_rp": 2.023,
+        "j_mag": 12.731,
+        "h_mag": 6.723,
+        "ks_mag": 12.235
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 101.5,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "5254358807428812703",
+      "hd_id": "HD 125244",
+      "hip_id": "HIP 95260",
+      "ra": 116.59946301,
+      "dec": 83.16095929,
+      "parallax": 62.435,
+      "distance": 12.3,
+      "pmra": 316.16,
+      "pmdec": -107.35,
+      "radial_velocity": 33.1,
+      "stellar_parameters": {
+        "teff": 3400,
+        "logg": 3.68,
+        "metallicity_feh": -1.05,
+        "mass": 0.307,
+        "radius": 0.202,
+        "luminosity": 0.0527,
+        "age": 12.5,
+        "vsini": 31.9
+      },
+      "spectral_classification": {
+        "spectral_type": "M5V",
+        "mk_class": "M5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 14.12,
+        "bp_rp": 1.624,
+        "j_mag": 11.997,
+        "h_mag": 14.25,
+        "ks_mag": 12.961
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.299
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 870.8,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "2003537290179181970",
+      "hd_id": "HD 227005",
+      "hip_id": "HIP 48458",
+      "ra": 313.98724965,
+      "dec": 66.86493228,
+      "parallax": 40.656,
+      "distance": 10.9,
+      "pmra": -61.63,
+      "pmdec": 125.02,
+      "radial_velocity": 6.3,
+      "stellar_parameters": {
+        "teff": 5887,
+        "logg": 3.69,
+        "metallicity_feh": -0.43,
+        "mass": 0.937,
+        "radius": 0.977,
+        "luminosity": 1.0437,
+        "age": 11.2,
+        "vsini": 29.8
+      },
+      "spectral_classification": {
+        "spectral_type": "G2V",
+        "mk_class": "G2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.311,
+        "bp_rp": 1.95,
+        "j_mag": 14.738,
+        "h_mag": 9.567,
+        "ks_mag": 4.251
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 743.0,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "1367114571187431724",
+      "hd_id": "HD 202433",
+      "hip_id": "HIP 48705",
+      "ra": 77.19118844,
+      "dec": -48.5873859,
+      "parallax": 90.709,
+      "distance": 10.1,
+      "pmra": 483.7,
+      "pmdec": 321.51,
+      "radial_velocity": -65.2,
+      "stellar_parameters": {
+        "teff": 3551,
+        "logg": 3.86,
+        "metallicity_feh": -0.83,
+        "mass": 0.385,
+        "radius": 0.273,
+        "luminosity": 0.0428,
+        "age": 12.1,
+        "vsini": 18.4
+      },
+      "spectral_classification": {
+        "spectral_type": "M4V",
+        "mk_class": "M4V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 6.899,
+        "bp_rp": 2.6,
+        "j_mag": 16.903,
+        "h_mag": 15.355,
+        "ks_mag": 9.859
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.082
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 520.2,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "8963128227933633966",
+      "hd_id": "HD 180747",
+      "hip_id": "HIP 90042",
+      "ra": 128.20651849,
+      "dec": -64.94271415,
+      "parallax": 22.043,
+      "distance": 41.4,
+      "pmra": -266.64,
+      "pmdec": 225.35,
+      "radial_velocity": 4.0,
+      "stellar_parameters": {
+        "teff": 5971,
+        "logg": 4.92,
+        "metallicity_feh": -0.08,
+        "mass": 1.164,
+        "radius": 1.013,
+        "luminosity": 1.313,
+        "age": 11.1,
+        "vsini": 44.9
+      },
+      "spectral_classification": {
+        "spectral_type": "G5V",
+        "mk_class": "G5V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 16.416,
+        "bp_rp": 0.939,
+        "j_mag": 16.048,
+        "h_mag": 14.511,
+        "ks_mag": 8.702
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 756.1,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "6108624469294054721",
+      "hd_id": "HD 218377",
+      "hip_id": "HIP 5856",
+      "ra": 255.18213706,
+      "dec": -18.65673138,
+      "parallax": 60.298,
+      "distance": 74.6,
+      "pmra": 358.78,
+      "pmdec": 245.25,
+      "radial_velocity": -26.6,
+      "stellar_parameters": {
+        "teff": 4630,
+        "logg": 4.72,
+        "metallicity_feh": -1.37,
+        "mass": 1.231,
+        "radius": 42.44,
+        "luminosity": 2532.5188,
+        "age": 11.1,
+        "vsini": 21.7
+      },
+      "spectral_classification": {
+        "spectral_type": "K7V",
+        "mk_class": "K7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 17.755,
+        "bp_rp": 2.119,
+        "j_mag": 5.756,
+        "h_mag": 4.382,
+        "ks_mag": 9.817
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.394
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 757.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "7395297258696962396",
+      "hd_id": "HD 105164",
+      "hip_id": "HIP 54761",
+      "ra": 85.26273906,
+      "dec": -41.12908002,
+      "parallax": 46.477,
+      "distance": 10.5,
+      "pmra": -62.07,
+      "pmdec": -284.72,
+      "radial_velocity": -70.5,
+      "stellar_parameters": {
+        "teff": 3426,
+        "logg": 3.99,
+        "metallicity_feh": -1.59,
+        "mass": 0.48,
+        "radius": 0.39,
+        "luminosity": 0.0456,
+        "age": 12.3,
+        "vsini": 26.5
+      },
+      "spectral_classification": {
+        "spectral_type": "M9V",
+        "mk_class": "M9V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.776,
+        "bp_rp": 3.985,
+        "j_mag": 8.507,
+        "h_mag": 9.421,
+        "ks_mag": 9.832
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": true,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 323.9,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "4759377976451094867",
+      "hd_id": "HD 33536",
+      "hip_id": "HIP 36206",
+      "ra": 180.26628979,
+      "dec": -69.27225102,
+      "parallax": 86.663,
+      "distance": 18.8,
+      "pmra": 239.75,
+      "pmdec": -322.0,
+      "radial_velocity": 83.9,
+      "stellar_parameters": {
+        "teff": 2588,
+        "logg": 4.91,
+        "metallicity_feh": -0.02,
+        "mass": 0.364,
+        "radius": 0.222,
+        "luminosity": 0.0498,
+        "age": 9.2,
+        "vsini": 45.1
+      },
+      "spectral_classification": {
+        "spectral_type": "M0V",
+        "mk_class": "M0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.629,
+        "bp_rp": 2.863,
+        "j_mag": 4.388,
+        "h_mag": 7.622,
+        "ks_mag": 9.964
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.087
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 65.4,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "7840945334013474718",
+      "hd_id": "HD 66077",
+      "hip_id": "HIP 113478",
+      "ra": 157.38347733,
+      "dec": 43.35121307,
+      "parallax": 44.675,
+      "distance": 56.4,
+      "pmra": 498.78,
+      "pmdec": -476.56,
+      "radial_velocity": 50.4,
+      "stellar_parameters": {
+        "teff": 5904,
+        "logg": 4.51,
+        "metallicity_feh": -0.31,
+        "mass": 1.117,
+        "radius": 1.209,
+        "luminosity": 1.222,
+        "age": 9.3,
+        "vsini": 39.8
+      },
+      "spectral_classification": {
+        "spectral_type": "G8V",
+        "mk_class": "G8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 6.958,
+        "bp_rp": 3.807,
+        "j_mag": 15.619,
+        "h_mag": 7.102,
+        "ks_mag": 6.069
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 358.3,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "4946425487628750272",
+      "hd_id": "HD 155564",
+      "hip_id": "HIP 50321",
+      "ra": 269.0726626,
+      "dec": -42.53579708,
+      "parallax": 32.255,
+      "distance": 27.4,
+      "pmra": 373.22,
+      "pmdec": -115.08,
+      "radial_velocity": -96.1,
+      "stellar_parameters": {
+        "teff": 6606,
+        "logg": 3.52,
+        "metallicity_feh": -0.11,
+        "mass": 1.181,
+        "radius": 1.162,
+        "luminosity": 2.3441,
+        "age": 3.4,
+        "vsini": 12.3
+      },
+      "spectral_classification": {
+        "spectral_type": "F2V",
+        "mk_class": "F2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.827,
+        "bp_rp": 1.613,
+        "j_mag": 16.567,
+        "h_mag": 6.185,
+        "ks_mag": 6.752
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.108
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 683.9,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "2910433826101835180",
+      "hd_id": "HD 196242",
+      "hip_id": "HIP 60853",
+      "ra": 341.75286659,
+      "dec": 61.53314222,
+      "parallax": 32.909,
+      "distance": 11.4,
+      "pmra": -243.95,
+      "pmdec": 345.55,
+      "radial_velocity": -85.7,
+      "stellar_parameters": {
+        "teff": 2725,
+        "logg": 3.93,
+        "metallicity_feh": -0.59,
+        "mass": 0.517,
+        "radius": 0.444,
+        "luminosity": 0.0328,
+        "age": 9.5,
+        "vsini": 30.7
+      },
+      "spectral_classification": {
+        "spectral_type": "M8V",
+        "mk_class": "M8V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 16.992,
+        "bp_rp": 1.544,
+        "j_mag": 14.558,
+        "h_mag": 16.379,
+        "ks_mag": 14.958
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 5
+      },
+      "data_quality": {
+        "parallax_snr": 122.3,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "3091285007615068458",
+      "hd_id": "HD 90560",
+      "hip_id": "HIP 27637",
+      "ra": 333.12103341,
+      "dec": 76.28252229,
+      "parallax": 62.24,
+      "distance": 11.4,
+      "pmra": -61.52,
+      "pmdec": 267.8,
+      "radial_velocity": -14.1,
+      "stellar_parameters": {
+        "teff": 7489,
+        "logg": 4.29,
+        "metallicity_feh": -0.5,
+        "mass": 1.378,
+        "radius": 1.329,
+        "luminosity": 2.585,
+        "age": 7.6,
+        "vsini": 36.8
+      },
+      "spectral_classification": {
+        "spectral_type": "F2V",
+        "mk_class": "F2V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 9.328,
+        "bp_rp": 1.709,
+        "j_mag": 6.495,
+        "h_mag": 9.792,
+        "ks_mag": 8.722
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.298
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 344.6,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "6516452340085713203",
+      "hd_id": "HD 31835",
+      "hip_id": "HIP 32645",
+      "ra": 277.29599861,
+      "dec": 9.0623151,
+      "parallax": 90.497,
+      "distance": 27.2,
+      "pmra": 166.45,
+      "pmdec": 143.88,
+      "radial_velocity": -5.3,
+      "stellar_parameters": {
+        "teff": 6141,
+        "logg": 3.83,
+        "metallicity_feh": -0.37,
+        "mass": 1.159,
+        "radius": 1.197,
+        "luminosity": 4.0817,
+        "age": 7.4,
+        "vsini": 13.1
+      },
+      "spectral_classification": {
+        "spectral_type": "F6V",
+        "mk_class": "F6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 19.991,
+        "bp_rp": 3.184,
+        "j_mag": 14.802,
+        "h_mag": 15.641,
+        "ks_mag": 7.661
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": true,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 713.3,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "9490921432336097539",
+      "hd_id": "HD 32193",
+      "hip_id": "HIP 82559",
+      "ra": 230.32183497,
+      "dec": 17.55484548,
+      "parallax": 3.091,
+      "distance": 11.3,
+      "pmra": 190.97,
+      "pmdec": 427.82,
+      "radial_velocity": -85.7,
+      "stellar_parameters": {
+        "teff": 5985,
+        "logg": 4.76,
+        "metallicity_feh": -0.38,
+        "mass": 1.133,
+        "radius": 1.199,
+        "luminosity": 0.7979,
+        "age": 10.5,
+        "vsini": 43.5
+      },
+      "spectral_classification": {
+        "spectral_type": "G0V",
+        "mk_class": "G0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.478,
+        "bp_rp": 3.589,
+        "j_mag": 15.268,
+        "h_mag": 12.094,
+        "ks_mag": 10.282
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.128
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 397.2,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "3366505613374386415",
+      "hd_id": "HD 104792",
+      "hip_id": "HIP 3192",
+      "ra": 47.19864088,
+      "dec": 74.56089893,
+      "parallax": 75.07,
+      "distance": 14.6,
+      "pmra": 481.58,
+      "pmdec": -147.53,
+      "radial_velocity": 38.3,
+      "stellar_parameters": {
+        "teff": 5004,
+        "logg": 4.66,
+        "metallicity_feh": -1.92,
+        "mass": 1.015,
+        "radius": 84.311,
+        "luminosity": 2594.2421,
+        "age": 1.4,
+        "vsini": 21.0
+      },
+      "spectral_classification": {
+        "spectral_type": "K7V",
+        "mk_class": "K7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.548,
+        "bp_rp": 0.322,
+        "j_mag": 13.809,
+        "h_mag": 16.244,
+        "ks_mag": 8.722
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 3
+      },
+      "data_quality": {
+        "parallax_snr": 853.3,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "3593940169119682554",
+      "hd_id": "HD 30417",
+      "hip_id": "HIP 115594",
+      "ra": 162.39153245,
+      "dec": -14.81208731,
+      "parallax": 44.486,
+      "distance": 11.3,
+      "pmra": 26.4,
+      "pmdec": -306.45,
+      "radial_velocity": 11.3,
+      "stellar_parameters": {
+        "teff": 2775,
+        "logg": 3.72,
+        "metallicity_feh": -0.23,
+        "mass": 0.292,
+        "radius": 0.135,
+        "luminosity": 0.0765,
+        "age": 10.0,
+        "vsini": 38.2
+      },
+      "spectral_classification": {
+        "spectral_type": "M0V",
+        "mk_class": "M0V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 13.557,
+        "bp_rp": 3.152,
+        "j_mag": 15.159,
+        "h_mag": 14.897,
+        "ks_mag": 8.088
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": false,
+        "amplitude": 0.234
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 339.9,
+        "overall_quality": "B"
+      }
+    },
+    {
+      "source_id": "1989608384544224120",
+      "hd_id": "HD 29923",
+      "hip_id": "HIP 54077",
+      "ra": 332.15100431,
+      "dec": -70.51866416,
+      "parallax": 55.088,
+      "distance": 11.8,
+      "pmra": -90.97,
+      "pmdec": -418.26,
+      "radial_velocity": -1.9,
+      "stellar_parameters": {
+        "teff": 7329,
+        "logg": 4.19,
+        "metallicity_feh": -0.61,
+        "mass": 1.167,
+        "radius": 1.339,
+        "luminosity": 3.0627,
+        "age": 5.8,
+        "vsini": 48.1
+      },
+      "spectral_classification": {
+        "spectral_type": "F7V",
+        "mk_class": "F7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.677,
+        "bp_rp": 3.32,
+        "j_mag": 10.419,
+        "h_mag": 7.156,
+        "ks_mag": 9.452
+      },
+      "habitable_zone": {
+        "inner_edge": 1.16,
+        "outer_edge": 3.73
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 5
+      },
+      "data_quality": {
+        "parallax_snr": 748.1,
+        "overall_quality": "C"
+      }
+    },
+    {
+      "source_id": "6441434495804784026",
+      "hd_id": "HD 25165",
+      "hip_id": "HIP 46763",
+      "ra": 7.87413687,
+      "dec": 15.53923063,
+      "parallax": 19.279,
+      "distance": 16.6,
+      "pmra": 143.28,
+      "pmdec": -247.06,
+      "radial_velocity": 6.6,
+      "stellar_parameters": {
+        "teff": 2561,
+        "logg": 3.71,
+        "metallicity_feh": -0.64,
+        "mass": 0.243,
+        "radius": 0.604,
+        "luminosity": 0.045,
+        "age": 15.0,
+        "vsini": 37.6
+      },
+      "spectral_classification": {
+        "spectral_type": "M1V",
+        "mk_class": "M1V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 15.529,
+        "bp_rp": 3.723,
+        "j_mag": 8.579,
+        "h_mag": 7.937,
+        "ks_mag": 13.078
+      },
+      "habitable_zone": {
+        "inner_edge": 0.01,
+        "outer_edge": 0.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.0
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 5
+      },
+      "data_quality": {
+        "parallax_snr": 751.5,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "8178501022618839690",
+      "hd_id": "HD 89813",
+      "hip_id": "HIP 119354",
+      "ra": 351.91531323,
+      "dec": -21.91526198,
+      "parallax": 37.175,
+      "distance": 12.4,
+      "pmra": 481.22,
+      "pmdec": 64.57,
+      "radial_velocity": -60.4,
+      "stellar_parameters": {
+        "teff": 5947,
+        "logg": 4.25,
+        "metallicity_feh": 0.35,
+        "mass": 1.175,
+        "radius": 0.846,
+        "luminosity": 1.4726,
+        "age": 5.6,
+        "vsini": 31.2
+      },
+      "spectral_classification": {
+        "spectral_type": "G7V",
+        "mk_class": "G7V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 12.518,
+        "bp_rp": 0.8,
+        "j_mag": 4.938,
+        "h_mag": 6.004,
+        "ks_mag": 14.958
+      },
+      "habitable_zone": {
+        "inner_edge": 0.74,
+        "outer_edge": 2.05
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.485
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 560.2,
+        "overall_quality": "A"
+      }
+    },
+    {
+      "source_id": "3913087166866753509",
+      "hd_id": "HD 14630",
+      "hip_id": "HIP 94692",
+      "ra": 281.24549937,
+      "dec": 87.37414854,
+      "parallax": 4.187,
+      "distance": 11.4,
+      "pmra": 124.06,
+      "pmdec": 20.25,
+      "radial_velocity": -86.8,
+      "stellar_parameters": {
+        "teff": 3728,
+        "logg": 4.69,
+        "metallicity_feh": -2.44,
+        "mass": 1.019,
+        "radius": 36.895,
+        "luminosity": 537.3914,
+        "age": 6.9,
+        "vsini": 34.4
+      },
+      "spectral_classification": {
+        "spectral_type": "K6V",
+        "mk_class": "K6V",
+        "luminosity_class": "V"
+      },
+      "photometry": {
+        "g_mag": 14.121,
+        "bp_rp": 1.857,
+        "j_mag": 13.528,
+        "h_mag": 11.25,
+        "ks_mag": 8.234
+      },
+      "habitable_zone": {
+        "inner_edge": 0.27,
+        "outer_edge": 91.47
+      },
+      "variability": {
+        "is_variable": true,
+        "amplitude": 0.236
+      },
+      "planetary_system": {
+        "has_planets": false,
+        "number_of_planets": 0
+      },
+      "data_quality": {
+        "parallax_snr": 374.5,
+        "overall_quality": "C"
+      }
+    }
+  ]
+}
