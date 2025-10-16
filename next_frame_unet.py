@@ -33,16 +33,24 @@ class NextFrameDataset(Dataset):
         frames_dir: str,
         img_size: int = 128,
         augment: bool = True,
+        mode: str = 'predict',  # 'predict' ou 'reconstruct'
+        add_noise: bool = True,
+        noise_std: float = 0.02,
     ) -> None:
         self.img_paths = sorted(glob.glob(os.path.join(frames_dir, 'frame_*.png')))
         assert len(self.img_paths) >= 2, 'Il faut au moins 2 images frame_*.png'
         self.img_size = img_size
         self.augment = augment
+        self.mode = mode
+        self.add_noise = add_noise
+        self.noise_std = noise_std
 
         self.resize = T.Resize((img_size, img_size), interpolation=T.InterpolationMode.BILINEAR)
 
     def __len__(self) -> int:
-        return len(self.img_paths) - 1
+        if self.mode == 'predict':
+            return len(self.img_paths) - 1
+        return len(self.img_paths)
 
     def _paired_augment(self, x: torch.Tensor, y: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
         if not self.augment:
@@ -81,18 +89,28 @@ class NextFrameDataset(Dataset):
         return x, y
 
     def __getitem__(self, idx: int) -> Tuple[torch.Tensor, torch.Tensor]:
-        img_t = Image.open(self.img_paths[idx]).convert('RGB')
-        img_tp1 = Image.open(self.img_paths[idx + 1]).convert('RGB')
+        if self.mode == 'predict':
+            img_t = Image.open(self.img_paths[idx]).convert('RGB')
+            img_tp1 = Image.open(self.img_paths[idx + 1]).convert('RGB')
 
-        img_t = self.resize(img_t)
-        img_tp1 = self.resize(img_tp1)
+            img_t = self.resize(img_t)
+            img_tp1 = self.resize(img_tp1)
 
-        t = TF.to_tensor(img_t)
-        tp1 = TF.to_tensor(img_tp1)
+            t = TF.to_tensor(img_t)
+            tp1 = TF.to_tensor(img_tp1)
 
-        t, tp1 = self._paired_augment(t, tp1)
-
-        return t, tp1
+            t, tp1 = self._paired_augment(t, tp1)
+            return t, tp1
+        else:
+            # Reconstruction autoencodeur: entrée bruitée -> cible propre
+            img = Image.open(self.img_paths[idx]).convert('RGB')
+            img = self.resize(img)
+            clean = TF.to_tensor(img)
+            inp, target = self._paired_augment(clean, clean)
+            if self.add_noise:
+                noise = torch.randn_like(inp) * self.noise_std
+                inp = torch.clamp(inp + noise, 0.0, 1.0)
+            return inp, target
 
 
 # ==================================================
@@ -283,8 +301,18 @@ def make_loaders(
     num_workers: int,
     val_split: float = 0.1,
     augment: bool = True,
+    mode: str = 'predict',
+    add_noise: bool = True,
+    noise_std: float = 0.02,
 ) -> Tuple[DataLoader, Optional[DataLoader]]:
-    dataset = NextFrameDataset(frames_dir, img_size=img_size, augment=augment)
+    dataset = NextFrameDataset(
+        frames_dir,
+        img_size=img_size,
+        augment=augment,
+        mode=mode,
+        add_noise=add_noise,
+        noise_std=noise_std,
+    )
     n_val = int(len(dataset) * val_split)
     n_train = len(dataset) - n_val
     if n_val > 0:
@@ -332,112 +360,181 @@ def train(
     out_dir: str = 'outputs',
     img_size: int = 128,
     batch_size: int = 8,
-    epochs: int = 50,
-    lr: float = 2e-4,
+    pre_epochs: int = 20,
+    pred_epochs: int = 30,
+    pre_lr: float = 2e-4,
+    pred_lr: float = 2e-5,
     num_workers: int = 2,
     val_split: float = 0.1,
     amp: bool = True,
     resume: Optional[str] = None,
+    pre_noise_std: float = 0.02,
 ) -> nn.Module:
     os.makedirs(out_dir, exist_ok=True)
 
     model = UNet(in_ch=3, out_ch=3, base=64).to(DEVICE)
-    optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-5)
-    scheduler = CosineAnnealingLR(optimizer, T_max=max(1, epochs))
-    criterion = CompositeLoss()
+    # Phase 1: reconstruction (autoencoder)
+    pre_optimizer = torch.optim.AdamW(model.parameters(), lr=pre_lr, weight_decay=1e-5)
+    pre_scheduler = CosineAnnealingLR(pre_optimizer, T_max=max(1, pre_epochs))
+    recon_criterion = CompositeLoss(w_char=1.0, w_grad=0.1, w_ssim=0.5)
 
     scaler = torch.cuda.amp.GradScaler(enabled=(amp and DEVICE == 'cuda'))
 
-    start_epoch = 0
-    best_val = float('inf')
+    # Reprise si demandé (sur phase 2 généralement)
     if resume and os.path.exists(resume):
         ckpt = load_checkpoint(resume, map_location=DEVICE)
         model.load_state_dict(ckpt['model_state_dict'])
-        if 'optimizer_state_dict' in ckpt:
-            optimizer.load_state_dict(ckpt['optimizer_state_dict'])
-        start_epoch = int(ckpt.get('epoch', 0)) + 1
-        best_val = float(ckpt.get('best_metric', float('inf')))
-        print(f"✓ Reprise depuis {resume} (epoch {start_epoch}, best={best_val:.6f})")
-
-    train_loader, val_loader = make_loaders(
-        frames_dir, img_size, batch_size, num_workers, val_split, augment=True
-    )
+        print(f"✓ Reprise depuis {resume}")
 
     print(f"Device: {DEVICE}")
-    print(f"Taille dataset: train={len(train_loader.dataset)}" + (f", val={len(val_loader.dataset)}" if val_loader else ""))
     print(f"Paramètres: {sum(p.numel() for p in model.parameters()):,}")
 
-    for epoch in range(start_epoch, epochs):
-        model.train()
-        train_losses: List[float] = []
+    # ============================
+    # Phase 1 — Pré-entraînement AE
+    # ============================
+    pre_train_loader, pre_val_loader = make_loaders(
+        frames_dir, img_size, batch_size, num_workers, val_split,
+        augment=True, mode='reconstruct', add_noise=True, noise_std=pre_noise_std,
+    )
+    print(f"Phase 1 (AE): train={len(pre_train_loader.dataset)}" + (f", val={len(pre_val_loader.dataset)}" if pre_val_loader else ""))
 
-        for i, (t, tp1) in enumerate(train_loader):
+    best_pre = float('inf')
+    for epoch in range(pre_epochs):
+        model.train()
+        losses: List[float] = []
+        for i, (noisy, clean) in enumerate(pre_train_loader):
+            noisy = noisy.to(DEVICE, non_blocking=True)
+            clean = clean.to(DEVICE, non_blocking=True)
+
+            pre_optimizer.zero_grad(set_to_none=True)
+            with torch.cuda.amp.autocast(enabled=(amp and DEVICE == 'cuda')):
+                recon = model(noisy)
+                loss, loss_dict = recon_criterion(recon, clean)
+            scaler.scale(loss).backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            scaler.step(pre_optimizer)
+            scaler.update()
+            losses.append(float(loss.item()))
+            if i % 25 == 0:
+                print(f"  [AE {epoch+1}/{pre_epochs}] Batch {i}/{len(pre_train_loader)} "
+                      f"Loss={loss.item():.5f} (Char={loss_dict['char']:.4f}, Grad={loss_dict['grad']:.4f}, SSIM={loss_dict['ssim']:.4f})")
+
+        pre_scheduler.step()
+        avg_train = float(np.mean(losses)) if losses else 0.0
+        avg_val = avg_train
+        if pre_val_loader is not None and len(pre_val_loader) > 0:
+            model.eval()
+            vloss: List[float] = []
+            with torch.no_grad():
+                for noisy, clean in pre_val_loader:
+                    noisy = noisy.to(DEVICE, non_blocking=True)
+                    clean = clean.to(DEVICE, non_blocking=True)
+                    with torch.cuda.amp.autocast(enabled=(amp and DEVICE == 'cuda')):
+                        recon = model(noisy)
+                        l, _ = recon_criterion(recon, clean)
+                    vloss.append(float(l.item()))
+            avg_val = float(np.mean(vloss)) if vloss else avg_train
+
+        print(f"AE Epoch {epoch+1}/{pre_epochs}: train={avg_train:.6f} val={avg_val:.6f} lr={pre_scheduler.get_last_lr()[0]:.6e}")
+
+        # Sauvegarde meilleur AE
+        if avg_val < best_pre:
+            best_pre = avg_val
+            pre_ckpt = os.path.join(out_dir, 'best_unet_autoencoder.pth')
+            save_checkpoint(model, pre_optimizer, epoch, pre_ckpt, best_pre)
+            print(f"  ✓ Meilleur AE sauvegardé ({best_pre:.6f}) → {pre_ckpt}")
+
+        # Visualisation AE
+        try:
+            model.eval()
+            with torch.no_grad():
+                noisy_v, clean_v = next(iter(pre_train_loader))
+                noisy_v = noisy_v.to(DEVICE)[:4]
+                clean_v = clean_v.to(DEVICE)[:4]
+                with torch.cuda.amp.autocast(enabled=(amp and DEVICE == 'cuda')):
+                    recon_v = model(noisy_v)
+                grid = make_grid(torch.cat([noisy_v, recon_v, clean_v], dim=0), nrow=4)
+                save_image(grid, os.path.join(out_dir, f'ae_vis_epoch_{epoch+1}.png'))
+        except Exception as e:
+            print(f"(AE vis) Ignoré: {e}")
+
+    # ============================
+    # Phase 2 — Fine-tuning prédiction
+    # ============================
+    pred_optimizer = torch.optim.AdamW(model.parameters(), lr=pred_lr, weight_decay=1e-5)
+    pred_scheduler = CosineAnnealingLR(pred_optimizer, T_max=max(1, pred_epochs))
+    pred_criterion = CompositeLoss(w_char=1.0, w_grad=0.2, w_ssim=0.5)
+
+    pred_train_loader, pred_val_loader = make_loaders(
+        frames_dir, img_size, batch_size, num_workers, val_split,
+        augment=True, mode='predict', add_noise=False,
+    )
+    print(f"Phase 2 (Pred): train={len(pred_train_loader.dataset)}" + (f", val={len(pred_val_loader.dataset)}" if pred_val_loader else ""))
+
+    best_pred = float('inf')
+    for epoch in range(pred_epochs):
+        model.train()
+        losses: List[float] = []
+        for i, (t, tp1) in enumerate(pred_train_loader):
             t = t.to(DEVICE, non_blocking=True)
             tp1 = tp1.to(DEVICE, non_blocking=True)
 
-            optimizer.zero_grad(set_to_none=True)
+            pred_optimizer.zero_grad(set_to_none=True)
             with torch.cuda.amp.autocast(enabled=(amp and DEVICE == 'cuda')):
-                pred = model(t)
-                loss, loss_dict = criterion(pred, tp1)
-
+                y = model(t)
+                loss, loss_dict = pred_criterion(y, tp1)
             scaler.scale(loss).backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-            scaler.step(optimizer)
+            scaler.step(pred_optimizer)
             scaler.update()
-
-            train_losses.append(float(loss.item()))
-
+            losses.append(float(loss.item()))
             if i % 25 == 0:
-                print(f"  [Epoch {epoch+1}/{epochs}] Batch {i}/{len(train_loader)} "
+                print(f"  [Pred {epoch+1}/{pred_epochs}] Batch {i}/{len(pred_train_loader)} "
                       f"Loss={loss.item():.5f} (Char={loss_dict['char']:.4f}, Grad={loss_dict['grad']:.4f}, SSIM={loss_dict['ssim']:.4f})")
 
-        scheduler.step()
-        avg_train = float(np.mean(train_losses)) if train_losses else 0.0
-
-        # Validation
+        pred_scheduler.step()
+        avg_train = float(np.mean(losses)) if losses else 0.0
         avg_val = avg_train
-        if val_loader is not None and len(val_loader) > 0:
+        if pred_val_loader is not None and len(pred_val_loader) > 0:
             model.eval()
-            val_losses: List[float] = []
+            vloss: List[float] = []
             with torch.no_grad():
-                for t, tp1 in val_loader:
+                for t, tp1 in pred_val_loader:
                     t = t.to(DEVICE, non_blocking=True)
                     tp1 = tp1.to(DEVICE, non_blocking=True)
                     with torch.cuda.amp.autocast(enabled=(amp and DEVICE == 'cuda')):
-                        pred = model(t)
-                        loss, _ = criterion(pred, tp1)
-                    val_losses.append(float(loss.item()))
-            avg_val = float(np.mean(val_losses)) if val_losses else avg_train
+                        y = model(t)
+                        l, _ = pred_criterion(y, tp1)
+                    vloss.append(float(l.item()))
+            avg_val = float(np.mean(vloss)) if vloss else avg_train
 
-        print(f"Epoch {epoch+1}/{epochs}: train={avg_train:.6f} val={avg_val:.6f} lr={scheduler.get_last_lr()[0]:.6e}")
+        print(f"Pred Epoch {epoch+1}/{pred_epochs}: train={avg_train:.6f} val={avg_val:.6f} lr={pred_scheduler.get_last_lr()[0]:.6e}")
 
-        # Sauvegardes
-        grid = None
+        # Sauvegarde meilleur prédicteur
+        if avg_val < best_pred:
+            best_pred = avg_val
+            pred_ckpt = os.path.join(out_dir, 'best_unet_predictor.pth')
+            save_checkpoint(model, pred_optimizer, epoch, pred_ckpt, best_pred)
+            print(f"  ✓ Meilleur prédicteur sauvegardé ({best_pred:.6f}) → {pred_ckpt}")
+
+        # Visualisation prédiction
         try:
-            # Visualisation rapide
             model.eval()
             with torch.no_grad():
-                t_vis, y_vis = next(iter(train_loader))
-                t_vis = t_vis.to(DEVICE)[:4]
-                y_vis = y_vis.to(DEVICE)[:4]
+                t_v, y_v = next(iter(pred_train_loader))
+                t_v = t_v.to(DEVICE)[:4]
+                y_v = y_v.to(DEVICE)[:4]
                 with torch.cuda.amp.autocast(enabled=(amp and DEVICE == 'cuda')):
-                    p_vis = model(t_vis)
-                grid = make_grid(torch.cat([t_vis, p_vis, y_vis], dim=0), nrow=4)
-                save_image(grid, os.path.join(out_dir, f'train_vis_epoch_{epoch+1}.png'))
+                    p_v = model(t_v)
+                grid = make_grid(torch.cat([t_v, p_v, y_v], dim=0), nrow=4)
+                save_image(grid, os.path.join(out_dir, f'pred_vis_epoch_{epoch+1}.png'))
         except Exception as e:
-            print(f"(vis) Ignoré: {e}")
+            print(f"(Pred vis) Ignoré: {e}")
 
-        # Best checkpoint basé sur val
-        if avg_val < best_val:
-            best_val = avg_val
-            ckpt_path = os.path.join(out_dir, 'best_unet_nextframe.pth')
-            save_checkpoint(model, optimizer, epoch, ckpt_path, best_val)
-            print(f"  ✓ Nouveau meilleur modèle sauvegardé ({best_val:.6f}) → {ckpt_path}")
-
-    # Dernière sauvegarde
-    last_path = os.path.join(out_dir, 'last_unet_nextframe.pth')
-    save_checkpoint(model, optimizer, epochs - 1, last_path, best_val)
-    print(f"✓ Entraînement terminé. Best={best_val:.6f}. Dernier checkpoint: {last_path}")
+    # Dernier checkpoint prédicteur
+    last_path = os.path.join(out_dir, 'last_unet_predictor.pth')
+    save_checkpoint(model, pred_optimizer, pred_epochs - 1, last_path, best_pred)
+    print(f"✓ Entraînement terminé. BestPred={best_pred:.6f}. Dernier checkpoint: {last_path}")
 
     return model
 
@@ -457,7 +554,7 @@ def generate_future(
     os.makedirs(out_dir, exist_ok=True)
 
     # Dataset sans augmentation pour préparer l'entrée
-    ds = NextFrameDataset(frames_dir, img_size=img_size, augment=False)
+    ds = NextFrameDataset(frames_dir, img_size=img_size, augment=False, mode='predict', add_noise=False)
 
     if start_index is None:
         # On part de la dernière frame disponible
@@ -494,8 +591,11 @@ def main():
     parser.add_argument('--out_dir', type=str, default='outputs', help='Dossier de sortie')
     parser.add_argument('--img_size', type=int, default=128, help='Taille des images (carrée)')
     parser.add_argument('--batch_size', type=int, default=8, help='Taille de batch')
-    parser.add_argument('--epochs', type=int, default=50, help="Nombre d'epochs")
-    parser.add_argument('--lr', type=float, default=2e-4, help='Learning rate')
+    parser.add_argument('--pre_epochs', type=int, default=20, help="Epochs pré-entrainement (autoencodeur)")
+    parser.add_argument('--pred_epochs', type=int, default=30, help='Epochs fine-tuning prédiction')
+    parser.add_argument('--pre_lr', type=float, default=2e-4, help='LR phase pré-entrainement')
+    parser.add_argument('--pred_lr', type=float, default=2e-5, help='LR phase prédiction')
+    parser.add_argument('--pre_noise_std', type=float, default=0.02, help='Bruit gaussien std pour AE')
     parser.add_argument('--num_workers', type=int, default=2, help='Workers DataLoader')
     parser.add_argument('--val_split', type=float, default=0.1, help='Fraction validation [0,1)')
     parser.add_argument('--amp', action='store_true', help='Activer AMP (FP16) pour GPU (P100 OK)')
@@ -509,8 +609,8 @@ def main():
     if args.inference_only:
         print('MODE INFÉRENCE')
         model = UNet(in_ch=3, out_ch=3, base=64).to(DEVICE)
-        ckpt_best = os.path.join(args.out_dir, 'best_unet_nextframe.pth')
-        ckpt_last = os.path.join(args.out_dir, 'last_unet_nextframe.pth')
+        ckpt_best = os.path.join(args.out_dir, 'best_unet_predictor.pth')
+        ckpt_last = os.path.join(args.out_dir, 'last_unet_predictor.pth')
         ckpt_path = ckpt_best if os.path.exists(ckpt_best) else ckpt_last
         if os.path.exists(ckpt_path):
             ckpt = load_checkpoint(ckpt_path, map_location=DEVICE)
@@ -529,12 +629,15 @@ def main():
         out_dir=args.out_dir,
         img_size=args.img_size,
         batch_size=args.batch_size,
-        epochs=args.epochs,
-        lr=args.lr,
+        pre_epochs=args.pre_epochs,
+        pred_epochs=args.pred_epochs,
+        pre_lr=args.pre_lr,
+        pred_lr=args.pred_lr,
         num_workers=args.num_workers,
         val_split=args.val_split,
         amp=args.amp,
         resume=args.resume if args.resume else None,
+        pre_noise_std=args.pre_noise_std,
     )
 
     # Génération finale
