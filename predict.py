@@ -220,6 +220,7 @@ if __name__ == '__main__':
             model.eval()
             with torch.no_grad():
                 pred = model(x)
+                # CORRECTION: Sélectionner la première image du batch 
                 pred_img = T.ToPILImage()(pred.cpu())
                 gt_img = T.ToPILImage()(y.cpu())
                 pred_img.save(f'prediction_epoch{epoch+1}.png')
@@ -234,9 +235,10 @@ if __name__ == '__main__':
     print("\nMode inférence:")
     model.eval()
     with torch.no_grad():
-        sample_x, sample_y = dataset
+        sample_x, sample_y = dataset  # CORRECTION: utiliser  pour indexer
         sample_x = sample_x.unsqueeze(0).to(DEVICE)
         prediction = model(sample_x)
+        # CORRECTION: Sélectionner la première (et seule) image
         pred_img = T.ToPILImage()(prediction.cpu())
         pred_img.save('next_frame_prediction.png')
         print("✓ Prédiction sauvegardée: next_frame_prediction.png")
