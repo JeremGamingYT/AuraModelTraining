@@ -136,12 +136,19 @@ class SEBlock(nn.Module):
 class ConvBlock(nn.Module):
     def __init__(self, in_ch: int, out_ch: int) -> None:
         super().__init__()
+        def _gn(ch: int) -> nn.Module:
+            # GroupNorm robuste aux petits batchs
+            for g in (32, 16, 8, 4, 2, 1):
+                if ch % g == 0:
+                    return nn.GroupNorm(g, ch)
+            return nn.GroupNorm(1, ch)
+
         self.block = nn.Sequential(
-            nn.Conv2d(in_ch, out_ch, 3, padding=1),
-            nn.BatchNorm2d(out_ch),
+            nn.Conv2d(in_ch, out_ch, 3, padding=1, bias=False),
+            _gn(out_ch),
             nn.ReLU(inplace=True),
-            nn.Conv2d(out_ch, out_ch, 3, padding=1),
-            nn.BatchNorm2d(out_ch),
+            nn.Conv2d(out_ch, out_ch, 3, padding=1, bias=False),
+            _gn(out_ch),
             nn.ReLU(inplace=True),
             SEBlock(out_ch),
         )
@@ -181,6 +188,14 @@ class UNet(nn.Module):
             nn.Sigmoid(),  # Sortie [0,1]
         )
 
+        # Initialisation stable
+        def _init(m: nn.Module) -> None:
+            if isinstance(m, (nn.Conv2d, nn.ConvTranspose2d)):
+                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+                if getattr(m, 'bias', None) is not None and m.bias is not None:
+                    nn.init.zeros_(m.bias)
+        self.apply(_init)
+
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         e1 = self.enc1(x)
         e2 = self.enc2(self.pool(e1))
@@ -205,7 +220,10 @@ class UNet(nn.Module):
         d1 = torch.cat([d1, e1], dim=1)
         d1 = self.dec1(d1)
 
-        return self.out(d1)
+        out = self.out(d1)
+        # clamp pour stabilité des sorties
+        out = torch.clamp(out, 0.0, 1.0)
+        return out
 
 
 # ==================================================
@@ -280,10 +298,16 @@ class CompositeLoss(nn.Module):
         self.w_ssim = w_ssim
 
     def forward(self, pred: torch.Tensor, target: torch.Tensor) -> Tuple[torch.Tensor, dict]:
+        # Empêche saturation totale en blanc/noir
+        pred = torch.clamp(pred, 0.0, 1.0)
+        target = torch.clamp(target, 0.0, 1.0)
+
         l_char = self.charb(pred, target)
         l_grad = gradient_loss(pred, target)
         l_ssim = 1.0 - self.ssim(pred, target)
-        total = self.w_char * l_char + self.w_grad * l_grad + self.w_ssim * l_ssim
+        # Pénalité légère pour s'éloigner du centre (évite images constantes)
+        center_penalty = 0.01 * torch.mean((pred - 0.5) ** 2)
+        total = self.w_char * l_char + self.w_grad * l_grad + self.w_ssim * l_ssim + center_penalty
         return total, {
             'char': float(l_char.item()),
             'grad': float(l_grad.item()),
@@ -421,6 +445,11 @@ def train(
 
         pre_scheduler.step()
         avg_train = float(np.mean(losses)) if losses else 0.0
+        # Logs de saturation
+        if len(losses) > 0:
+            with torch.no_grad():
+                mn, mx = float(recon.min().item()), float(recon.max().item())
+            print(f"    Recon stats[min/max]: {mn:.4f}/{mx:.4f}")
         avg_val = avg_train
         if pre_val_loader is not None and len(pre_val_loader) > 0:
             model.eval()
@@ -494,6 +523,10 @@ def train(
 
         pred_scheduler.step()
         avg_train = float(np.mean(losses)) if losses else 0.0
+        if len(losses) > 0:
+            with torch.no_grad():
+                mn, mx = float(y.min().item()), float(y.max().item())
+            print(f"    Pred stats[min/max]: {mn:.4f}/{mx:.4f}")
         avg_val = avg_train
         if pred_val_loader is not None and len(pred_val_loader) > 0:
             model.eval()
@@ -556,15 +589,16 @@ def generate_future(
     # Dataset sans augmentation pour préparer l'entrée
     ds = NextFrameDataset(frames_dir, img_size=img_size, augment=False, mode='predict', add_noise=False)
 
+    # Détermine l'image de départ (frame_t uniquement, sans wrap vers frame_1)
     if start_index is None:
-        # On part de la dernière frame disponible
-        x0, _ = ds[-1]
-        start_index = len(ds)  # indice logique
+        img_path = ds.img_paths[-1]
     else:
-        # start_index réfère à la frame_t (1-based attendu si utilisé depuis nommage)
-        start_idx = max(0, min(start_index - 1, len(ds) - 1))
-        x0, _ = ds[start_idx]
+        idx = max(0, min(start_index - 1, len(ds.img_paths) - 1))
+        img_path = ds.img_paths[idx]
 
+    start_img = Image.open(img_path).convert('RGB')
+    start_img = ds.resize(start_img)
+    x0 = TF.to_tensor(start_img)
     x = x0.unsqueeze(0).to(DEVICE)
 
     preds = []
@@ -573,7 +607,8 @@ def generate_future(
         preds.append(y.cpu())
         x = y  # réinjecte la prédiction comme entrée
         save_image(y, os.path.join(out_dir, f'future_{i+1:03d}.png'))
-        print(f"  Généré: future_{i+1:03d}.png")
+        y_min, y_mean, y_max = float(y.min().item()), float(y.mean().item()), float(y.max().item())
+        print(f"  Généré: future_{i+1:03d}.png  stats[min/mean/max]={y_min:.4f}/{y_mean:.4f}/{y_max:.4f}")
 
     grid = make_grid(torch.cat(preds, dim=0), nrow=num_future)
     save_image(grid, os.path.join(out_dir, 'future_sequence.png'))
